@@ -1,23 +1,121 @@
----
-layout: default
----
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Source+Sans+Pro" rel="stylesheet">
 
-<div class="home">
+		<meta charset="utf-8">
+		<title> Portfolio </title>
+	</head>
+	<body>
+		<div class = "grid">
+			<div id = "header" class = "row">
+				<div id = "logo" class = "col-6">
+					<div>
+						<img src="logo.png">
+					</div>
+				 	<div id = "sitetitle">
+						<h1> Crumble </h1>
+						<h4> Cookie Shop </h4>
+					</div>
+				</div>
+				<div class = "col-6">
+					<div class = "menu">
+						<ul>
+							<li> <a href="#Home">Home</a> </li>
+							<li><a href="About.html"> About </a></li>
+							<li><a href="#Shop"> Shop <a/></li>
+							<li><a href="#Classes"> Classes <a/></li>
+							<li> <a href="#Recipes">Recipes <a/></li>
+							<li> <a href="#Blog">Blog <a/></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "banner">
+					<div id = "innerban">
+						<div>
+							<h2> Welcome! </h2>
+            				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut metus sem, pretium ut massa suscipit, pretium ornare purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis bibendum nibh eu convallis. </p>
+              				<a href="#About"> More... </a>
+						</div>
+					</div>
 
-  <h1 class="page-heading">Posts</h1>
+				</div>
+			</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+			<div id="services" class="row">
+				<h3> Freshly Baked Cookies </h3>
+				<h2> Made with Love </h2>
+				<div id = "service_div"> </div>
+			</div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+			<div id = "test" class = "row">
+				<div>
+					<img src="cookie_jar.jpg">
+					<a href="youtube.com"> Products
+					</a>
+					<div> </div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam magna, porta sed odio at, hendrerit fringilla risus. Phasellus sem massa, rutrum in mattis eget, blandit nec felis.</p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+				</div>
+				<div>
+					<img src="chef_hat.jpg">
+					<a href="youtube.com"> Classes
+					</a>
+					<div> </div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam magna, porta sed odio at, hendrerit fringilla risus. Phasellus sem massa, rutrum in mattis eget, blandit nec felis.</p>
+				</div>
+				<div>
+					<img src="recipes.jpg">
+					<a href="youtube.com"> Recipes
+					</a>
+					<div> </div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque diam magna, porta sed odio at, hendrerit fringilla risus. Phasellus sem massa, rutrum in mattis eget, blandit nec felis.</p>
+				</div>
+			</div>
 
-</div>
+		</div>
+			<div id = "divisor">
+				<div id = "footer" class = "row">
+					<div id = "social" class = "col-4">
+						<ul>
+							<li> <a href = "#fb"><img src="fb-icon.jpg"></a></li>
+							<li> <a href = "#ig"><img src="ig-icon.jpg"></a></li>
+							<li> <a href = "#twitter"><img src="tw-icon.jpg"></a></li>
+						</ul>
+						<h2> Contact us</h2>
+						<a href="#email"> Email </a>
+						<p> Address: 567 Elk Street San Francisco, CA 94105</p>
+						<p> Phone: (555) 555 1234</p>
+					</div>
+					<div id = "left_foot" class= "col-8">
+						<div id ="menu2">
+							<ul>
+								<li> <a href="#Home">Home</a> </li>
+								<li><a href="#About"> About </a></li>
+								<li><a href="#Shop"> Shop <a/></li>
+								<li><a href="#Classes"> Classes <a/></li>
+								<li> <a href="#Recipes">Recipes <a/></li>
+								<li> <a href="#Blog">Blog <a/></li>
+							</ul>
+						</div>
+						<div>
+							<img src="logo_ftr.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "grid">
+				<div id = "copy" class = "row">
+					<p> Copyright © 2016 Jessica Andzouana </p>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
+
