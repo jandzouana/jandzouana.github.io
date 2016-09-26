@@ -1,0 +1,351 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+/*Variables*/
+$icon-size: 60px;
+$overlay: #00284d;
+
+/*Basics*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.grid {
+		padding:{
+			top: 70px;
+			bottom:40px;
+			right: 15px;
+			left: 15px;
+		}
+    margin: 0 auto;
+    max-width: 1100px;
+   	width: 100%;
+		//border: 1px solid green;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+		//border: 1px solid pink;
+	}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    //border: 1px solid red;
+}
+
+/*Logo pieces*/
+header {
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+	height: 100px;
+	align-items: center;
+}
+#brand {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	//border: 1px solid orange;
+	a{
+		text-decoration: none;
+	}
+}
+#logo {
+	height: 100px;
+	width: 100px;
+	border: 1px solid blue;
+	border-radius: 50%;
+
+	//centering text
+	display: flex;
+	text-align: center;
+	align-items: center;
+  justify-content: center;
+}
+#logo-text{
+	border-left: 2px solid black;
+	height: 100%;
+	padding-left: 10px;
+	margin-left: 10px;
+
+	//centering text
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+
+	//extending border line upward
+		h2 {
+			padding-top: 10px;
+		}
+		h3 {
+			padding-bottom: 10px;
+		}
+}
+
+/*social media*/
+#social-media{
+	//border: 1px solid red;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 270px;
+	height: 100px;
+	position: absolute;
+	right: 0;
+	a{
+		text-decoration: none;
+	}
+
+}
+
+.iconcon{
+	//border: 1px solid yellow;
+	padding: 10px;
+	width: $icon-size;
+	height: $icon-size;
+	//margin-left: 25px;
+
+}
+.icon {
+	height: auto;
+	width: 100%;
+	padding: auto;
+
+	//border: 1px solid orange;
+
+}
+#youtube {
+	margin-top: -3px;
+	img{
+		width: $icon-size*.75;
+		max-width: 100%;
+	}
+}
+
+#link{
+	margin-bottom: 2px;
+}
+/*Main*/
+main {
+	display: flex;
+	flex-direction: column;
+//	justify-content: center;
+}
+.nav{
+	margin-top: 160px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	//border: 1px solid red;
+}
+.art_nav {
+	display: flex;
+	flex-flow: column nowrap;
+	position: relative;
+//changing color of overlay
+	&:hover{
+ 	 	.overlay{
+			//filter: brightness(125%);
+ 			opacity: 0.65;
+			transition: opacity .25s;
+		}
+ 	}
+	h2 {
+		text-decoration: none;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		display: none;
+		color: white;
+		text-align: center;
+	}
+}
+.imgcontainer{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+.overlay{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $overlay;
+
+}
+#box{
+	display: flex;
+	justify-content: center;
+	padding-top: 100px;
+	height: auto;
+	//border: 1px solid orange;
+	a{
+		text-decoration: none;
+	}
+}
+#port {
+	border: 2px solid black;
+	width: 250px;
+	height: 50px;
+	border-radius: 4%;
+	//Centering everything
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	h2{
+		color: black;
+		//border: 1px solid red;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Mobile devices*/
+@media only screen and (max-width: 500px) {
+	header {
+		flex-flow: column nowrap;
+		height: auto;
+	//	align-items: center;
+	}
+	#social-media {
+		position: static;
+		width: auto;
+		height: auto;
+		clear: both;
+	}
+	.icon{
+		margin: 0px 10px 0px 10px;
+	}
+	#logo-text{
+		text-align: center;
+		border-left: hidden;
+		border-top: 2px solid black;
+		margin-top: 5px;
+	}
+	#brand {
+		flex-direction: column;
+		//border: 1px solid red;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav {
+		display: none;
+	}
+	#box{
+		padding-top: 10px;
+	}
+//media
+}
+@media only screen and (max-width: 900px){
+	.imgcontainer{
+		width: 180px;
+		height: auto;
+	}
+}
+/*Tablets*/
+@media only screen and (max-width: 800px) {
+	.nav {
+		flex-flow: row wrap;
+		align-content: space-around;
+		margin-top: 30px;
+		height: 600px;
+	}
+	.imgcontainer{
+		width: 260px;
+		height: auto;
+	}
+	header {
+		flex-flow: column nowrap;
+		height: auto;
+	//	align-items: center;
+	}
+	#social-media {
+		position: static;
+		width: auto;
+		height: auto;
+		clear: both;
+	}
+	.icon{
+		margin: 0px 10px 0px 10px;
+	}
+	#logo-text{
+		text-align: center;
+		border-left: hidden;
+		border-top: 2px solid black;
+		margin-top: 5px;
+	}
+	#brand {
+		flex-direction: column;
+		//border: 1px solid red;
+		justify-content: center;
+		align-items: center;
+	}
+	#box{
+			padding-top: 50px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.nav {
+		height: 470px;
+	}
+	.imgcontainer{
+		width: 200px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width:800px){
+	.iconcon{
+		border: 2px solid white;
+		&:hover{
+			border: 2px solid black;
+			border-radius: 50%;
+			transition: border .3s;
+		}
+	}
+}

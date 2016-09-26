@@ -1,0 +1,489 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Users/jessi/Desktop/Jessica/Programs/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Users/jessi/Desktop/Jessica/Programs/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Users/jessi/Desktop/Jessica/Programs/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Users/jessi/Desktop/Jessica/Programs/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Users/jessi/Desktop/Jessica/Programs/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Users/jessi/Desktop/Jessica/Programs/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+
+/* line 103, C:/Users/jessi/Desktop/Jessica/Programs/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Users/jessi/Desktop/Jessica/Programs/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Users/jessi/Desktop/Jessica/Programs/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+elements-of-type(html5-block) {
+  display: block;
+}
+
+/*Variables*/
+/*Basics*/
+/* line 13, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 19, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.grid {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* line 32, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.row {
+  width: 100%;
+  display: flex;
+}
+
+/* line 38, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* line 43, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.col-1 {
+  width: 8.33%;
+}
+
+/* line 44, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.col-2 {
+  width: 16.66%;
+}
+
+/* line 45, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.col-3 {
+  width: 25%;
+}
+
+/* line 46, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.col-4 {
+  width: 33.33%;
+}
+
+/* line 47, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.col-5 {
+  width: 41.66%;
+}
+
+/* line 48, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.col-6 {
+  width: 50%;
+}
+
+/* line 49, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.col-7 {
+  width: 58.33%;
+}
+
+/* line 50, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.col-8 {
+  width: 66.66%;
+}
+
+/* line 51, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.col-9 {
+  width: 75%;
+}
+
+/* line 52, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.col-10 {
+  width: 83.33%;
+}
+
+/* line 53, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.col-11 {
+  width: 91.66%;
+}
+
+/* line 54, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.col-12 {
+  width: 100%;
+}
+
+/* line 56, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+[class*="col-"] {
+  float: left;
+}
+
+/*Logo pieces*/
+/* line 62, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+header {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  height: 100px;
+  align-items: center;
+}
+
+/* line 69, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#brand {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+/* line 74, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#brand a {
+  text-decoration: none;
+}
+
+/* line 78, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#logo {
+  height: 100px;
+  width: 100px;
+  border: 1px solid blue;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 90, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#logo-text {
+  border-left: 2px solid black;
+  height: 100%;
+  padding-left: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 102, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#logo-text h2 {
+  padding-top: 10px;
+}
+
+/* line 105, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#logo-text h3 {
+  padding-bottom: 10px;
+}
+
+/*social media*/
+/* line 111, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#social-media {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 270px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+}
+
+/* line 121, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#social-media a {
+  text-decoration: none;
+}
+
+/* line 127, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.iconcon {
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+/* line 135, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.icon {
+  height: auto;
+  width: 100%;
+  padding: auto;
+}
+
+/* line 143, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#youtube {
+  margin-top: -3px;
+}
+
+/* line 145, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#youtube img {
+  width: 45px;
+  max-width: 100%;
+}
+
+/* line 151, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#link {
+  margin-bottom: 2px;
+}
+
+/*Main*/
+/* line 155, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 160, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.nav {
+  margin-top: 160px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 168, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.art_nav {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+}
+
+/* line 174, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.art_nav:hover .overlay {
+  opacity: 0.65;
+  transition: opacity .25s;
+}
+
+/* line 180, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.art_nav h2 {
+  text-decoration: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  color: white;
+  text-align: center;
+}
+
+/* line 191, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.imgcontainer {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+/* line 195, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.imgcontainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 200, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+.overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00284d;
+}
+
+/* line 209, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#box {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  height: auto;
+}
+
+/* line 215, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#box a {
+  text-decoration: none;
+}
+
+/* line 219, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#port {
+  border: 2px solid black;
+  width: 250px;
+  height: 50px;
+  border-radius: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 229, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+#port h2 {
+  color: black;
+}
+
+/*Mobile devices*/
+@media only screen and (max-width: 500px) {
+  /* line 249, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  header {
+    flex-flow: column nowrap;
+    height: auto;
+  }
+  /* line 254, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  #social-media {
+    position: static;
+    width: auto;
+    height: auto;
+    clear: both;
+  }
+  /* line 260, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  .icon {
+    margin: 0px 10px 0px 10px;
+  }
+  /* line 263, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  #logo-text {
+    text-align: center;
+    border-left: hidden;
+    border-top: 2px solid black;
+    margin-top: 5px;
+  }
+  /* line 269, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  #brand {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 275, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  .nav {
+    display: none;
+  }
+  /* line 278, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  #box {
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /* line 284, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  .imgcontainer {
+    width: 180px;
+    height: auto;
+  }
+}
+
+/*Tablets*/
+@media only screen and (max-width: 800px) {
+  /* line 291, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  .nav {
+    flex-flow: row wrap;
+    align-content: space-around;
+    margin-top: 30px;
+    height: 600px;
+  }
+  /* line 297, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  .imgcontainer {
+    width: 260px;
+    height: auto;
+  }
+  /* line 301, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  header {
+    flex-flow: column nowrap;
+    height: auto;
+  }
+  /* line 306, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  #social-media {
+    position: static;
+    width: auto;
+    height: auto;
+    clear: both;
+  }
+  /* line 312, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  .icon {
+    margin: 0px 10px 0px 10px;
+  }
+  /* line 315, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  #logo-text {
+    text-align: center;
+    border-left: hidden;
+    border-top: 2px solid black;
+    margin-top: 5px;
+  }
+  /* line 321, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  #brand {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 327, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  #box {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 333, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  .nav {
+    height: 470px;
+  }
+  /* line 336, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  .imgcontainer {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  /* line 343, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  .iconcon {
+    border: 2px solid white;
+  }
+  /* line 345, C:/Users/jessi/Desktop/Jessica/Web Dev/myport/sass/screen.scss */
+  .iconcon:hover {
+    border: 2px solid black;
+    border-radius: 50%;
+    transition: border .3s;
+  }
+}
+
+/*# sourceMappingURL=../stylesheets/screen.map */
