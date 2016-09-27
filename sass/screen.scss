@@ -320,7 +320,7 @@ main {
 	header {
 		border: 1px solid red;
 		flex-flow: column nowrap;
-		height: 300px;
+		height: 100%;
 		width: auto;
 		justify-content: space-around;
 	//	align-items: center;
@@ -345,7 +345,7 @@ main {
 		//border: 1px solid red;
 		justify-content: space-around;
 		align-items: center;
-		height: 200px;
+		height: 100%;
 	}
 	#box{
 			padding-top: 50px;
