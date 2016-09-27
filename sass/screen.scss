@@ -9,7 +9,7 @@
 @import "colors";
 
 /*Variables*/
-$icon-size: 60px;
+$icon-size: 40px;
 
 
 /*Basics*/
@@ -343,8 +343,9 @@ main {
 	#brand {
 		flex-direction: column;
 		//border: 1px solid red;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
+		height: 200px;
 	}
 	#box{
 			padding-top: 50px;
