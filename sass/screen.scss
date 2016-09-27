@@ -74,7 +74,9 @@ header {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
-	//border: 1px solid orange;
+	height: auto;
+	width: auto;
+	border: 1px solid orange;
 	a{
 		text-decoration: none;
 	}
@@ -113,6 +115,7 @@ header {
 	}
 }
 #logo-text{
+	border: 1px solid blue;
 	border-left: 2px solid black;
 	height: 100%;
 	padding-left: 15px;
@@ -136,7 +139,7 @@ header {
 
 /*social media*/
 #social-media{
-	//border: 1px solid red;
+	border: 1px solid green;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
