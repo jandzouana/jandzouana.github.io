@@ -9,7 +9,7 @@
 @import "colors";
 
 /*Variables*/
-$icon-size: 30px;
+$icon-size: 60px;
 
 
 /*Basics*/
@@ -315,8 +315,11 @@ main {
 		height: auto;
 	}
 	header {
+		border: 1px solid red;
 		flex-flow: column nowrap;
-		height: auto;
+		height: 300px;
+		width: auto;
+		justify-content: space-around;
 	//	align-items: center;
 	}
 	#social-media {
