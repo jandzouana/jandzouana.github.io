@@ -264,8 +264,6 @@ main {
 	}
 	#social-media {
 		position: static;
-		width: auto;
-		height: auto;
 		clear: both;
 	}
 	.icon{
@@ -277,12 +275,7 @@ main {
 		border-top: 2px solid black;
 		margin-top: 5px;
 	}
-	#brand {
-		flex-direction: column;
-		//border: 1px solid red;
-		justify-content: center;
-		align-items: center;
-	}
+
 	.nav {
 		display: none;
 	}
