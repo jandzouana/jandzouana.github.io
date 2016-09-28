@@ -313,7 +313,7 @@ main {
 		height: auto;
 	}
 	header {
-		border: 1px solid red;
+		border: 1px solid blue;
 		flex-flow: column nowrap;
 		height: 80%;
 		width: auto;
@@ -345,7 +345,7 @@ main {
 		//border: 1px solid red;
 		justify-content: space-around;
 		align-items: center;
-		height: auto;
+		height: 100%;
 	}
 	#box{
 			padding-top: 50px;
