@@ -258,7 +258,6 @@ main {
 @media only screen and (max-width: 500px) {
 	header {
 		flex-flow: column nowrap;
-		height: auto;
 	//	align-items: center;
 	}
 	#social-media {
@@ -321,7 +320,7 @@ main {
 	header {
 		border: 1px solid red;
 		flex-flow: column nowrap;
-		height: auto;
+		height: 500px;
 		width: auto;
 		justify-content: space-around;
 	//	align-items: center;
