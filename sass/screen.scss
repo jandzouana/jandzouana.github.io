@@ -9,11 +9,12 @@
 @import "colors";
 
 /*Variables*/
-$icon-size: 60px;
-
-
+$icon-size: 40px;
+$sm-m-height:100px;
+$brand-m-height:250px;
 /*Basics*/
 * {
+	border: 1px solid red !important;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -70,6 +71,7 @@ header {
 	align-items: center;
 }
 #brand {
+	height: 100%;
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
@@ -141,7 +143,7 @@ header {
 	justify-content: space-around;
 	align-items: center;
 	width: 270px;
-	height: 100px;
+	height: 100%;
 	position: absolute;
 	right: 0;
 	a{
@@ -151,32 +153,22 @@ header {
 }
 
 .iconcon{
-	//border: 1px solid yellow;
-	padding: 10px;
+	border: 1px solid yellow;
+	padding: 3px;
 	width: $icon-size;
 	height: $icon-size;
 	//margin-left: 25px;
 
 }
 .icon {
-	height: auto;
+	height: 100%;
 	width: 100%;
 	padding: auto;
 
 	//border: 1px solid orange;
 
 }
-#youtube {
-	margin-top: -3px;
-	img{
-		width: $icon-size*.75;
-		max-width: 100%;
-	}
-}
 
-#link{
-	margin-bottom: 2px;
-}
 /*Main*/
 main {
 	display: flex;
@@ -307,33 +299,33 @@ main {
 		width: 260px;
 		height: auto;
 	}
+
 	header {
 		flex-flow: column nowrap;
-		height: 250px;
+		height: $sm-m-height+$brand-m-height;
 		justify-content: space-around;
 	//	align-items: center;
 	}
 	#social-media {
 		position: static;
-		width: auto;
-		height: auto;
+		width: 200px;
+		height: $sm-m-height;
 		clear: both;
 	}
-	.icon{
-		margin: 0px 10px 0px 10px;
-	}
+
 	#logo-text{
 		text-align: center;
 		border-left: hidden;
 		border-top: 2px solid black;
-		margin-top: 5px;
+		margin-top: 15px;
+		margin-left: 0;
 	}
 	#brand {
 		flex-direction: column;
 		//border: 1px solid red;
 		justify-content: space-around;
 		align-items: center;
-		height: 100%;
+		height: $brand-m-height;
 	}
 	#box{
 			padding-top: 50px;
@@ -355,14 +347,13 @@ main {
 	}
 }
 
+/*Desktop*/
 @media only screen and (min-width:801px){
 
-	.iconcon{
-		border: 2px solid white;
+	.icon{
+		opacity: 0.6;
 		&:hover{
-			border: 2px solid black;
-			border-radius: 50%;
-			transition: border .3s;
+			opacity: 1;
 		}
 	}
 
