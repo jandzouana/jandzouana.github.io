@@ -13,7 +13,7 @@ $icon-size: 45px;
 $sm-m-height:70px;
 //height of header in mobile
 $brand-m-height:170px;
-$logo-size:90px;
+$logo-size:80px;
 //logo font size
 $logo-f-size: 50px;
 /*Basics*/
@@ -87,38 +87,12 @@ header {
 	}
 }
 #logo {
-	height: $logo-size;
-	width: $logo-size;
-	border: 2px solid black;
-	background-color: black;
-	border-radius: 50%;
-
-	//centering text
-	display: flex;
-	text-align: center;
-	align-items: center;
-  justify-content: center;
-
-	h1{
-		font-size: $logo-f-size;
-		color: white;
+	opacity: .95;
+	img{
+		height: $logo-size;
+		width: $logo-size;
 	}
 
-	&:hover, &:focus{
-		transition: background-color .3s;
-		background-color: white;
-		h1 {
-			transition: color .3s;
-			color: black;
-		}
-	}
-	&:active{
-		h1{
-			color: $focus;
-		}
-	  border: 2px solid $focus;
-	  transition: background-color .3s, color .3s, border .3s;
-	}
 }
 #logo-text{
 	border-left: 1px solid grey;
@@ -331,10 +305,9 @@ main {
 		clear: both;
 	}
 	#logo{
-		width: 1.25*$logo-size;
-		height: 1.25*$logo-size;
-		h1{
-			font-size: 1.25*$logo-f-size;
+		img{
+			width: 1.5*$logo-size;
+			height: 1.5*$logo-size;
 		}
 	}
 	#logo-text{
