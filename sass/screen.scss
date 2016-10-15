@@ -7,15 +7,10 @@
 @import "../btns/btns.scss";
 @import "fonts";
 @import "colors";
+@import "variable";
+@import "responsive";
 
-/*Variables*/
-$icon-size: 45px;
-$sm-m-height:70px;
-//height of header in mobile
-$brand-m-height:170px;
-$logo-size:90px;
-//logo font size
-$logo-f-size: 50px;
+
 /*Basics*/
 * {
 	//border: 1px solid red !important;
@@ -24,50 +19,10 @@ $logo-f-size: 50px;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.grid {
-		padding:{
-			top: 70px;
-			bottom:40px;
-			right: 15px;
-			left: 15px;
-		}
-    margin: 0 auto;
-    max-width: 1100px;
-   	width: 100%;
-		//border: 1px solid green;
-}
-
-.row {
-    width: 100%;
-    display: flex;
-		//border: 1px solid pink;
-	}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-[class*="col-"] {
-    float: left;
-    //border: 1px solid red;
-}
 
 /*Logo pieces*/
 header {
+
 	display: flex;
 	flex-flow: row wrap;
 	position: relative;
@@ -95,7 +50,7 @@ header {
 
 }
 #logo-text{
-	border-left: 1px solid grey;
+	border-left: 1px solid #767875;
 	height: 100%;
 	padding-left: 15px;
 	margin-left: 15px;
@@ -305,15 +260,19 @@ main {
 		clear: both;
 	}
 	#logo{
+
 		img{
-			width: 1.5*$logo-size;
-			height: 1.5*$logo-size;
+			width: 1.25*$logo-size;
+			height: 1.25*$logo-size;
+		}
+		h1{
+			font-size: 1.25*$logo-f-size;
 		}
 	}
 	#logo-text{
 		text-align: center;
 		border-left: hidden;
-		border-top: 1px solid black;
+		border-top: 2px solid #767875;
 		margin-top: 15px;
 		padding-left: 0;
 		margin-left: 0;
@@ -362,13 +321,13 @@ main {
 	}
 
 	.art_nav{
-		h2, h3, &:visited {
+		h2, h3 {
 			font-family: AracneLight;
 			font-size: 40px;
 			display: none;
 		}
 		//changing color of overlay
-			&:hover, &:active, &focus{
+			&:hover, &:active{
 				h2, h3 {
 					display: block;
 				}

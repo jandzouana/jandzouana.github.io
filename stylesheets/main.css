@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
 @import 'https://fonts.googleapis.com/css?family=Josefin+Sans:300,400';
 @import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
@@ -475,7 +471,6 @@ h3 {
   float: left;
 }
 
-/*Basics*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -483,56 +478,126 @@ h3 {
   box-sizing: border-box;
 }
 
-/*Logo pieces*/
-header {
-  display: flex;
-  flex-flow: row wrap;
-  position: relative;
-  height: 100px;
-  align-items: center;
-}
-
 #brand {
-  height: 100%;
-  width: auto;
   display: flex;
-  justify-content: flex-start;
-  flex-flow: row nowrap;
+  justify-content: center;
   align-items: center;
-}
-
-#brand a {
-  text-decoration: none;
+  flex-flow: column nowrap;
+  margin-top: 20px;
+  width: 100%;
 }
 
 #logo {
-  opacity: .75;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 108px;
+  height: 108px;
+}
+
+#logo h1 {
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  padding-top: 18px;
 }
 
 #logo img {
-  height: 90px;
+  display: none;
   width: 90px;
+  height: 90px;
 }
 
 #logo-text {
-  border-left: 1px solid #767875;
-  height: 100%;
-  padding-left: 15px;
-  margin-left: 15px;
+  color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  text-align: center;
+  border-left: hidden;
+  border-top: 2px solid white;
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-left: 0;
+  margin-left: 0;
+  height: 120px;
+  width: 85%;
 }
 
 #logo-text h2 {
-  padding-top: 10px;
-  margin-bottom: 6px;
+  font-size: 30px;
+  text-align: center;
 }
 
 #logo-text h3 {
-  padding-bottom: 10px;
-  margin-left: 4px;
-  color: #669999;
+  font-size: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+.container {
+  border: 1px solid blue;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 800px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.menu {
+  background-color: #3d4853;
+  max-width: 250px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.main-nav {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.main-nav a {
+  cursor: pointer;
+  display: block;
+  padding: 15px 0 15px 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  font-size: 15px;
+  letter-spacing: .175em;
+}
+
+.main-nav a:hover {
+  color: #ffbf5e;
+}
+
+.main-nav-ul ul {
+  display: none;
+  background-color: #232930;
+}
+
+.main-nav-ul li.tap ul {
+  display: block;
+}
+
+.sub-arrow:after {
+  content: "\203A";
+  font-size: 20px;
+  text-align: center;
+  margin-left: 5px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 /*social media*/
@@ -541,10 +606,10 @@ header {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
-  width: 270px;
-  height: 100%;
+  width: 80%;
   position: absolute;
-  right: 0;
+  bottom: 25px;
+  margin: auto;
 }
 
 .social-media a {
@@ -553,8 +618,8 @@ header {
 
 .iconcon {
   padding: 3px;
-  width: 45px;
-  height: 45px;
+  width: 36px;
+  height: 36px;
 }
 
 .icon {
@@ -563,209 +628,7 @@ header {
   padding: auto;
 }
 
-/*Main*/
 main {
-  display: flex;
-  flex-direction: column;
-}
-
-#profile {
-  display: none;
-}
-
-#profile img {
-  width: 100%;
-  height: auto;
-}
-
-.nav {
-  margin-top: 160px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.art_nav {
-  display: flex;
-  flex-flow: column nowrap;
-  position: relative;
-}
-
-.art_nav h2, .art_nav h3 {
-  font-family: AracneRegular;
-  font-size: 50px;
-  text-decoration: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-}
-
-.imgcontainer {
-  width: 200px;
-  height: 200px;
-  position: relative;
-}
-
-.imgcontainer img {
-  max-width: 100%;
-  height: auto;
-}
-
-.overlay {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #00284d;
-}
-
-#box {
-  display: flex;
-  justify-content: center;
-  padding-top: 70px;
-  height: auto;
-}
-
-#box a {
-  text-decoration: none;
-  font-size: 23px;
-}
-
-#soc2 {
-  display: none;
-}
-
-/*Mobile devices*/
-@media only screen and (max-width: 500px) {
-  .social-media {
-    clear: both;
-  }
-  .nav {
-    display: none;
-  }
-  #profile {
-    margin-top: -30px;
-    display: block;
-  }
-  #soc1 {
-    display: none;
-  }
-  #soc2 {
-    display: flex;
-    margin: auto;
-    width: 80%;
-    margin-top: 20px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .imgcontainer {
-    width: 180px;
-    height: auto;
-  }
-  .art_nav h2, .art_nav h3 {
-    font-size: 20px;
-  }
-}
-
-/*Tablets Square box*/
-@media only screen and (max-width: 800px) {
-  .art_nav h2, .art_nav h3 {
-    font-size: 35px;
-    left: 0;
-    top: 0;
-    transform: translate(5%, 10%);
-    color: white;
-    text-align: left;
-  }
-  .nav {
-    flex-flow: row wrap;
-    align-content: space-around;
-    margin-top: 30px;
-    height: 600px;
-  }
-  .imgcontainer {
-    width: 260px;
-    height: auto;
-  }
-  header {
-    flex-flow: column nowrap;
-    height: 330px;
-    justify-content: space-around;
-  }
-  .social-media {
-    position: static;
-    width: 200px;
-    height: 70px;
-    clear: both;
-  }
-  #logo img {
-    width: 112.5px;
-    height: 112.5px;
-  }
-  #logo h1 {
-    font-size: 62.5px;
-  }
-  #logo-text {
-    text-align: center;
-    border-left: hidden;
-    border-top: 2px solid #767875;
-    margin-top: 15px;
-    padding-left: 0;
-    margin-left: 0;
-    height: 170px;
-  }
-  #brand {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 260px;
-  }
-  #box {
-    padding-top: 30px;
-  }
-  #soc1 {
-    width: 250px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .nav {
-    height: 470px;
-  }
-  .imgcontainer {
-    width: 200px;
-    height: auto;
-  }
-  .art_nav h2, .art_nav h3 {
-    font-size: 30px;
-  }
-}
-
-/*Desktop*/
-@media only screen and (min-width: 801px) {
-  .iconcon {
-    opacity: 0.5;
-  }
-  .iconcon:hover {
-    opacity: 1.0;
-    transition: opacity .35s;
-  }
-  .art_nav h2, .art_nav h3 {
-    font-family: AracneLight;
-    font-size: 40px;
-    display: none;
-  }
-  .art_nav:hover h2, .art_nav:hover h3, .art_nav:active h2, .art_nav:active h3 {
-    display: block;
-  }
-  .art_nav:hover .overlay, .art_nav:active .overlay {
-    opacity: 0.65;
-    transition: opacity .25s;
-  }
+  border: 1px solid green;
+  width: auto;
 }
