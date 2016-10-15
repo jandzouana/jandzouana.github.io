@@ -13,6 +13,31 @@
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
+.container{
+	border: 1px solid blue;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-flow: column nowrap;
+	height: 800px;
+	max-width: 1100px;
+	width: 100%;
+	//height: 100%;
+}
+.menu{
+	//border: 1px solid orange;
+
+	background-color: $menu;
+	max-width: 250px;
+	//max-height: 2000px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
 #copy{
 	h3{
 		color: white;
@@ -20,7 +45,7 @@
 		font-size: 15px;
 	}
 	position: absolute;
-	bottom: 10px;
+	bottom: $footer-dist-bot;
 }
 
 #brand{
@@ -81,35 +106,9 @@
 	height: 120px;
 	width: 85%;
 }
-.container{
-	border: 1px solid blue;
-	margin: auto;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	display: flex;
-	flex-flow: column nowrap;
-	height: 800px;
-	max-width: 1100px;
-	width: 100%;
-	//height: 100%;
-}
-.menu{
-	background-color: $menu;
-	max-width: 250px;
-	//max-height: 2000px;
-	width: 100%;
-	height: 100%;
-	position: relative;
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-}
 
 .main-nav{
-	padding: {
-		top: 0px;
-		bottom: 20px;
-	}
+	//border: 1px solid green;
 	width: 100%;
 	a{
 		//border: 1px solid red;
@@ -133,22 +132,29 @@
 		display: none;
 		background-color: $menu-sub;
 	}
+	li {
+		//border: 1px solid blue;
+		height: 50px;
+	}
 }
 
 .main-nav-ul li.tap ul{
 	display: block;
 }
 
-.sub-arrow{
-	&:after{
-		content: "\203A";
-		font-size: 20px;
-		text-align: center;
-		margin-left: 5px;
-		//@include transform(rotate(45deg));
 
-		-webkit-transform:rotate(90deg);
-		transform: rotate(90deg);
+.sub-arrow{
+	display: inline-block;
+	&:after{
+		position: relative;
+		top: 1px;
+		color: lighten(grey, 20%);
+		display: inline-block;
+		content: "\2039";
+		font-size: 24px;
+		text-align: center;
+		margin-left: 4px;
+		//@include transform(rotate(180deg));
 	}
 }
 /*social media*/
@@ -164,7 +170,7 @@
 	a{
 		text-decoration: none;
 	}
-	bottom: 40px;
+	bottom: $footer-dist-bot + 30;
 	margin: auto;
 }
 

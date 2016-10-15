@@ -479,9 +479,32 @@ h3 {
   box-sizing: border-box;
 }
 
+.container {
+  border: 1px solid blue;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 800px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.menu {
+  background-color: #3d4853;
+  max-width: 250px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
 #copy {
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
 }
 
 #copy h3 {
@@ -549,32 +572,7 @@ h3 {
   margin-top: 5px;
 }
 
-.container {
-  border: 1px solid blue;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  display: flex;
-  flex-flow: column nowrap;
-  height: 800px;
-  max-width: 1100px;
-  width: 100%;
-}
-
-.menu {
-  background-color: #3d4853;
-  max-width: 250px;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
 .main-nav {
-  padding-top: 0px;
-  padding-bottom: 20px;
   width: 100%;
 }
 
@@ -599,17 +597,27 @@ h3 {
   background-color: #232930;
 }
 
+.main-nav-ul li {
+  height: 50px;
+}
+
 .main-nav-ul li.tap ul {
   display: block;
 }
 
+.sub-arrow {
+  display: inline-block;
+}
+
 .sub-arrow:after {
-  content: "\203A";
-  font-size: 20px;
+  position: relative;
+  top: 1px;
+  color: #b3b3b3;
+  display: inline-block;
+  content: "\2039";
+  font-size: 24px;
   text-align: center;
-  margin-left: 5px;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+  margin-left: 4px;
 }
 
 /*social media*/
@@ -620,7 +628,7 @@ h3 {
   align-items: center;
   width: 80%;
   position: absolute;
-  bottom: 40px;
+  bottom: 45px;
   margin: auto;
 }
 
