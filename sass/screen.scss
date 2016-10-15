@@ -13,7 +13,7 @@ $icon-size: 45px;
 $sm-m-height:70px;
 //height of header in mobile
 $brand-m-height:170px;
-$logo-size:80px;
+$logo-size:90px;
 //logo font size
 $logo-f-size: 50px;
 /*Basics*/
@@ -87,7 +87,7 @@ header {
 	}
 }
 #logo {
-	opacity: .95;
+	opacity: 1;
 	img{
 		height: $logo-size;
 		width: $logo-size;
@@ -313,7 +313,7 @@ main {
 	#logo-text{
 		text-align: center;
 		border-left: hidden;
-		border-top: 2px solid black;
+		border-top: 1px solid black;
 		margin-top: 15px;
 		padding-left: 0;
 		margin-left: 0;
@@ -362,13 +362,13 @@ main {
 	}
 
 	.art_nav{
-		h2, h3 {
+		h2, h3, &:visited {
 			font-family: AracneLight;
 			font-size: 40px;
 			display: none;
 		}
 		//changing color of overlay
-			&:hover, &:active{
+			&:hover, &:active, &focus{
 				h2, h3 {
 					display: block;
 				}

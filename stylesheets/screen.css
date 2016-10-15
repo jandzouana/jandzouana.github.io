@@ -504,12 +504,12 @@ header {
 }
 
 #logo {
-  opacity: .95;
+  opacity: 1;
 }
 
 #logo img {
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
 }
 
 #logo-text {
@@ -693,7 +693,7 @@ main {
   }
   header {
     flex-flow: column nowrap;
-    height: 320px;
+    height: 330px;
     justify-content: space-around;
   }
   .social-media {
@@ -703,13 +703,13 @@ main {
     clear: both;
   }
   #logo img {
-    width: 120px;
-    height: 120px;
+    width: 135px;
+    height: 135px;
   }
   #logo-text {
     text-align: center;
     border-left: hidden;
-    border-top: 2px solid black;
+    border-top: 1px solid black;
     margin-top: 15px;
     padding-left: 0;
     margin-left: 0;
@@ -719,7 +719,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 250px;
+    height: 260px;
   }
   #box {
     padding-top: 30px;
@@ -751,15 +751,15 @@ main {
     opacity: 1.0;
     transition: opacity .35s;
   }
-  .art_nav h2, .art_nav h3 {
+  .art_nav h2, .art_nav h3, .art_nav:visited {
     font-family: AracneLight;
     font-size: 40px;
     display: none;
   }
-  .art_nav:hover h2, .art_nav:hover h3, .art_nav:active h2, .art_nav:active h3 {
+  .art_nav:hover h2, .art_nav:hover h3, .art_nav:active h2, .art_nav:active h3, .art_navfocus h2, .art_navfocus h3 {
     display: block;
   }
-  .art_nav:hover .overlay, .art_nav:active .overlay {
+  .art_nav:hover .overlay, .art_nav:active .overlay, .art_navfocus .overlay {
     opacity: 0.65;
     transition: opacity .25s;
   }
