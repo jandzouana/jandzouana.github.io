@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('.cont-subs').click(function(){
-		$(this).toggleClass("tap");
+		$(this).next('ul').toggle();
 		//alert("hello");
 	});
 });

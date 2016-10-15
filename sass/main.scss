@@ -13,13 +13,24 @@
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
+#copy{
+	h3{
+		color: white;
+		opacity: .4;
+		font-size: 15px;
+	}
+	position: absolute;
+	bottom: 10px;
+}
+
 #brand{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: column nowrap;
-	margin-top: 20px;
+	margin-top: 40px;
 	width: 100%;
+	margin-bottom: 45px;
 }
 #logo{
 	border: 2px solid white;
@@ -55,13 +66,13 @@
 				top: 5px;
 			};
 	}
-	display: flex;
+	display: none;
 	flex-flow: column nowrap;
 	//justify-content: center;
 	align-items: flex-start;
 	text-align: center;
 	border-left: hidden;
-	border-top: 2px solid white;
+	//border-top: 2px solid lighten($menu, 40%);
 
 	margin-top: 15px;
 	padding-top: 15px;
@@ -109,7 +120,7 @@
 		color: white;
 		text-transform: uppercase;
 		display: block;
-		font-size: 15px;
+		font-size: $menu-font-size;
 		letter-spacing: .175em;
 		&:hover{
 			color: $hover-menu;
@@ -153,7 +164,7 @@
 	a{
 		text-decoration: none;
 	}
-	bottom: 25px;
+	bottom: 40px;
 	margin: auto;
 }
 
@@ -166,14 +177,19 @@
 
 }
 .icon {
+	opacity: .35;
 	height: 100%;
 	width: 100%;
 	padding: auto;
+	&:hover{
+		opacity: .75;
+		transition: opacity .2s;
+	}
 
-	//border: 1px solid orange;
+
 
 }
 main{
-	border: 1px solid green;
+	border: 1px solid red;
 	width: auto;
 }
