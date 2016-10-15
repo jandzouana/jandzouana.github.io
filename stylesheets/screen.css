@@ -504,7 +504,7 @@ header {
 }
 
 #logo {
-  opacity: 1;
+  opacity: .75;
 }
 
 #logo img {
