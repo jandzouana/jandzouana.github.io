@@ -606,8 +606,8 @@ h3 {
 #logo {
   border: 2px solid white;
   border-radius: 50%;
-  width: 108px;
-  height: 108px;
+  width: 120px;
+  height: 120px;
 }
 
 #logo h1 {
@@ -620,8 +620,8 @@ h3 {
 
 #logo img {
   display: none;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
 }
 
 #logo-text {

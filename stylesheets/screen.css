@@ -489,7 +489,7 @@ header {
   display: flex;
   flex-flow: row wrap;
   position: relative;
-  height: 100px;
+  height: 120px;
   align-items: center;
 }
 
@@ -499,7 +499,7 @@ header {
   display: flex;
   justify-content: flex-start;
   flex-flow: row nowrap;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #brand a {
@@ -507,22 +507,23 @@ header {
 }
 
 #logo {
-  opacity: .75;
+  opacity: 1;
 }
 
 #logo img {
-  height: 90px;
-  width: 90px;
+  height: 100px;
+  width: 100px;
 }
 
 #logo-text {
-  border-left: 1px solid #767875;
+  position: absolute;
+  right: 0;
   height: 100%;
   padding-left: 15px;
   margin-left: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 #logo-text h2 {
@@ -531,6 +532,7 @@ header {
 }
 
 #logo-text h3 {
+  text-align: right;
   padding-bottom: 10px;
   margin-left: 4px;
   color: #669999;
@@ -541,11 +543,8 @@ header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  align-items: center;
   width: 270px;
   height: 100%;
-  position: absolute;
-  right: 0;
 }
 
 .social-media a {
@@ -603,6 +602,7 @@ main {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+  margin: 2px;
 }
 
 .imgcontainer {
@@ -638,6 +638,11 @@ main {
 }
 
 #soc2 {
+  align-self: center;
+  margin-top: 100px;
+}
+
+#soc1 {
   display: none;
 }
 
@@ -655,6 +660,7 @@ main {
   }
   #soc1 {
     display: none;
+    border: 1px solid orange;
   }
   #soc2 {
     display: flex;
@@ -664,13 +670,20 @@ main {
   }
 }
 
+@media only screen and (max-width: 500px) and (min-width: 501px) {
+  #soc1 {
+    width: 250px;
+    display: flex;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .imgcontainer {
     width: 180px;
     height: auto;
   }
   .art_nav h2, .art_nav h3 {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 
@@ -696,7 +709,7 @@ main {
   }
   header {
     flex-flow: column nowrap;
-    height: 330px;
+    height: 260px;
     justify-content: space-around;
   }
   .social-media {
@@ -706,8 +719,8 @@ main {
     clear: both;
   }
   #logo img {
-    width: 112.5px;
-    height: 112.5px;
+    width: 125px;
+    height: 125px;
   }
   #logo h1 {
     font-size: 62.5px;
@@ -715,23 +728,22 @@ main {
   #logo-text {
     text-align: center;
     border-left: hidden;
-    border-top: 2px solid #767875;
-    margin-top: 15px;
     padding-left: 0;
     margin-left: 0;
-    height: 170px;
+    height: 140px;
+    position: static;
+  }
+  #logo-text h3 {
+    text-align: center;
   }
   #brand {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 260px;
+    height: 240px;
   }
   #box {
     padding-top: 30px;
-  }
-  #soc1 {
-    width: 250px;
   }
 }
 
