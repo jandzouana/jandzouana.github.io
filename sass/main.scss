@@ -239,7 +239,7 @@ main{
 }
 
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:800px) and (orientation: portrait){
 	.mob-nav-bar{
 		display: block;
 		position: fixed;
@@ -252,13 +252,14 @@ main{
 	.menu{
 		position:  fixed;
 		top: $nav-height;
-		//display: none;
+		display: none;
 		max-width: 100%;
 		height: auto;
 		padding: {
 			top: 15px;
 			bottom: 15px;
 		}
+
 	}
 	#brand, .social-media, #copy{
 		display: none;
@@ -266,5 +267,12 @@ main{
 	main{
 		width: 100%;
 		margin-top: 100px;
+	}
+}
+
+@media only screen and (max-width:800px) and (orientation: landscape){
+	.menu{
+		height: 100%;
+		overflow:auto;
 	}
 }
