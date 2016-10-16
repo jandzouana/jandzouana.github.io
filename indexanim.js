@@ -24,9 +24,21 @@ $(document).ready(function(){
 				rotated = false;
 			}
 	});
-	$("#logo").click(function(){
+	var menuDown = false;
+	$("#menuButton").click(function(){
+			$(this).toggleClass('is-active');
+			if (menuDown == false){
+				$('.menu').slideDown("fast");
+				menuDown = true;
+			}
+			else{
+				$('.menu').slideUp("fast");
+				menuDown = false;
+			}
 
+			//$('.menu').toggle();
 	});
+
 });
 
 

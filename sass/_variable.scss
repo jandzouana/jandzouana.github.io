@@ -1,6 +1,7 @@
 /*Variables*/
 $icon-size: 45px;
 $sm-m-height:70px;
+$grid-size: 1100px;
 //height of header in mobile
 $brand-m-height:170px;
 $logo-size:90px;
@@ -10,3 +11,9 @@ $logo-f-size: 50px;
 /*Menu*/
 $menu-font-size: 17px;
 $footer-dist-bot: 15px;
+$menu-width: 250px;
+
+$burger-height: 22px;
+$burger-gutter: 3px;
+
+$nav-height: 2*$burger-height + 5*$burger-gutter

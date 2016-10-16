@@ -479,16 +479,36 @@ h3 {
   box-sizing: border-box;
 }
 
+#copy {
+  position: absolute;
+  bottom: 15px;
+}
+
+#copy h3 {
+  color: white;
+  opacity: .4;
+  font-size: 15px;
+}
+
 .container {
   border: 1px solid blue;
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   height: 800px;
   max-width: 1100px;
   width: 100%;
+}
+
+.mob-nav-bar {
+  display: none;
+  height: 59px;
+  width: 100%;
+  background-color: #536270;
+  position: fixed;
+  z-index: 1;
 }
 
 .menu {
@@ -502,15 +522,75 @@ h3 {
   align-items: center;
 }
 
-#copy {
-  position: absolute;
-  bottom: 15px;
+.menu-button {
+  display: inline-block;
+  float: right;
+  padding: .5em;
+  background-color: #39434d;
 }
 
-#copy h3 {
-  color: white;
-  opacity: .4;
-  font-size: 15px;
+.menu-button:hover {
+  background-color: #272f36;
+  transition: background-color .2s;
+}
+
+.burger-icon {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.burger-icon, .burger-icon::before, .burger-icon::after {
+  display: block;
+  width: 22px;
+  height: 3px;
+  background-color: white;
+  outline: 1px solid transparent;
+  -webkit-transition-property: background-color, -webkit-transform;
+  -moz-transition-property: background-color, -moz-transform;
+  -o-transition-property: background-color, -o-transform;
+  transition-property: background-color, transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.burger-icon::before, .burger-icon::after {
+  position: absolute;
+  content: "";
+}
+
+.burger-icon::before {
+  top: -8px;
+}
+
+.burger-icon::after {
+  top: 8px;
+}
+
+.menu-button.is-active .burger-icon {
+  background-color: transparent;
+}
+
+.menu-button.is-active .burger-icon::before {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -moz-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-button.is-active .burger-icon::after {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -moz-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 #brand {
@@ -656,5 +736,37 @@ h3 {
 
 main {
   border: 1px solid red;
-  width: auto;
+  width: 850px;
+  height: 100%;
+}
+
+main img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .mob-nav-bar {
+    display: block;
+    position: fixed;
+  }
+  .container {
+    flex-direction: column;
+    margin-top: 0px;
+    justify-content: flex-start;
+  }
+  .menu {
+    position: fixed;
+    top: 59px;
+    max-width: 100%;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #brand, .social-media, #copy {
+    display: none;
+  }
+  main {
+    width: 100%;
+    margin-top: 100px;
+  }
 }

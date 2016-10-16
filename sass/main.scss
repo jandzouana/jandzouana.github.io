@@ -5,6 +5,7 @@
 @import "variable";
 @import "responsive";
 @import "compass/css3";
+@import "../sass-burger-master/burger";
 
 * {
 	//border: 1px solid red !important;
@@ -13,31 +14,7 @@
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.container{
-	border: 1px solid blue;
-	margin: auto;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	display: flex;
-	flex-flow: column nowrap;
-	height: 800px;
-	max-width: 1100px;
-	width: 100%;
-	//height: 100%;
-}
-.menu{
-	//border: 1px solid orange;
 
-	background-color: $menu;
-	max-width: 250px;
-	//max-height: 2000px;
-	width: 100%;
-	height: 100%;
-	position: relative;
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
-}
 #copy{
 	h3{
 		color: white;
@@ -47,6 +24,63 @@
 	position: absolute;
 	bottom: $footer-dist-bot;
 }
+.container{
+	border: 1px solid blue;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-flow: row nowrap;
+	height: 800px;
+	max-width: $grid-size;
+	width: 100%;
+	//height: 100%;
+	//position: absolute;
+}
+.mob-nav-bar{
+	display: none;
+	height: $nav-height;
+	width: 100%;
+	background-color: lighten($menu, 10%);
+	position: fixed;
+	z-index: 1;
+}
+.menu{
+	//border: 1px solid orange;
+
+	background-color: $menu;
+	max-width: $menu-width;
+	//max-height: 2000px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.menu-button {
+	display: inline-block;
+	float: right;
+	padding: .5em;
+	background-color: darken($menu, 2%);
+	//border: 1px solid #ccc;
+	&:hover{
+		background-color: darken($menu, 10%);
+		transition: background-color .2s;
+	}
+}
+
+
+.burger-icon {
+	@include burger($burger-height, $burger-gutter, 5px, white);
+}
+
+.menu-button.is-active .burger-icon {
+	@include burger-to-cross;
+}
+
+
 
 #brand{
 	display: flex;
@@ -197,5 +231,40 @@
 }
 main{
 	border: 1px solid red;
-	width: auto;
+	width: $grid-size - $menu-width;
+	height: 100%;
+	img{
+		width: 100%;
+	}
+}
+
+
+@media only screen and (max-width:800px){
+	.mob-nav-bar{
+		display: block;
+		position: fixed;
+	}
+	.container{
+		flex-direction: column;
+		margin-top: 0px;
+		justify-content: flex-start;
+	}
+	.menu{
+		position:  fixed;
+		top: $nav-height;
+		//display: none;
+		max-width: 100%;
+		height: auto;
+		padding: {
+			top: 15px;
+			bottom: 15px;
+		}
+	}
+	#brand, .social-media, #copy{
+		display: none;
+	}
+	main{
+		width: 100%;
+		margin-top: 100px;
+	}
 }
