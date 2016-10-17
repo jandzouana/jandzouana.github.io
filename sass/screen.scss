@@ -20,7 +20,15 @@
 	box-sizing: border-box;
 }
 
-/*Logo pieces*/
+.grid {
+		padding:{
+			top: 70px;
+			bottom:40px;
+			right: 15px;
+			left: 15px;
+		}
+	}
+
 header {
 
 	display: flex;
@@ -29,6 +37,8 @@ header {
 	height: 120px;
 	align-items: center;
 }
+/*Logo pieces*/
+
 #brand {
 	height: 100%;
 	width: auto;
@@ -92,7 +102,21 @@ header {
 	}
 
 }
+/*soc 1 == social media icons in header
+soc 2 == social media icons in footer*/
+#soc2 {
+	//display: none;
+	align-self: center;
+	margin:{
+		top: 100px;
+	}
+}
 
+#soc1{
+	display: none;
+}
+
+/*social media icons*/
 .iconcon{
 	//border: 1px solid yellow;
 	padding: 3px;
@@ -110,11 +134,12 @@ header {
 
 }
 
-/*Main*/
+/*Main: Navigation links, portfolio button and footer social media box*/
 main {
 	display: flex;
 	flex-direction: column;
 }
+/*Picture that shows up in mobile version instead of navigation links*/
 #profile{
 	display: none;
 	img {
@@ -134,7 +159,7 @@ main {
 	display: flex;
 	flex-flow: column nowrap;
 	position: relative;
-
+	/*Text for art navigation*/
 	h2, h3 {
 		font-family: AracneRegular;
 		font-size: 50px;
@@ -145,7 +170,7 @@ main {
 		transform: translate(-50%, -50%);
 		color: white;
 		text-align: center;
-		margin: 2px;
+		margin: 3px;
 	}
 }
 .imgcontainer{
@@ -167,6 +192,7 @@ main {
 	background-color: $overlay;
 
 }
+/*Portfolio link button*/
 #box{
 	display: flex;
 	justify-content: center;
@@ -180,24 +206,6 @@ main {
 	}
 }
 
-#soc2 {
-	//display: none;
-	align-self: center;
-	margin:{
-		top: 100px;
-	}
-}
-
-#soc1{
-	display: none;
-}
-
-
-
-
-
-
-
 
 
 /*Mobile devices*/
@@ -210,7 +218,6 @@ main {
 		display: none;
 	}
 	#profile{
-		margin-top: -30px;
 		display: block;
 	}
 
@@ -224,13 +231,8 @@ main {
 		width: 80%;
 		margin-top: 20px;
 	}
-@media only screen and (min-width: 501px) {
-	#soc1{
-		width: 250px;
-		display: flex;
-	}
 }
-}
+/*Slight adjustment to desktop version*/
 @media only screen and (max-width: 900px){
 	.imgcontainer{
 		width: 180px;
@@ -242,10 +244,19 @@ main {
 		}
 	}
 }
-/*Tablets Square box*/
+/*Tablets (Square boxes)*/
 @media only screen and (max-width: 800px) {
+	.grid {
+			padding:{
+				top: 10px;
+				bottom:40px;
+				right: 15px;
+				left: 15px;
+			}
+		}
 	.art_nav{
 		h2, h3{
+			opacity: .75;
 			font-size: 35px;
 			left: 0;
 			top: 0;
@@ -273,7 +284,7 @@ main {
 	}
 	.social-media {
 		position: static;
-		width: 200px;
+		width: 250px;
 		height: $sm-m-height;
 		clear: both;
 	}
