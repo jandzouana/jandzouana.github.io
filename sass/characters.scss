@@ -1,0 +1,74 @@
+/*Stylesheet for character page*/
+@import "fonts";
+@import "colors";
+@import "variable";
+
+*{
+	//border: 1px solid red!important;
+}
+
+
+#main-char{
+	position: relative;
+	//border: 1px solid blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.slideshow{
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		height: 700px;
+		//border: 1px solid orange;
+		//background-color: yellow;
+		border-top: 1px solid $slide-color;
+		border-bottom: 1px solid $slide-color;
+		.active{
+			display: block;
+		}
+		img{
+			display: none;
+		}
+
+	}
+	&:hover{
+		#right_arrow, #left_arrow{
+			display: block;
+		}
+	}
+
+}
+
+.land{
+		width: 100%;
+		height: auto;
+}
+//also for square pictures
+.port{
+		height: 100%;
+		width: auto;
+		object-fit: contain;
+}
+
+#left_arrow{
+	width: 50px;
+	height: 75px;
+	background-color: orange;
+	position: absolute;
+	left: 50px;
+	cursor: pointer;
+	display: none;
+}
+
+#right_arrow{
+	width: 50px;
+	height: 75px;
+	background-color: blue;
+	position: absolute;
+	right: 50px;
+	cursor: pointer;
+	display: none;
+}

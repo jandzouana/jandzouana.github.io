@@ -1,3 +1,6 @@
+/*This stylesheet is for the overall look of the main part of the website*/
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans:300,400';
 @import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
 @import 'https://fonts.googleapis.com/css?family=Josefin+Sans:300,400';
 @import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
@@ -77,28 +80,28 @@ elements-of-type(html5-block) {
 */
 @font-face {
   font-family: 'Aracne';
-  src: url("../Arcane/ARACNE-ULTRA-CONDENSED_light.eot?") format("eot"), url("../Arcane/ARACNE-ULTRA-CONDENSED_light.woff") format("woff"), url("../Arcane/ARACNE-ULTRA-CONDENSED_light.ttf") format("truetype"), url("../Arcane/ARACNE-ULTRA-CONDENSED_light.svg#AracneUltraCondensedLight") format("svg");
+  src: url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.eot?") format("eot"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.woff") format("woff"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.ttf") format("truetype"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.svg#AracneUltraCondensedLight") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "AracneReg";
-  src: url("../AracneReg/ARACNE-ULTRA-CONDENSED_regular.eot?") format("eot"), url("../AracneReg/ARACNE-ULTRA-CONDENSED_regular.woff") format("woff"), url("../AracneReg/ARACNE-ULTRA-CONDENSED_regular.ttf") format("truetype"), url("../AracneReg/ARACNE-ULTRA-CONDENSED_regular.svg#AracneUltraCondensedRegular") format("svg");
+  src: url("../Fonts/AracneReg/ARACNE-ULTRA-CONDENSED_regular.eot?") format("eot"), url("../Fonts/AracneReg/ARACNE-ULTRA-CONDENSED_regular.woff") format("woff"), url("../Fonts/AracneReg/ARACNE-ULTRA-CONDENSED_regular.ttf") format("truetype"), url("../Fonts/AracneReg/ARACNE-ULTRA-CONDENSED_regular.svg#AracneUltraCondensedRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "AracneLight";
-  src: url("../Aracne_Light/ARACNE_light.eot?") format("eot"), url("../Aracne_Light/ARACNE_light.woff") format("woff"), url("../Aracne_Light/ARACNE_light.ttf") format("truetype"), url("../Aracne_Light/ARACNE_light.svg#AracneLight") format("svg");
+  src: url("../Fonts/Aracne_Light/ARACNE_light.eot?") format("eot"), url("../Fonts/Aracne_Light/ARACNE_light.woff") format("woff"), url("../Fonts/Aracne_Light/ARACNE_light.ttf") format("truetype"), url("../Fonts/Aracne_Light/ARACNE_light.svg#AracneLight") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "AracneRegular";
-  src: url("../Aracne_Regular/ARACNE_regular.eot?") format("eot"), url("../Aracne_Regular/ARACNE_regular.woff") format("woff"), url("../Aracne_Regular/ARACNE_regular.ttf") format("truetype"), url("../Aracne_Regular/ARACNE_regular.svg#AracneRegular") format("svg");
+  src: url("../Fonts/Aracne_Regular/ARACNE_regular.eot?") format("eot"), url("../Fonts/Aracne_Regular/ARACNE_regular.woff") format("woff"), url("../Fonts/Aracne_Regular/ARACNE_regular.ttf") format("truetype"), url("../Fonts/Aracne_Regular/ARACNE_regular.svg#AracneRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -354,28 +357,28 @@ h3 {
 
 @font-face {
   font-family: 'Aracne';
-  src: url("../Arcane/ARACNE-ULTRA-CONDENSED_light.eot?") format("eot"), url("../Arcane/ARACNE-ULTRA-CONDENSED_light.woff") format("woff"), url("../Arcane/ARACNE-ULTRA-CONDENSED_light.ttf") format("truetype"), url("../Arcane/ARACNE-ULTRA-CONDENSED_light.svg#AracneUltraCondensedLight") format("svg");
+  src: url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.eot?") format("eot"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.woff") format("woff"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.ttf") format("truetype"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.svg#AracneUltraCondensedLight") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "AracneReg";
-  src: url("../AracneReg/ARACNE-ULTRA-CONDENSED_regular.eot?") format("eot"), url("../AracneReg/ARACNE-ULTRA-CONDENSED_regular.woff") format("woff"), url("../AracneReg/ARACNE-ULTRA-CONDENSED_regular.ttf") format("truetype"), url("../AracneReg/ARACNE-ULTRA-CONDENSED_regular.svg#AracneUltraCondensedRegular") format("svg");
+  src: url("../Fonts/AracneReg/ARACNE-ULTRA-CONDENSED_regular.eot?") format("eot"), url("../Fonts/AracneReg/ARACNE-ULTRA-CONDENSED_regular.woff") format("woff"), url("../Fonts/AracneReg/ARACNE-ULTRA-CONDENSED_regular.ttf") format("truetype"), url("../Fonts/AracneReg/ARACNE-ULTRA-CONDENSED_regular.svg#AracneUltraCondensedRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "AracneLight";
-  src: url("../Aracne_Light/ARACNE_light.eot?") format("eot"), url("../Aracne_Light/ARACNE_light.woff") format("woff"), url("../Aracne_Light/ARACNE_light.ttf") format("truetype"), url("../Aracne_Light/ARACNE_light.svg#AracneLight") format("svg");
+  src: url("../Fonts/Aracne_Light/ARACNE_light.eot?") format("eot"), url("../Fonts/Aracne_Light/ARACNE_light.woff") format("woff"), url("../Fonts/Aracne_Light/ARACNE_light.ttf") format("truetype"), url("../Fonts/Aracne_Light/ARACNE_light.svg#AracneLight") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "AracneRegular";
-  src: url("../Aracne_Regular/ARACNE_regular.eot?") format("eot"), url("../Aracne_Regular/ARACNE_regular.woff") format("woff"), url("../Aracne_Regular/ARACNE_regular.ttf") format("truetype"), url("../Aracne_Regular/ARACNE_regular.svg#AracneRegular") format("svg");
+  src: url("../Fonts/Aracne_Regular/ARACNE_regular.eot?") format("eot"), url("../Fonts/Aracne_Regular/ARACNE_regular.woff") format("woff"), url("../Fonts/Aracne_Regular/ARACNE_regular.ttf") format("truetype"), url("../Fonts/Aracne_Regular/ARACNE_regular.svg#AracneRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -468,6 +471,116 @@ h3 {
   float: left;
 }
 
+/*Stylesheet for character page*/
+@font-face {
+  font-family: 'Aracne';
+  src: url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.eot?") format("eot"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.woff") format("woff"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.ttf") format("truetype"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.svg#AracneUltraCondensedLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AracneReg";
+  src: url("../Fonts/AracneReg/ARACNE-ULTRA-CONDENSED_regular.eot?") format("eot"), url("../Fonts/AracneReg/ARACNE-ULTRA-CONDENSED_regular.woff") format("woff"), url("../Fonts/AracneReg/ARACNE-ULTRA-CONDENSED_regular.ttf") format("truetype"), url("../Fonts/AracneReg/ARACNE-ULTRA-CONDENSED_regular.svg#AracneUltraCondensedRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AracneLight";
+  src: url("../Fonts/Aracne_Light/ARACNE_light.eot?") format("eot"), url("../Fonts/Aracne_Light/ARACNE_light.woff") format("woff"), url("../Fonts/Aracne_Light/ARACNE_light.ttf") format("truetype"), url("../Fonts/Aracne_Light/ARACNE_light.svg#AracneLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AracneRegular";
+  src: url("../Fonts/Aracne_Regular/ARACNE_regular.eot?") format("eot"), url("../Fonts/Aracne_Regular/ARACNE_regular.woff") format("woff"), url("../Fonts/Aracne_Regular/ARACNE_regular.ttf") format("truetype"), url("../Fonts/Aracne_Regular/ARACNE_regular.svg#AracneRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: AracneRegular;
+  font-size: 60px;
+}
+
+h2, a {
+  font-family: AracneLight;
+  font-size: 40px;
+  letter-spacing: .04em;
+}
+
+h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/*Variables*/
+/*Menu*/
+#main-char {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-char .slideshow {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 700px;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#main-char .slideshow .active {
+  display: block;
+}
+
+#main-char .slideshow img {
+  display: none;
+}
+
+#main-char:hover #right_arrow, #main-char:hover #left_arrow {
+  display: block;
+}
+
+.land {
+  width: 100%;
+  height: auto;
+}
+
+.port {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+#left_arrow {
+  width: 50px;
+  height: 75px;
+  background-color: orange;
+  position: absolute;
+  left: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+#right_arrow {
+  width: 50px;
+  height: 75px;
+  background-color: blue;
+  position: absolute;
+  right: 50px;
+  cursor: pointer;
+  display: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -475,6 +588,20 @@ h3 {
   box-sizing: border-box;
 }
 
+body {
+  padding-top: 50px;
+}
+
+/*Additional classes*/
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+/*Copyright note*/
 #copy {
   margin: auto;
 }
@@ -486,24 +613,29 @@ h3 {
   text-align: center;
 }
 
+/*container for navigation and main content*/
 .container {
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
   display: flex;
+  justify-content: center;
   flex-flow: row nowrap;
-  height: 800px;
-  max-width: 1100px;
+  height: 750px;
+  max-width: 1500px;
   width: 100%;
 }
 
+/*Navigation bar that shows up in mobile version*/
 .mob-nav-bar {
   display: none;
   height: 59px;
   width: 100%;
   background-color: #536270;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav-logo {
@@ -514,7 +646,9 @@ h3 {
   filter: invert(100%);
 }
 
+/*Navigation + logo + footer*/
 .menu {
+  z-index: 1;
   background-color: #3d4853;
   max-width: 250px;
   width: 100%;
@@ -646,11 +780,13 @@ h3 {
   margin-top: 5px;
 }
 
+/*Navigation links*/
 .main-nav {
   width: 100%;
 }
 
 .main-nav a {
+  text-decoration: none;
   cursor: pointer;
   display: block;
   padding: 15px 0 15px 0;
@@ -666,6 +802,7 @@ h3 {
   color: #ffbf5e;
 }
 
+/*Sub menus*/
 .main-nav-ul ul {
   display: none;
   background-color: #232930;
@@ -675,10 +812,12 @@ h3 {
   height: 50px;
 }
 
+/*Shows sub menu when sub menu headings are clicked*/
 .main-nav-ul li.tap ul {
   display: block;
 }
 
+/*arrow that shows up next to sub menus*/
 .sub-arrow {
   display: inline-block;
 }
@@ -738,13 +877,13 @@ h3 {
   transition: opacity .2s;
 }
 
+/*Main content container*/
 main {
-  border: 1px solid red;
-  width: 850px;
+  width: 1250px;
   height: 100%;
 }
 
-main img {
+#main-home img {
   width: 100%;
 }
 
@@ -757,6 +896,7 @@ main img {
     flex-direction: column;
     margin-top: 0px;
     justify-content: flex-start;
+    padding: 0;
   }
   .menu {
     position: fixed;
@@ -775,6 +915,9 @@ main img {
     width: 100%;
     margin-top: 100px;
   }
+  body {
+    padding-top: 0;
+  }
 }
 
 @media only screen and (max-width: 800px) and (orientation: landscape) {
@@ -784,5 +927,11 @@ main img {
   .menu {
     position: static;
     top: 0px;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .menu {
+    display: block !important;
   }
 }

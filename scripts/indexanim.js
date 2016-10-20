@@ -1,6 +1,35 @@
 $(document).ready(function(){
+	/*Slideshow operator*/
+	var firstSlide = $(".slideshow :first-child");
+	var lastSlide = $(".slideshow :last-child");
+	$("#right_arrow").click(function(){
+		var currentSlide = $(".active");
+		var nextSlide = currentSlide.next();
+
+		if(currentSlide.is(":last-child")){
+			//alert("last-child");
+			nextSlide = firstSlide;
+		}
+		currentSlide.removeClass("active");
+		currentSlide.css("display", "none");
+		nextSlide.fadeIn(600).addClass("active");
+	});
+	$("#left_arrow").click(function(){
+		var currentSlide = $(".active");
+		var previousSlide = currentSlide.prev();
+
+		if(currentSlide.is(":first-child")){
+			previousSlide = lastSlide;
+		}
+
+		currentSlide.removeClass("active");
+		currentSlide.css("display", "none");
+		previousSlide.fadeIn(600).addClass("active");
+	});
+
 	var rotated = false;
 	var down = false;
+	/*Function that shows sub menus*/
 	$('.cont-subs').click(function(){
 		if(down == false){
 			$(this).next('ul').slideDown("fast");
@@ -12,8 +41,6 @@ $(document).ready(function(){
 		}
 			if(rotated == false){
 	      $('.sub-arrow').css({ transition: "transform 0.2s", transform:  "rotate(" + -86 + "deg) translate(0px,-3px)"});
-				//$('.sub-arrow').css({ transition: "transform 0.2s", transform:  "scaleY(-1)"});
-
 				rotated = true;
 
 				setTimeout( function() { $(element).css( { transition: "none" } ) }, 500 );
@@ -25,6 +52,7 @@ $(document).ready(function(){
 			}
 	});
 	var menuDown = false;
+	/*Mobile navigation icon animation activation*/
 	$("#menuButton").click(function(){
 			$(this).toggleClass('is-active');
 			if (menuDown == false){
@@ -35,11 +63,5 @@ $(document).ready(function(){
 				$('.menu').slideUp("fast");
 				menuDown = false;
 			}
-
-			//$('.menu').toggle();
 	});
-
 });
-
-
-//add p to links in menu
