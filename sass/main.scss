@@ -44,7 +44,7 @@ body{
 
 /*container for navigation and main content*/
 .container{
-	//border: 1px solid red;
+	border: 1px solid blue;
 	margin: auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
@@ -266,7 +266,6 @@ body{
 
 /*Main content container*/
 main{
-	//border: 1px solid red;
 	width: $page-width - $menu-width;
 	height: 100%;
 
@@ -279,6 +278,9 @@ main{
 }
 
 @media only screen and (max-width:800px){
+	.container{
+		height:100vh;
+	}
 	.mob-nav-bar{
 		display: block;
 		position: fixed;
