@@ -19,4 +19,6 @@ $menu-width: 250px;
 $burger-height: 22px;
 $burger-gutter: 3px;
 
-$nav-height: 2*$burger-height + 5*$burger-gutter
+$nav-height: 2*$burger-height + 5*$burger-gutter;
+
+$cut-off: $page-width - $page-height + $menu-width;

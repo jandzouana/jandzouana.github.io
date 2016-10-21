@@ -77,14 +77,17 @@
 	right: 50px;
 	cursor: pointer;
 }
-
-@media only screen and (max-width:800px){
+@media only screen and (max-width:$cut-off){
 
 	.port{
-		width: 400px;
+		max-width: 400px;
+		width: auto;
 	}
 	.square{
 		width: 100%;
 		height: auto;
 	}
 }
+
+
+//when height > width need to switch sizing (media quer)

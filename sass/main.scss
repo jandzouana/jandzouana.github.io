@@ -277,7 +277,7 @@ main{
 	}
 }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:$cut-off){
 	.container{
 		height:100vh;
 	}
@@ -315,7 +315,7 @@ main{
 	}
 }
 
-@media only screen and (max-width: 800px) and (orientation: landscape){
+@media only screen and (max-width: $cut-off) and (orientation: landscape){
 	.mob-nav-bar{
 		position: static;
 	}
@@ -325,7 +325,7 @@ main{
 	}
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: $cut-off+1) {
 	.menu{
 		display:block!important;
 	}
