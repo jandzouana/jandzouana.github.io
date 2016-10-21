@@ -44,16 +44,15 @@
 	background-color: yellow;
 }
 .land{
-	max-width: 100%;
 		width: 100%;
-		max-height: $page-height;
-		height: auto;
+		height: 500px;
+		object-fit: scale-down;
 }
 //also for square pictures
 .port{
 		height: 100%;
-		width: auto;
-		object-fit: contain;
+		width: 500px;
+		object-fit: scale-down;
 }
 
 .square{
@@ -80,6 +79,10 @@
 }
 
 @media only screen and (max-width:800px){
+
+	.port{
+		width: 400px;
+	}
 	.square{
 		width: 100%;
 		height: auto;
