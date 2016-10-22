@@ -12,21 +12,10 @@
 	position: relative;
 	//border: 1px solid blue;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	flex-flow: column nowrap;
 	.slideshow{
-		/*
-		padding: 40px;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		align-items: center;
-		/*
-		height: $page-height - $dot-box-size;
-		width: $page-height - $dot-box-size;
-		*/
-		
 		height: 100%;
 		width: 100%;
 		border: 1px solid orange;
@@ -116,16 +105,6 @@
 			width: 100%;
 		}
 	}
-	/*
-	.port{
-		max-width: 400px;
-		width: auto;
-	}
-	.square{
-		width: 100%;
-		height: auto;
-	}
-	*/
 }
 
 
