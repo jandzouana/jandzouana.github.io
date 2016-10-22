@@ -21,12 +21,13 @@
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;
-		width: 100%;
-		height: 100%;
+		height: $page-height - $dot-box-size;
+		width: $page-height - $dot-box-size;
+
 		border: 1px solid orange;
 		//background-color: yellow;
-		border-top: 1px solid $slide-color;
-		border-bottom: 1px solid $slide-color;
+		//border-top: 1px solid $slide-color;
+	// border-bottom: 1px solid $slide-color;
 		.active{
 			display: block;
 		}
@@ -39,27 +40,25 @@
 }
 
 .dots{
-	height: 100px;
+	height: $dot-box-size;
 	width: 100%;
 	background-color: yellow;
 }
 .land{
 		width: 100%;
-		height: 500px;
-		object-fit: scale-down;
+		height: auto;
 }
 //also for square pictures
 .port{
 		height: 100%;
-		width: 500px;
-		object-fit: scale-down;
+		width: auto;
 }
 
 .square{
 	height: 100%;
 	width: auto;
-	object-fit: contain;
 }
+
 #left_arrow{
 	width: 50px;
 	height: 75px;
@@ -78,7 +77,13 @@
 	cursor: pointer;
 }
 @media only screen and (max-width:$cut-off){
-
+	#main-char{
+		.slideshow{
+			border: 2px solid red;
+			width: 100%;
+		}
+	}
+	/*
 	.port{
 		max-width: 400px;
 		width: auto;
@@ -87,6 +92,7 @@
 		width: 100%;
 		height: auto;
 	}
+	*/
 }
 
 
