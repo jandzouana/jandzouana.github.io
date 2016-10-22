@@ -10,18 +10,20 @@
 
 #main-char{
 	position: relative;
-	//border: 1px solid blue;
+	//border: 2px solid blue;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	flex-flow: column nowrap;
+	padding: 20px;
 	.slideshow{
 		height: 100%;
 		width: 100%;
-		border: 1px solid orange;
-		//background-color: yellow;
-		//border-top: 1px solid $slide-color;
-	// border-bottom: 1px solid $slide-color;
+
+
+		//border: 1px solid orange;
+		border-top: 1px solid $slide-color;
+	  border-bottom: 1px solid $slide-color;
 		.active{
 			display: block;
 		}
@@ -38,8 +40,8 @@
 		display: block;
 	}
 	.slide{
+		//border: 2px solid purple;
 		margin: 20px;
-		border: 2px solid purple;
 		display: none;
 		position: absolute;
     top: 0;
@@ -47,7 +49,6 @@
     left: 0;
     right: 0;
 		background-position: center;
-
 		/*
 		left: 50%;
     top: 50%;
@@ -64,20 +65,6 @@
 	width: 100%;
 	background-color: yellow;
 }
-.land{
-		width: 100%;
-		height: auto;
-}
-//also for square pictures
-.port{
-		height: 100%;
-		width: auto;
-}
-
-.square{
-	height: 100%;
-	width: auto;
-}
 
 #left_arrow, #right_arrow{
 	z-index: 1;
@@ -91,20 +78,22 @@
 
 #left_arrow{
 	background-color: orange;
-	left: 50px;
+	left: 10px;
 
 }
 #right_arrow{
 	background-color: blue;
-	right: 50px;
+	right: 10px;
 }
 @media only screen and (max-width:$cut-off){
 	#main-char{
 		.slideshow{
-			border: 2px solid red;
+			//border: 2px solid red;
 			width: 100%;
-			height: 100 - $dot-box-size;
+			height: 100 - $dot-box-size - $char-main-marg-bot;
 		}
+		margin-bottom: $char-main-marg-bot;
+
 	}
 }
 
