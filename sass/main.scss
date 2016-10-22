@@ -309,7 +309,7 @@ main{
 	}
 	main{
 		width: 100%;
-		margin-top: 100px;
+		margin-top: $nav-height;
 	}
 	body{
 		padding-top: 0;
@@ -323,6 +323,9 @@ main{
 	.menu{
 		position: static;
 		top: 0px;
+	}
+	main{
+		margin-top: 0px;
 	}
 }
 
