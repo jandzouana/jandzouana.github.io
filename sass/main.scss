@@ -65,7 +65,7 @@ body{
 	width: 100%;
 	background-color: lighten($menu, 10%);
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 }
 
 .nav-logo{
@@ -79,7 +79,7 @@ body{
 /*Navigation + logo + footer*/
 .menu{
 	//border: 1px solid orange;
-	z-index: 1;
+	z-index: 2;
 
 	background-color: $menu;
 	max-width: $menu-width;
