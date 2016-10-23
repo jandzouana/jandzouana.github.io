@@ -24,8 +24,8 @@
 		padding:{
 			top: 70px;
 			bottom:40px;
-			right: 15px;
-			left: 15px;
+			right: 25px;
+			left: 25px;
 		}
 	}
 
@@ -123,7 +123,11 @@ soc 2 == social media icons in footer*/
 	width: $icon-size;
 	height: $icon-size;
 	//margin-left: 25px;
-
+	opacity: 0.65;
+	&:hover{
+		opacity: 1.0;
+		transition: opacity .35s;
+	}
 }
 .icon {
 	height: 100%;
@@ -131,7 +135,6 @@ soc 2 == social media icons in footer*/
 	padding: auto;
 
 	//border: 1px solid orange;
-
 }
 
 /*Main: Navigation links, portfolio button and footer social media box*/
@@ -342,15 +345,6 @@ main {
 
 /*Desktop*/
 @media only screen and (min-width:801px){
-	.iconcon{
-		opacity: 0.5;
-	}
-	.iconcon{
-		&:hover{
-			opacity: 1.0;
-			transition: opacity .35s;
-		}
-	}
 
 	.art_nav{
 		h2, h3 {

@@ -16,6 +16,7 @@
 	flex-flow: column nowrap;
 	padding: 20px;
 	padding-top: 40px;
+	padding-bottom: 40px;
 	.slideshow{
 		height: 100%;
 		width: 100%;
@@ -75,6 +76,7 @@
 }
 
 .single-dot{
+	cursor: pointer;
 	margin: 8px;
 	background-color: grey;
 	border-radius: 50%;
@@ -94,6 +96,7 @@
 	top: 50%;
 	position: absolute;
 	cursor: pointer;
+	opacity: 0.5;
 }
 
 #left_arrow{
@@ -127,6 +130,24 @@
 	}
 	#i4 {
 		background-image: url(../pictures/characters/4med.jpg);
+	}
+	#i5{
+		background-image: url(../pictures/characters/5med.jpg);
+	}
+	#i6 {
+		background-image: url(../pictures/characters/6med.jpg);
+	}
+	#i7 {
+		background-image: url(../pictures/characters/7med.jpg);
+	}
+	#i8 {
+		background-image: url(../pictures/characters/8med.jpg);
+	}
+	#i9 {
+		background-image: url(../pictures/characters/9med.jpg);
+	}
+	#i10 {
+		background-image: url(../pictures/characters/10med.jpg);
 	}
 }
 
