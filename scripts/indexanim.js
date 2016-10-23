@@ -56,6 +56,26 @@ $(document).ready(function(){
 		previousDot.addClass("active-dot");
 	});
 
+	var $dot = $(".dots ul").find("li");
+	$dot.click(function(){
+		var currentSlide = $(".active");
+		var nextSlide;
+		var currentDot = $(".active-dot");
+		$(this).addClass("active-dot");
+		$(currentDot).removeClass("active-dot");
+
+		//alert( "Index: " + $(this).index() );
+
+		var index = $(this).index();
+		index = index + 1;
+		//var index = $dot.index(this);
+		currentSlide.removeClass("active");
+		currentSlide.css("display", "none");
+	  nextSlide = $(".slideshow :nth-child(" + index + ")");
+		nextSlide.fadeIn(600).addClass("active");
+
+	});
+
 	var rotated = false;
 	var down = false;
 	/*Function that shows sub menus*/
