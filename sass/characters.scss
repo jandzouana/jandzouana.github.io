@@ -7,7 +7,6 @@
 	//border: 1px solid red!important;
 }
 
-
 #main-char{
 	position: relative;
 	//border: 2px solid blue;
@@ -64,7 +63,27 @@
 .dots{
 	height: $dot-box-size;
 	width: 100%;
-	background-color: yellow;
+	display: flex;
+	justify-content: center;
+	ul{
+		display: flex;
+		align-items: center;
+		height: 100%;
+		width: auto;
+		//border: 1px solid red;
+	}
+}
+
+.single-dot{
+	margin: 8px;
+	background-color: grey;
+	border-radius: 50%;
+	width: $dot-box-size*.15;
+	height: $dot-box-size*.15;
+}
+
+.active-dot{
+	background-color: orange;
 }
 
 #left_arrow, #right_arrow{
@@ -86,6 +105,8 @@
 	background-color: blue;
 	right: 10px;
 }
+
+
 @media only screen and (max-width:$cut-off){
 	#main-char{
 		.slideshow{
@@ -94,22 +115,32 @@
 			height: 100 - $dot-box-size - $char-main-marg-bot;
 		}
 		margin-bottom: $char-main-marg-bot;
-
 	}
-
 	#i1 {
-		background-image: url(pictures/characters/1med.jpg);
+		background-image: url(../pictures/characters/1med.jpg);
 	}
 	#i2 {
-		background-image: url(pictures/characters/2med.jpg);
+		background-image: url(../pictures/characters/2med.jpg);
 	}
 	#i3{
-		background-image: url(pictures/characters/3med.jpg);
+		background-image: url(../pictures/characters/3med.jpg);
 	}
 	#i4 {
-		background-image: url(pictures/characters/4med.jpg);
+		background-image: url(../pictures/characters/4med.jpg);
 	}
 }
 
-
-//when height > width need to switch sizing (media quer)
+@media only screen and (min-width:$cut-off+1){
+	#i1 {
+		background-image: url(../pictures/characters/1.jpg);
+	}
+	#i2 {
+		background-image: url(../pictures/characters/2.jpg);
+	}
+	#i3{
+		background-image: url(../pictures/characters/3.jpg);
+	}
+	#i4 {
+		background-image: url(../pictures/characters/4.jpg);
+	}
+}

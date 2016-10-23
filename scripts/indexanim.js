@@ -1,30 +1,59 @@
+/*Adds n number of dots*/
+function add(n){
+	var $active_dot = $("<li class='single-dot active-dot'> </li>");
+	$(".dots ul").append($active_dot);
+	for(var i = 0; i < n-1; i++){
+		var $dot = $("<li class='single-dot'> </li>");
+		$(".dots ul").append($dot);
+	}
+}
 $(document).ready(function(){
+	/*Dot addition n is number of images*/
+	var n = $(".slideshow div").length;
+	add(n);
+
 	/*Slideshow operator*/
 	var firstSlide = $(".slideshow :first-child");
 	var lastSlide = $(".slideshow :last-child");
+
+	var firstDot = $(".dots ul :first-child");
+	var lastDot = $(".dots ul :last-child");
+
 	$("#right_arrow").click(function(){
 		var currentSlide = $(".active");
 		var nextSlide = currentSlide.next();
+		var currentDot = $(".active-dot");
+		var nextDot = currentDot.next();
 
 		if(currentSlide.is(":last-child")){
 			//alert("last-child");
 			nextSlide = firstSlide;
+			nextDot = firstDot;
 		}
 		currentSlide.removeClass("active");
 		currentSlide.css("display", "none");
 		nextSlide.fadeIn(600).addClass("active");
+		currentDot.removeClass("active-dot");
+		nextDot.addClass("active-dot");
+
 	});
 	$("#left_arrow").click(function(){
 		var currentSlide = $(".active");
 		var previousSlide = currentSlide.prev();
 
+		var currentDot = $(".active-dot");
+		var previousDot = currentDot.prev();
+
 		if(currentSlide.is(":first-child")){
 			previousSlide = lastSlide;
+			previousDot = lastDot;
 		}
 
 		currentSlide.removeClass("active");
 		currentSlide.css("display", "none");
 		previousSlide.fadeIn(600).addClass("active");
+		currentDot.removeClass("active-dot");
+		previousDot.addClass("active-dot");
 	});
 
 	var rotated = false;

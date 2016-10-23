@@ -189,6 +189,8 @@ body{
 /*Sub menus*/
 .main-nav-ul {
 	ul{
+		border: 1px solid blue;
+
 		display: none;
 		background-color: $menu-sub;
 	}
@@ -293,6 +295,7 @@ main{
 		padding: 0;
 	}
 	.menu{
+		border: 1px solid red;
 		position:  fixed;
 		top: $nav-height;
 		display: none;
