@@ -1,4 +1,4 @@
-/*Adds n number of dots*/
+/*Adds n number of dots underslideshow*/
 function add(n){
 	var $active_dot = $("<li class='single-dot active-dot'> </li>");
 	$(".dots ul").append($active_dot);
@@ -56,6 +56,7 @@ $(document).ready(function(){
 		previousDot.addClass("active-dot");
 	});
 
+	/*Adds dot interactivity*/
 	var $dot = $(".dots ul").find("li");
 	$dot.click(function(){
 		var currentSlide = $(".active");
@@ -105,11 +106,13 @@ $(document).ready(function(){
 	$("#menuButton").click(function(){
 			$(this).toggleClass('is-active');
 			if (menuDown == false){
-				$('.menu').slideDown("fast");
+				$('.menu').fadeIn("fast");
+				//$('.menu').css("display", "flex");
+
 				menuDown = true;
 			}
 			else{
-				$('.menu').slideUp("fast");
+				$('.menu').fadeOut("fast");
 				menuDown = false;
 			}
 	});
