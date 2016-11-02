@@ -65,7 +65,7 @@ body{
 	width: 100%;
 	background-color: lighten($menu, 10%);
 	position: fixed;
-	z-index: 3;
+	z-index: 4;
 }
 
 .nav-logo{
@@ -169,6 +169,7 @@ body{
 /*Navigation links*/
 .main-nav{
 	width: 100%;
+	height: 100%;
 	a{
 		text-decoration: none;
 		cursor: pointer;
@@ -186,16 +187,19 @@ body{
 	}
 }
 
-/*Sub menus*/
+
 .main-nav-ul {
+	//border: 1px solid red;
+/*Sub menus*/
 	ul{
 		//border: 1px solid blue;
+		height: 100%;
 
 		display: none;
 		background-color: $menu-sub;
 	}
 	li {
-		//border: 1px solid blue;
+		//border: 1px solid green;
 		height: 50px;
 	}
 }
@@ -205,6 +209,12 @@ body{
 	display: block;
 }
 
+.cont-subs{
+	//border: 1px solid orange;
+	ul{
+		//border: 1px solid red;
+	}
+}
 /*arrow that shows up next to sub menus*/
 .sub-arrow{
 	display: inline-block;
@@ -285,7 +295,7 @@ main{
 	}
 	.mob-nav-bar{
 		display: block;
-		position: fixed;
+		position: static;
 	}
 	.container{
 		flex-direction: column;
@@ -295,23 +305,27 @@ main{
 		padding: 0;
 	}
 	.menu{
-		position: fixed;
-		top: $nav-height;
+		position: static;
+		top: 0px;
 		display: none;
 		max-width: 100%;
 		height: auto;
+		max-height: 100%;
 		padding: {
 			top: 15px;
 			bottom: 15px;
 		}
 		align-items: center;
 	}
+
+
 	#brand, .social-media, #copy{
 		display: none;
 	}
+
 	main{
 		width: 100%;
-		margin-top: $nav-height;
+		margin-top: 0px;
 	}
 	body{
 		padding-top: 0;
