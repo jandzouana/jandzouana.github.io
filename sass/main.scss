@@ -295,7 +295,7 @@ main{
 	}
 	.mob-nav-bar{
 		display: block;
-		position: static;
+		position: fixed;
 	}
 	.container{
 		flex-direction: column;
@@ -306,7 +306,7 @@ main{
 	}
 	.menu{
 		position: static;
-		top: 0px;
+		top: $nav-height;
 		display: none;
 		max-width: 100%;
 		height: auto;
