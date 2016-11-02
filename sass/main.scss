@@ -193,8 +193,6 @@ body{
 /*Sub menus*/
 	ul{
 		//border: 1px solid blue;
-		height: 100%;
-
 		display: none;
 		background-color: $menu-sub;
 	}
@@ -209,12 +207,6 @@ body{
 	display: block;
 }
 
-.cont-subs{
-	//border: 1px solid orange;
-	ul{
-		//border: 1px solid red;
-	}
-}
 /*arrow that shows up next to sub menus*/
 .sub-arrow{
 	display: inline-block;
