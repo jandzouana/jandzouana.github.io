@@ -768,12 +768,13 @@ body {
   display: inline-block;
   float: right;
   padding: .5em;
-  background-color: #39434d;
-}
-
-.menu-button:hover {
-  background-color: #272f36;
-  transition: background-color .2s;
+  background-color: #536270;
+  /*
+	&:hover{
+		background-color: $menu;
+		transition: background-color .2s;
+	}
+	*/
 }
 
 .burger-icon {
@@ -988,7 +989,10 @@ main {
 }
 
 #main-home img {
-  width: 100%;
+  margin-left: 50px;
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1025,6 +1029,10 @@ main {
   }
   body {
     padding-top: 0;
+  }
+  #main-home img {
+    margin-left: 0px;
+    padding-top: 79px;
   }
 }
 
