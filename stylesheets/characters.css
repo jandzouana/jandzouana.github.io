@@ -50,6 +50,7 @@ h3 {
 /*Menu*/
 #main-char {
   position: relative;
+  border: 2px solid blue;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -130,7 +131,11 @@ h3 {
   z-index: 1;
   width: 50px;
   height: 75px;
-  transform: translate(0, -50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
   top: 50%;
   position: absolute;
   cursor: pointer;
