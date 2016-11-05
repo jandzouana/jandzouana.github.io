@@ -9,7 +9,6 @@
 @import "compass/css3";
 @import "../externals/sass-burger-master/burger";
 @import "characters";
-@import "compass/css3/transform";
 
 * {
 	//border: 1px solid red !important;
@@ -276,21 +275,17 @@ body{
 main{
 	width: $page-width - $menu-width;
 	height: 100%;
+
 }
 
 #main-home{
-//border: 1px solid red;
 	img{
-		margin-left:50px;
-		max-height: 100%;
-		width: auto;
-		max-width: 100%;
+		width: 100%;
 	}
 }
 
 @media only screen and (max-width:$cut-off){
 	.container{
-		border: 1px solid orange;
 		height:100vh;
 	}
 	.mob-nav-bar{
@@ -306,7 +301,7 @@ main{
 	}
 	.menu{
 		position: static;
-		margin-top: $nav-height;
+		top: $nav-height;
 		display: none;
 		max-width: 100%;
 		height: auto;
@@ -323,23 +318,14 @@ main{
 	}
 
 	main{
-		height: 100%;
 		width: 100%;
-		margin-top: $nav-height;
+		margin-top: 0px;
 	}
 	body{
 		padding-top: 0;
 	}
-
-	#main-home{
-		img{
-			margin-left:0px;
-			padding-top: $nav-height+20;
-		}
-	}
 }
 
-/*
 @media only screen and (max-width: $cut-off) and (orientation: landscape){
 	.mob-nav-bar{
 		position: static;
@@ -352,7 +338,7 @@ main{
 		margin-top: 0px;
 	}
 }
-*/
+
 @media only screen and (min-width: $cut-off+1) {
 	.menu{
 		display:block!important;

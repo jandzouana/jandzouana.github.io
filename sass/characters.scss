@@ -2,7 +2,6 @@
 @import "fonts";
 @import "colors";
 @import "variable";
-@import "compass/css3/transform";
 
 *{
 	//border: 1px solid red!important;
@@ -10,7 +9,7 @@
 
 #main-char{
 	position: relative;
-	border: 2px solid blue;
+	//border: 2px solid blue;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -92,8 +91,7 @@
 	z-index: 1;
 	width: 50px;
 	height: 75px;
-	//transform: translate(0,-50%);
-	@include transform(translateY(-50%));
+	transform: translate(0,-50%);
 	top: 50%;
 	position: absolute;
 	cursor: pointer;
@@ -120,7 +118,6 @@
 
 @media only screen and (max-width:$cut-off){
 	#main-char{
-		//height: 100%;
 		.slideshow{
 			//border: 2px solid red;
 			width: 100%;

@@ -521,7 +521,6 @@ h3 {
 /*Menu*/
 #main-char {
   position: relative;
-  border: 2px solid blue;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -602,11 +601,7 @@ h3 {
   z-index: 1;
   width: 50px;
   height: 75px;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translate(0, -50%);
   top: 50%;
   position: absolute;
   cursor: pointer;
@@ -994,15 +989,11 @@ main {
 }
 
 #main-home img {
-  margin-left: 50px;
-  max-height: 100%;
-  width: auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 1000px) {
   .container {
-    border: 1px solid orange;
     height: 100vh;
   }
   .mob-nav-bar {
@@ -1018,7 +1009,7 @@ main {
   }
   .menu {
     position: static;
-    margin-top: 59px;
+    top: 59px;
     display: none;
     max-width: 100%;
     height: auto;
@@ -1030,33 +1021,27 @@ main {
     display: none;
   }
   main {
-    height: 100%;
     width: 100%;
-    margin-top: 59px;
+    margin-top: 0px;
   }
   body {
     padding-top: 0;
   }
-  #main-home img {
-    margin-left: 0px;
-    padding-top: 79px;
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  .mob-nav-bar {
+    position: static;
+  }
+  .menu {
+    position: static;
+    top: 0px;
+  }
+  main {
+    margin-top: 0px;
   }
 }
 
-/*
-@media only screen and (max-width: $cut-off) and (orientation: landscape){
-	.mob-nav-bar{
-		position: static;
-	}
-	.menu{
-		position: static;
-		top: 0px;
-	}
-	main{
-		margin-top: 0px;
-	}
-}
-*/
 @media only screen and (min-width: 1001px) {
   .menu {
     display: block !important;
