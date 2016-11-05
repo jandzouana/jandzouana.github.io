@@ -1002,6 +1002,7 @@ main {
 
 @media only screen and (max-width: 1000px) {
   .container {
+    border: 1px solid red;
     height: 100vh;
   }
   .mob-nav-bar {
@@ -1017,7 +1018,7 @@ main {
   }
   .menu {
     position: static;
-    top: 59px;
+    margin-top: 59px;
     display: none;
     max-width: 100%;
     height: auto;
@@ -1029,8 +1030,9 @@ main {
     display: none;
   }
   main {
+    height: 100%;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 59px;
   }
   body {
     padding-top: 0;
@@ -1041,19 +1043,20 @@ main {
   }
 }
 
-@media only screen and (max-width: 1000px) and (orientation: landscape) {
-  .mob-nav-bar {
-    position: static;
-  }
-  .menu {
-    position: static;
-    top: 0px;
-  }
-  main {
-    margin-top: 0px;
-  }
+/*
+@media only screen and (max-width: $cut-off) and (orientation: landscape){
+	.mob-nav-bar{
+		position: static;
+	}
+	.menu{
+		position: static;
+		top: 0px;
+	}
+	main{
+		margin-top: 0px;
+	}
 }
-
+*/
 @media only screen and (min-width: 1001px) {
   .menu {
     display: block !important;

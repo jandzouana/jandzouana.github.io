@@ -290,6 +290,7 @@ main{
 
 @media only screen and (max-width:$cut-off){
 	.container{
+		border: 1px solid red;
 		height:100vh;
 	}
 	.mob-nav-bar{
@@ -305,7 +306,7 @@ main{
 	}
 	.menu{
 		position: static;
-		top: $nav-height;
+		margin-top: $nav-height;
 		display: none;
 		max-width: 100%;
 		height: auto;
@@ -322,8 +323,9 @@ main{
 	}
 
 	main{
+		height: 100%;
 		width: 100%;
-		margin-top: 0px;
+		margin-top: $nav-height;
 	}
 	body{
 		padding-top: 0;
@@ -337,6 +339,7 @@ main{
 	}
 }
 
+/*
 @media only screen and (max-width: $cut-off) and (orientation: landscape){
 	.mob-nav-bar{
 		position: static;
@@ -349,7 +352,7 @@ main{
 		margin-top: 0px;
 	}
 }
-
+*/
 @media only screen and (min-width: $cut-off+1) {
 	.menu{
 		display:block!important;
