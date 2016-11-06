@@ -929,6 +929,7 @@ body {
 }
 
 .main-nav-ul li {
+  border: 1px solid green;
   height: 50px;
 }
 
@@ -1046,11 +1047,17 @@ main {
   body {
     padding-top: 0;
   }
+  .main-nav-ul ul {
+    z-index: -1;
+  }
+  .main-nav-ul li {
+    z-index: 2;
+  }
 }
 
 @media only screen and (max-width: 800px) and (orientation: landscape) {
   .main-nav-ul {
-    height: 80vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1059,8 +1066,10 @@ main {
     flex-direction: column;
     justify-content: space-around;
     height: 30vh;
+    z-index: -1;
   }
   .main-nav-ul li {
+    z-index: 2;
     height: 5vh;
   }
   .main-nav-ul li a {
