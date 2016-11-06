@@ -199,10 +199,12 @@ body{
 	ul{
 		//border: 1px solid blue;
 		display: none;
+		flex-direction: column;
+		justify-content: space-around;
 		background-color: $menu-sub;
 	}
 	li {
-		border: 1px solid green;
+		//border: 1px solid green;
 		height: 50px;
 	}
 }
@@ -334,19 +336,27 @@ main{
 
 @media only screen and (max-width:$cut-off) and (orientation: landscape){
 	.menu{
-		overflow: auto;
+
 	}
+
 	.main-nav-ul{
-		overflow: auto;
-	}
-	/*
-	.main-nav-ul{
-		height: 100%;
+		height: 100vh - 20;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
+		ul{
+			flex-direction: column;
+			justify-content: space-around;
+			height: 30vh;
+		}
+		li{
+			height: 5vh;
+			a{
+				font-size: 3vh;
+			}
+		}
 	}
-	*/
+
 }
 
 @media only screen and (min-width: $cut-off+1) {

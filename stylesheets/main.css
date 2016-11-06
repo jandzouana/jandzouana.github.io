@@ -923,11 +923,12 @@ body {
 
 .main-nav-ul ul {
   display: none;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: #232930;
 }
 
 .main-nav-ul li {
-  border: 1px solid green;
   height: 50px;
 }
 
@@ -1048,20 +1049,23 @@ main {
 }
 
 @media only screen and (max-width: 800px) and (orientation: landscape) {
-  .menu {
-    overflow: auto;
-  }
   .main-nav-ul {
-    overflow: auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
-  /*
-	.main-nav-ul{
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-	}
-	*/
+  .main-nav-ul ul {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30vh;
+  }
+  .main-nav-ul li {
+    height: 5vh;
+  }
+  .main-nav-ul li a {
+    font-size: 3vh;
+  }
 }
 
 @media only screen and (min-width: 801px) {

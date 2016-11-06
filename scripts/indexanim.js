@@ -83,6 +83,7 @@ $(document).ready(function(){
 	$('.cont-subs').click(function(){
 		if(down == false){
 			$(this).next('ul').slideDown("fast");
+			$('.main-nav-ul ul').css("display", "flex");
 			down = true;
 		}
 		else{
@@ -107,7 +108,6 @@ $(document).ready(function(){
 			$(this).toggleClass('is-active');
 			if (menuDown == false){
 				$('.menu').fadeIn("fast");
-				//$('.menu').css("display", "flex");
 
 				menuDown = true;
 			}
