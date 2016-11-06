@@ -632,6 +632,10 @@ h3 {
   #left_arrow, #right_arrow {
     top: 40vh;
   }
+  .single-dot {
+    width: 1.6vh;
+    height: 1.6vh;
+  }
   #main-char {
     padding-bottom: 15vh;
   }
@@ -671,6 +675,17 @@ h3 {
   }
   #i10 {
     background-image: url(../pictures/characters/10med.jpg);
+  }
+}
+
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+  #main-char {
+    padding-bottom: 4.5vh;
+    padding-top: 10px;
+  }
+  .single-dot {
+    width: 2.4vh;
+    height: 2.4vh;
   }
 }
 

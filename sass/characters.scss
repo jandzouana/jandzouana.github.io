@@ -120,6 +120,10 @@
 	#left_arrow, #right_arrow{
 		top: 55vh - $char-main-marg-bot;
 	}
+	.single-dot{
+		width: $dot-box-size*.2;
+		height: $dot-box-size*.2;
+	}
 	#main-char{
 		.slideshow{
 			//border: 2px solid yellow;
@@ -163,6 +167,16 @@
 	}
 }
 
+@media only screen and (max-width:$cut-off) and (orientation: landscape){
+	#main-char{
+		padding-bottom: .3*$char-main-marg-bot;
+		padding-top: 10px;
+	}
+	.single-dot{
+		width: $dot-box-size*.3;
+		height: $dot-box-size*.3;
+	}
+}
 @media only screen and (min-width:$cut-off+1){
 	#i1 {
 		background-image: url(../pictures/characters/1.jpg);
