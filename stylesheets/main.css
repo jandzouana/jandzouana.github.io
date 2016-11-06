@@ -603,7 +603,7 @@ h3 {
   z-index: 1;
   width: 50px;
   height: 75px;
-  transform: translate(0, -120%);
+  transform: translate(0, -50%);
   top: 50%;
   position: absolute;
   cursor: pointer;
@@ -629,6 +629,9 @@ h3 {
 }
 
 @media only screen and (max-width: 800px) {
+  #left_arrow, #right_arrow {
+    top: 35vh;
+  }
   #main-char {
     padding-bottom: 15vh;
   }
@@ -1046,8 +1049,19 @@ main {
 
 @media only screen and (max-width: 800px) and (orientation: landscape) {
   .menu {
-    overflow: scroll;
+    overflow: auto;
   }
+  .main-nav-ul {
+    overflow: auto;
+  }
+  /*
+	.main-nav-ul{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	*/
 }
 
 @media only screen and (min-width: 801px) {

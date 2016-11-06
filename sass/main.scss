@@ -334,8 +334,19 @@ main{
 
 @media only screen and (max-width:$cut-off) and (orientation: landscape){
 	.menu{
-		overflow: scroll;
+		overflow: auto;
 	}
+	.main-nav-ul{
+		overflow: auto;
+	}
+	/*
+	.main-nav-ul{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	*/
 }
 
 @media only screen and (min-width: $cut-off+1) {
