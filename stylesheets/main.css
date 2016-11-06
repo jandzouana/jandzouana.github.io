@@ -633,6 +633,7 @@ h3 {
     margin-bottom: 15vh;
   }
   #main-char .slideshow {
+    border: 2px solid yellow;
     width: 100%;
     height: 77vh;
   }
@@ -1003,10 +1004,12 @@ main {
 @media only screen and (max-width: 800px) {
   .container {
     height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
   }
   .mob-nav-bar {
     display: block;
-    position: static;
+    position: fixed;
   }
   .container {
     flex-direction: column;
@@ -1016,7 +1019,8 @@ main {
     padding: 0;
   }
   .menu {
-    position: static;
+    position: fixed;
+    top: 59px;
     display: none;
     max-width: 100%;
     height: auto;
@@ -1024,25 +1028,13 @@ main {
     padding-bottom: 15px;
     align-items: center;
   }
-  .main-nav-ul {
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .main-nav-ul li {
-    height: 5vh;
-  }
-  .main-nav-ul li a {
-    font-size: 2vh;
-  }
   #brand, .social-media, #copy {
     display: none;
   }
   main {
     width: 100%;
     height: 100%;
-    margin-top: 0px;
+    margin-top: 59px;
   }
   body {
     padding-top: 0;

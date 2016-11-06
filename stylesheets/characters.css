@@ -161,6 +161,7 @@ h3 {
     margin-bottom: 15vh;
   }
   #main-char .slideshow {
+    border: 2px solid yellow;
     width: 100%;
     height: 77vh;
   }
