@@ -158,12 +158,15 @@ h3 {
 
 @media only screen and (max-width: 800px) {
   #main-char {
-    margin-bottom: 15vh;
+    padding-bottom: 15vh;
   }
   #main-char .slideshow {
     border: 2px solid yellow;
     width: 100%;
-    height: 77vh;
+    height: 90%;
+  }
+  #main-char .dots {
+    height: 10%;
   }
   #i1 {
     background-image: url(../pictures/characters/1med.jpg);

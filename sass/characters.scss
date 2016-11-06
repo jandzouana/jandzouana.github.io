@@ -121,9 +121,12 @@
 		.slideshow{
 			border: 2px solid yellow;
 			width: 100%;
-			height: 100 - $dot-box-size - $char-main-marg-bot;
+			height: 90%;
 		}
-		margin-bottom: $char-main-marg-bot;
+		.dots{
+			height: 10%;
+		}
+		padding-bottom: $char-main-marg-bot;
 	}
 	#i1 {
 		background-image: url(../pictures/characters/1med.jpg);

@@ -332,6 +332,11 @@ main{
 	}
 }
 
+@media only screen and (max-width:$cut-off) and (orientation: landscape){
+	.menu{
+		overflow: scroll;
+	}
+}
 
 @media only screen and (min-width: $cut-off+1) {
 	.menu{
