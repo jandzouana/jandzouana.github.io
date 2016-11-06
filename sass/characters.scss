@@ -118,11 +118,11 @@
 
 @media only screen and (max-width:$cut-off){
 	#left_arrow, #right_arrow{
-		top: 50vh - $char-main-marg-bot;
+		top: 55vh - $char-main-marg-bot;
 	}
 	#main-char{
 		.slideshow{
-			border: 2px solid yellow;
+			//border: 2px solid yellow;
 			width: 100%;
 			height: 90%;
 		}
