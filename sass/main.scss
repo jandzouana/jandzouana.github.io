@@ -204,8 +204,11 @@ body{
 		background-color: $menu-sub;
 	}
 	li {
-		border: 1px solid green;
+		//border: 1px solid green;
 		height: 50px;
+		a{
+			border: 1px solid orange;
+		}
 	}
 }
 
@@ -226,6 +229,9 @@ body{
 		font-size: 24px;
 		text-align: center;
 		margin-left: 4px;
+	}
+	&:hover{
+		color: $hover-menu;
 	}
 }
 
@@ -334,8 +340,10 @@ main{
 	}
 
 	.main-nav-ul{
+		display: flex;
+		flex-direction: column;
 		ul{
-			z-index: -1;
+			z-index: 2;
 		}
 		li {
 			z-index: 2;
@@ -345,9 +353,17 @@ main{
 
 @media only screen and (max-width:$cut-off) and (orientation: landscape){
 	.menu{
+		height: 500px;
 
 	}
 
+	.main-nav-ul{
+				overflow: auto;
+	}
+	/*
+	.sub-arrow{
+		font-size: 3vh;
+	}
 	.main-nav-ul{
 		height: 100vh - 40;
 		display: flex;
@@ -357,16 +373,17 @@ main{
 			flex-direction: column;
 			justify-content: space-around;
 			height: 30vh;
-			z-index: -1;
+			z-index: 2;
 		}
 		li{
 			z-index: 2;
-			height: 5vh;
+			height: 3vh;
 			a{
 				font-size: 3vh;
 			}
 		}
 	}
+	*/
 
 }
 
