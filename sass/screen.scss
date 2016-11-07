@@ -82,7 +82,7 @@ header {
 			text-align: right;
 			padding-bottom: 10px;
 			margin-left: 4px;
-			color: #669999;
+			color: $sub-head-color;
 		}
 }
 
@@ -105,7 +105,7 @@ header {
 /*soc 1 == social media icons in header
 soc 2 == social media icons in footer*/
 #soc2 {
-	//display: none;
+	display: none;
 	align-self: center;
 	margin:{
 		top: 100px;
@@ -199,13 +199,24 @@ main {
 #box{
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	padding-top: 70px;
 	height: auto;
+	justify-content: center;
 	//border: 1px solid orange;
 	a{
 		text-decoration: none;
 		//size of button
 		font-size: 23px;
+	}
+	.btn{
+		//display: none;
+	}
+	.portlink{
+		display: none;
+		font-family: AracneRegular;
+		margin: auto;
+		color: black;
 	}
 }
 
@@ -324,6 +335,7 @@ main {
 	}
 	#box{
 			padding-top: 30px;
+
 	}
 
 }
@@ -345,7 +357,6 @@ main {
 
 /*Desktop*/
 @media only screen and (min-width:801px){
-
 	.art_nav{
 		h2, h3 {
 			font-family: AracneLight;

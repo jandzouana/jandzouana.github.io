@@ -79,6 +79,9 @@ elements-of-type(html5-block) {
   <a href="#" class="btn">Default button</a>
 
 */
+/*Variables*/
+/*Menu*/
+/*Nav bar*/
 @font-face {
   font-family: 'Aracne';
   src: url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.eot?") format("eot"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.woff") format("woff"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.ttf") format("truetype"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.svg#AracneUltraCondensedLight") format("svg");
@@ -132,7 +135,7 @@ h3 {
   border-radius: .25em;
   border-style: solid;
   border-width: 1px;
-  color: black;
+  color: #3d4853;
   display: inline-block;
   font-family: AracneRegular, avenir, helvetica, roboto, arial, sans-serif;
   letter-spacing: .15em;
@@ -161,7 +164,7 @@ h3 {
 
 .btn:hover {
   color: white;
-  background-color: black;
+  background-color: #3d4853;
   transition: background-color .3s, color .3s, border .3s;
 }
 
@@ -207,7 +210,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 100%;
+  width: 85%;
 }
 
 /*
@@ -350,10 +353,15 @@ h3 {
 }
 
 /* Keep it mobile-first and responsive */
-@media screen and (min-width: 32em) {
+@media screen and (min-width: 601px) {
   .btn--full {
     max-width: 16em !important;
   }
+  /*
+	.btn--full:link {
+	  width: 100%;
+	}
+	*/
 }
 
 @font-face {
@@ -539,7 +547,7 @@ header {
   text-align: right;
   padding-bottom: 10px;
   margin-left: 4px;
-  color: #669999;
+  color: #5d6e7f;
 }
 
 /*social media*/
@@ -558,6 +566,7 @@ header {
 /*soc 1 == social media icons in header
 soc 2 == social media icons in footer*/
 #soc2 {
+  display: none;
   align-self: center;
   margin-top: 100px;
 }
@@ -653,13 +662,22 @@ main {
 #box {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   padding-top: 70px;
   height: auto;
+  justify-content: center;
 }
 
 #box a {
   text-decoration: none;
   font-size: 23px;
+}
+
+#box .portlink {
+  display: none;
+  font-family: AracneRegular;
+  margin: auto;
+  color: black;
 }
 
 /*Mobile devices*/

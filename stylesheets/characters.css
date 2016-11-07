@@ -156,6 +156,12 @@ h3 {
   #left_arrow, #right_arrow {
     top: 40vh;
   }
+  #left_arrow {
+    left: 5px;
+  }
+  #right_arrow {
+    right: 5px;
+  }
   .single-dot {
     width: 1.6vh;
     height: 1.6vh;

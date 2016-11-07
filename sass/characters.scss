@@ -114,6 +114,13 @@
 	#left_arrow, #right_arrow{
 		top: 55vh - $char-main-marg-bot;
 	}
+	#left_arrow{
+		left: 5px;
+
+	}
+	#right_arrow{
+		right: 5px;
+	}
 	.single-dot{
 		width: $dot-box-size*.2;
 		height: $dot-box-size*.2;
@@ -123,7 +130,7 @@
 			//border: 2px solid yellow;
 			width: 100%;
 			height: 90%;
-			border-top: 0px solid red!important; 
+			border-top: 0px solid red!important;
 		}
 		.dots{
 			height: 10%;

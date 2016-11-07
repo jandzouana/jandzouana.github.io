@@ -1,6 +1,10 @@
+//$sub-head-color: darken(#669999, 10%);
+$sub-head-color: lighten(#3d4853, 15%);
 $overlay: #00284d;
 $focus: #0074D9;
 $menu: #3d4853;
 $menu-sub: darken($menu, 12%);
 $hover-menu: #ffbf5e;
 $slide-color: #d3d3d3;
+//$btn-color: darken(grey, 20%);
+$btn-color: $menu;
