@@ -691,12 +691,15 @@ h3 {
 
 @media only screen and (max-width: 800px) and (orientation: landscape) {
   #main-char {
-    padding-bottom: 4.5vh;
+    padding-bottom: 9vh;
     padding-top: 10px;
   }
   .single-dot {
     width: 2.4vh;
     height: 2.4vh;
+  }
+  #main-char .slideshow {
+    border-bottom: 0px solid red !important;
   }
 }
 
@@ -712,6 +715,24 @@ h3 {
   }
   #i4 {
     background-image: url(../pictures/characters/4.jpg);
+  }
+  #i5 {
+    background-image: url(../pictures/characters/5.jpg);
+  }
+  #i6 {
+    background-image: url(../pictures/characters/6.jpg);
+  }
+  #i7 {
+    background-image: url(../pictures/characters/7.jpg);
+  }
+  #i8 {
+    background-image: url(../pictures/characters/8.jpg);
+  }
+  #i9 {
+    background-image: url(../pictures/characters/9.jpg);
+  }
+  #i10 {
+    background-image: url(../pictures/characters/10.jpg);
   }
 }
 

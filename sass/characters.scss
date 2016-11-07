@@ -171,13 +171,18 @@
 
 @media only screen and (max-width:$cut-off) and (orientation: landscape){
 	#main-char{
-		padding-bottom: .3*$char-main-marg-bot;
+		padding-bottom: .6*$char-main-marg-bot;
 		padding-top: 10px;
 	}
 
 	.single-dot{
 		width: $dot-box-size*.3;
 		height: $dot-box-size*.3;
+	}
+	#main-char{
+		.slideshow{
+			border-bottom: 0px solid red!important;
+		}
 	}
 }
 @media only screen and (min-width:$cut-off+1){
@@ -192,5 +197,23 @@
 	}
 	#i4 {
 		background-image: url(../pictures/characters/4.jpg);
+	}
+	#i5 {
+		background-image: url(../pictures/characters/5.jpg);
+	}
+	#i6 {
+		background-image: url(../pictures/characters/6.jpg);
+	}
+	#i7 {
+		background-image: url(../pictures/characters/7.jpg);
+	}
+	#i8 {
+		background-image: url(../pictures/characters/8.jpg);
+	}
+	#i9 {
+		background-image: url(../pictures/characters/9.jpg);
+	}
+	#i10 {
+		background-image: url(../pictures/characters/10.jpg);
 	}
 }
