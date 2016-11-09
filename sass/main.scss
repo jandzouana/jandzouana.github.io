@@ -298,7 +298,7 @@ main{
 
 .bot-nav-ul{
 	display: none;
-
+	border: 1px solid green;
 	position: relative;
 	background-color: $menu;
 	padding-bottom: 5vh;
@@ -306,6 +306,7 @@ main{
 	flex-flow: column wrap;
 	justify-content: center;
 	width: 0vw;
+	height: 100%;
 	li{
 		//border: 1px solid red;
 		padding: 2vh;
@@ -412,7 +413,7 @@ main{
 @media only screen and (max-width:$cut-off) and (orientation: landscape) and (max-height: 450px){
 	.container {
 		flex-direction: row;
-		//border: 1px solid red;
+		border: 1px solid purple;
 		width: 100vw;
 	}
 	.menu{
@@ -420,7 +421,7 @@ main{
 	}
 	 main{
 		 border: 1px solid red;
-		 height: 90%;
+		 height: 80%;
 		 //width: 60vw;
 		 width: 100vw!important;
 		margin-top: 5%;
@@ -428,7 +429,6 @@ main{
 	.bot-nav-ul{
 		display: flex;
 		height: 100%;
-		//width: 40vw;
 		width: 0vw;
 		li{
 			display: none;
