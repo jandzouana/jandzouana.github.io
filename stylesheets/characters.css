@@ -219,6 +219,7 @@ h3 {
     height: 2.4vh;
   }
   #main-char .slideshow {
+    margin-top: 10vh;
     border-bottom: 0px solid red !important;
   }
 }

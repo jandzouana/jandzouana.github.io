@@ -74,7 +74,7 @@ body{
 	//border: 1px solid orange;
 	float: right;
 
-	height: 60px;
+	height: 55px;
 	width: auto;
 	padding: 5px;
 	-webkit-filter: invert(100%); filter: invert(100%);
@@ -298,11 +298,11 @@ main{
 
 .bot-nav-ul{
 	display: none;
-	border: 1px solid green;
+	//border: 1px solid green;
 	position: relative;
 	background-color: $menu;
 	padding-bottom: 5vh;
-	padding-top: $nav-height+3vh;
+	padding-top: $nav-height+5;
 	flex-flow: column wrap;
 	justify-content: center;
 	width: 0vw;
@@ -413,14 +413,14 @@ main{
 @media only screen and (max-width:$cut-off) and (orientation: landscape) and (max-height: 450px){
 	.container {
 		flex-direction: row;
-		border: 1px solid purple;
+		//border: 1px solid purple;
 		width: 100vw;
 	}
 	.menu{
 		display: none !important;
 	}
 	 main{
-		 border: 1px solid red;
+		 //border: 1px solid red;
 		 height: 90%;
 		 //width: 60vw;
 		 width: 100vw!important;

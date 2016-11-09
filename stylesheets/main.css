@@ -699,6 +699,7 @@ h3 {
     height: 2.4vh;
   }
   #main-char .slideshow {
+    margin-top: 10vh;
     border-bottom: 0px solid red !important;
   }
 }
@@ -797,7 +798,7 @@ body {
 
 .nav-logo {
   float: right;
-  height: 60px;
+  height: 55px;
   width: auto;
   padding: 5px;
   -webkit-filter: invert(100%);
@@ -1057,7 +1058,6 @@ main {
 
 .bot-nav-ul {
   display: none;
-  border: 1px solid green;
   position: relative;
   background-color: #3d4853;
   padding-bottom: 5vh;
@@ -1165,14 +1165,12 @@ main {
 @media only screen and (max-width: 800px) and (orientation: landscape) and (max-height: 450px) {
   .container {
     flex-direction: row;
-    border: 1px solid purple;
     width: 100vw;
   }
   .menu {
     display: none !important;
   }
   main {
-    border: 1px solid red;
     height: 90%;
     width: 100vw !important;
     margin-top: 5%;
