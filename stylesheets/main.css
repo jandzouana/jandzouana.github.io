@@ -1056,14 +1056,14 @@ main {
 }
 
 .bot-nav-ul {
+  display: none;
   position: relative;
   background-color: #3d4853;
   padding-bottom: 5vh;
   padding-top: 59px;
-  display: none;
   flex-flow: column wrap;
   justify-content: center;
-  width: 100%;
+  width: 0vw;
 }
 
 .bot-nav-ul li {
@@ -1169,6 +1169,7 @@ main {
     display: none !important;
   }
   main {
+    border: 1px solid red;
     height: 90%;
     width: 100vw !important;
     margin-top: 5%;
@@ -1177,6 +1178,9 @@ main {
     display: flex;
     height: 100%;
     width: 0vw;
+  }
+  .bot-nav-ul li {
+    display: none;
   }
 }
 

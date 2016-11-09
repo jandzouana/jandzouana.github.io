@@ -297,14 +297,15 @@ main{
 }
 
 .bot-nav-ul{
+	display: none;
+
 	position: relative;
 	background-color: $menu;
 	padding-bottom: 5vh;
 	padding-top: $nav-height;
-	display: none;
 	flex-flow: column wrap;
 	justify-content: center;
-	width: 100%;
+	width: 0vw;
 	li{
 		//border: 1px solid red;
 		padding: 2vh;
@@ -418,7 +419,7 @@ main{
 		display: none !important;
 	}
 	 main{
-		 //border: 1px solid red;
+		 border: 1px solid red;
 		 height: 90%;
 		 //width: 60vw;
 		 width: 100vw!important;
@@ -429,6 +430,9 @@ main{
 		height: 100%;
 		//width: 40vw;
 		width: 0vw;
+		li{
+			display: none;
+		}
 	}
 
 
