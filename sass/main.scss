@@ -325,7 +325,7 @@ main{
 }
 
 #soc3{
-	//border: 1px solid red;
+	display: none;
 	position: absolute;
 	bottom: 3vh;
 	left: 3vh;
@@ -421,7 +421,7 @@ main{
 		 //border: 1px solid red;
 		 height: 90%;
 		 //width: 60vw;
-		 width: 100vw;
+		 width: 100vw!important;
 		margin-top: 5%;
 	}
 	.bot-nav-ul{

@@ -1085,6 +1085,7 @@ main {
 }
 
 #soc3 {
+  display: none;
   position: absolute;
   bottom: 3vh;
   left: 3vh;
@@ -1169,7 +1170,7 @@ main {
   }
   main {
     height: 90%;
-    width: 100vw;
+    width: 100vw !important;
     margin-top: 5%;
   }
   .bot-nav-ul {

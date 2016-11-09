@@ -115,7 +115,7 @@ $(document).ready(function(){
 			else{
 				$('.menu').fadeOut("fast");
 				$('.bot-nav-ul').css("width", "0vw");
-				$("main land").css("width", "100vw");
+				$("main land").css("width", "100vw!important");
 				menuDown = false;
 			}
 	});
