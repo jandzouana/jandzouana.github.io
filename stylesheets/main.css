@@ -1061,7 +1061,7 @@ main {
   position: relative;
   background-color: #3d4853;
   padding-bottom: 5vh;
-  padding-top: 59px;
+  padding-top: 64px;
   flex-flow: column wrap;
   justify-content: center;
   width: 0vw;
@@ -1173,12 +1173,13 @@ main {
   }
   main {
     border: 1px solid red;
-    height: 80%;
+    height: 90%;
     width: 100vw !important;
     margin-top: 5%;
   }
   .bot-nav-ul {
     display: flex;
+    min-height: 100vh;
     height: 100%;
     width: 0vw;
   }

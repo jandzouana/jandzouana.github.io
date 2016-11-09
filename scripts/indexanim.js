@@ -108,7 +108,7 @@ $(document).ready(function(){
 			$(this).toggleClass('is-active');
 			if (menuDown == false){
 				$('.menu').fadeIn("fast");
-				$('.bot-nav-ul').css("width", "40vw");
+				$('.bot-nav-ul').css("width", "30vw");
 				$('.bot-nav-ul li').css("display", "block");
 				$("main land").css("width", "auto");
 				menuDown = true;
