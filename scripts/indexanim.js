@@ -108,11 +108,14 @@ $(document).ready(function(){
 			$(this).toggleClass('is-active');
 			if (menuDown == false){
 				$('.menu').fadeIn("fast");
-
+				$('.bot-nav-ul').css("width", "40vw");
+				$("main land").css("width", "auto");
 				menuDown = true;
 			}
 			else{
 				$('.menu').fadeOut("fast");
+				$('.bot-nav-ul').css("width", "0vw");
+				$("main land").css("width", "100vw");
 				menuDown = false;
 			}
 	});

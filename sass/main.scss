@@ -72,6 +72,8 @@ body{
 
 .nav-logo{
 	//border: 1px solid orange;
+	float: right;
+
 	height: 60px;
 	width: auto;
 	padding: 5px;
@@ -100,7 +102,6 @@ body{
 
 .menu-button {
 	display: inline-block;
-	float: right;
 	padding: .5em;
 	//background-color: darken($menu, 2%);
 	background-color: lighten($menu, 10%);
@@ -296,28 +297,46 @@ main{
 }
 
 .bot-nav-ul{
+	position: relative;
 	background-color: $menu;
 	padding-bottom: 5vh;
+	padding-top: $nav-height;
 	display: none;
-	flex-flow: row wrap;
-	justify-content: flex-start;
+	flex-flow: column wrap;
+	justify-content: center;
 	width: 100%;
 	li{
+		//border: 1px solid red;
 		padding: 2vh;
-		padding-right: 3vh;
+		padding-left: 3vh;
+		padding-bottom: 2vh;
 		a{
 			//border: 1px solid red;
 			color: white;
-			opacity: 0.4;
+			opacity: 0.6;
 			text-decoration: none;
-			font-size: 6vh;
+			font-size: 4.5vh;
 			font-family: AracneRegular;
 			&:hover{
 				color: $hover-menu;
 			}
 		}
 	}
+}
 
+#soc3{
+	//border: 1px solid red;
+	position: absolute;
+	bottom: 3vh;
+	left: 3vh;
+	width: 70%;
+	.iconcon{
+		padding: 3px;
+		width: $icon-size*1;
+		height: $icon-size*1;
+		//margin-left: 25px;
+
+	}
 }
 @media only screen and (max-width:$cut-off){
 	.container{
@@ -361,7 +380,7 @@ main{
 	}
 
 	.social-media{
-		width: 40%;
+		width: 80%;
 	}
 
 	.footer{
@@ -390,44 +409,28 @@ main{
 }
 
 @media only screen and (max-width:$cut-off) and (orientation: landscape) and (max-height: 450px){
-	.mob-nav-bar{
-		display: none;
+	.container {
+		flex-direction: row;
+		//border: 1px solid red;
+		width: 100vw;
 	}
 	.menu{
 		display: none !important;
 	}
 	 main{
-		 height: 80%;
-		margin-top: 0px;
+		 //border: 1px solid red;
+		 height: 90%;
+		 //width: 60vw;
+		 width: 100vw;
+		margin-top: 5%;
 	}
 	.bot-nav-ul{
 		display: flex;
-		height: 20%;
+		height: 100%;
+		//width: 40vw;
+		width: 0vw;
 	}
-	/*
-	.sub-arrow{
-		font-size: 3vh;
-	}
-	.main-nav-ul{
-		height: 100vh - 40;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		ul{
-			flex-direction: column;
-			justify-content: space-around;
-			height: 30vh;
-			z-index: 2;
-		}
-		li{
-			z-index: 2;
-			height: 3vh;
-			a{
-				font-size: 3vh;
-			}
-		}
-	}
-	*/
+
 
 }
 
