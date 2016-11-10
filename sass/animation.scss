@@ -12,7 +12,6 @@
 			*/
 
 *{
-	border: 1px solid red;
 }
 #main-anim{
 	//border: 1px solid blue;
@@ -74,8 +73,6 @@
 		.overlay{
 			position: absolute;
 			background-color: orange;
-			background-repeat: no-repeat;
-			background-size: cover;
 			opacity: 0;
 			&:hover{
 				opacity: 0.3;
@@ -83,9 +80,8 @@
 			}
 		}
 		div{
-			border: 1px solid red;
-			width: 90%;
-			height: 40%;
+			width: 150px;
+			height: 100px;
 		}
 		.active-li {
 				p{
@@ -98,9 +94,11 @@
 		}
 	}
 }
+
 #ii1 {
 	background-image: url(../pictures/video_icons/monster.jpg);
 }
+
 #ii2 {
 	background-image: url(../pictures/video_icons/wilf.jpg);
 }
