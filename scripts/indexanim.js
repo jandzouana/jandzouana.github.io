@@ -79,6 +79,27 @@ $(document).ready(function(){
 
 	var rotated = false;
 	var down = false;
+
+	/*Video Gallery functions*/
+	var $vidtitle = $(".vid-list").find("li");
+	$vidtitle.click(function(){
+		var currentVid = $(".active-vid");
+		var currentLi = $(".active-li");
+		var nextVid;
+		$(this).addClass("active-li");
+		$(currentLi).removeClass("active-li");
+
+		var index = $(this).index();
+		index = index +1;
+		currentVid.removeClass("active-vid");
+		currentVid.css("display", "none");
+		nextVid = $(".videos :nth-child(" + index + ")");
+		nextVid.fadeIn(600).addClass("active-vid");
+		//alert("Index: " + index);
+
+	});
+
+
 	/*Function that shows sub menus*/
 	$('.cont-subs').click(function(){
 		if(down == false){

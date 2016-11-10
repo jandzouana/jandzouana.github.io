@@ -8,8 +8,9 @@
 @import "responsive";
 @import "compass/css3";
 @import "../externals/sass-burger-master/burger";
+//Other page styles
 @import "characters";
-
+@import "animation";
 * {
 	//border: 1px solid red !important;
 	-webkit-box-sizing: border-box;
@@ -189,6 +190,7 @@ body{
 		letter-spacing: .175em;
 		&:hover{
 			color: $hover-menu;
+			transition: color 0.2s;
 		}
 	}
 }

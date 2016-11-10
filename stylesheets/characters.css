@@ -152,7 +152,7 @@ h3 {
   right: 10px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   #left_arrow, #right_arrow {
     top: 40vh;
   }
@@ -209,7 +209,7 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 800px) and (orientation: landscape) {
+@media only screen and (max-width: 900px) and (orientation: landscape) {
   #main-char {
     padding-bottom: 9vh;
     padding-top: 10px;
@@ -225,7 +225,7 @@ h3 {
   }
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 901px) {
   #i1 {
     background-image: url(../pictures/characters/1.jpg);
   }
