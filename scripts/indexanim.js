@@ -83,6 +83,7 @@ $(document).ready(function(){
 	/*Video Gallery functions*/
 	var $vidtitle = $(".vid-list").find("li");
 	$vidtitle.click(function(){
+		$('html, body').animate({ scrollTop: 0 }, 'fast');
 		var currentVid = $(".active-vid");
 		var currentLi = $(".active-li");
 		var nextVid;
