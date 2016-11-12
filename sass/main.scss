@@ -48,7 +48,7 @@ body{
 
 /*container for navigation and main content*/
 .container{
-	border: 3px solid blue;
+	//border: 3px solid blue;
 	margin: auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
@@ -290,7 +290,7 @@ body{
 
 /*Main content container*/
 main{
-	border: 2px solid purple;
+	//border: 2px solid purple;
 	width: $page-width - $menu-width;
 	height: 100%;
 
@@ -314,7 +314,7 @@ main{
 	width: 0vw;
 
 	display: none;
-	border: 2px solid green;
+	//border: 2px solid green;
 	position: relative;
 	padding-top: $nav-height+5;
 	flex-flow: column wrap;

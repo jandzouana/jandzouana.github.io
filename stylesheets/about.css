@@ -126,7 +126,6 @@ h3 {
   }
   .about-container {
     border-top: 0px solid red;
-    border: 3px solid orange;
     height: 100%;
     margin: 0px;
   }
@@ -138,7 +137,6 @@ h3 {
   .box1 {
     padding-top: 0px;
     height: 70vh;
-    border: 1px solid red;
     justify-content: space-around;
     flex-direction: column;
   }
@@ -150,11 +148,9 @@ h3 {
   }
   .box2 {
     height: auto;
-    border: 1px solid red;
     justify-content: flex-start;
   }
   .prof {
-    border: 1px solid green;
     height: 40vh;
     width: 100%;
   }
@@ -163,7 +159,6 @@ h3 {
     width: 100%;
   }
   .text2, .text {
-    border: 1px solid blue;
     height: auto;
   }
   .text2 h2, .text h2 {
@@ -179,7 +174,6 @@ h3 {
     height: 260vh;
   }
   .text2, .text {
-    border: 1px solid blue;
     height: auto;
   }
   .text2 h2, .text h2 {
