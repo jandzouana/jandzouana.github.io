@@ -14,7 +14,7 @@
 *{
 }
 #main-anim{
-	//border: 1px solid blue;
+	border: 2px solid purple;
 	height: 100%;
 }
 
@@ -131,12 +131,15 @@
 		width: 100%;
 		.videos{
 			height: 58vh;
+			padding: 10px;
 		}
 		.anim-title{
 			height: 50px;
 			margin-top: 50px;
 		}
 		.vid-list{
+			margin-left: 10px;
+			margin-right: 10px;
 			flex-flow: column nowrap;
 			//border: 1px solid purple;
 			margin-bottom: 50px;
@@ -159,9 +162,24 @@
 }
 
 @media only screen and (max-width:$cut-off) and (orientation:landscape){
+	.container{
+		height:auto;
+		max-height: auto;
+		min-height: auto;
+	}
+	#main-anim{
+		height: 100%;
+	}
 	.gallery{
+		margin-top: 10px;
+		height: auto;
+		//border: 1px solid orange;
 		.videos{
 			height: 90vh;
+		}
+		.vid-list{
+			height: auto;
+			border: 1px solid red;
 		}
 	}
 }

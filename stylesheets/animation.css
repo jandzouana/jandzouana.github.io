@@ -57,6 +57,7 @@ h3 {
 			</iframe>
 			*/
 #main-anim {
+  border: 2px solid purple;
   height: 100%;
 }
 
@@ -182,12 +183,15 @@ h3 {
   }
   .gallery .videos {
     height: 58vh;
+    padding: 10px;
   }
   .gallery .anim-title {
     height: 50px;
     margin-top: 50px;
   }
   .gallery .vid-list {
+    margin-left: 10px;
+    margin-right: 10px;
     flex-flow: column nowrap;
     margin-bottom: 50px;
     height: auto;
@@ -202,7 +206,23 @@ h3 {
 }
 
 @media only screen and (max-width: 900px) and (orientation: landscape) {
+  .container {
+    height: auto;
+    max-height: auto;
+    min-height: auto;
+  }
+  #main-anim {
+    height: 100%;
+  }
+  .gallery {
+    margin-top: 10px;
+    height: auto;
+  }
   .gallery .videos {
     height: 90vh;
+  }
+  .gallery .vid-list {
+    height: auto;
+    border: 1px solid red;
   }
 }
