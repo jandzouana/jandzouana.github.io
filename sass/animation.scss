@@ -157,7 +157,7 @@
 
 }
 
-@media only screen and (max-width:$cut-off) and (orientation:landscape){
+@media only screen and (max-width:$cut-off) and (orientation: landscape) and (max-height: $max-land-height){
 	.container{
 		height:auto;
 		max-height: auto;

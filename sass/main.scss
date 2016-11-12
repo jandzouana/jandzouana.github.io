@@ -416,7 +416,7 @@ main{
 	}
 }
 
-@media only screen and (max-width:$cut-off) and (orientation: landscape) and (max-height: 450px){
+@media only screen and (max-width:$cut-off) and (orientation: landscape) and (max-height: $max-land-height){
 	.container {
 		flex-direction: row;
 		//border: 1px solid purple;

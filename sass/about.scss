@@ -133,11 +133,39 @@
 		border: 1px solid blue;
 		height: auto;
 		h2{
-			font-size: 3vh;
+			font-size: 4vh;
 		}
 		h3{
 			font-size: 2.5vh;
 		}
 
+	}
+}
+
+@media only screen and (max-width:$cut-off) and (orientation:landscape) and (max-height: $max-land-height){
+	#main-about{
+		//border: 1px solid green;
+
+		height: 260vh;
+	}
+	.text2, .text{
+		border: 1px solid blue;
+		height: auto;
+		h2{
+			font-size: 10vh;
+		}
+		h3{
+			font-size: 5.5vh;
+		}
+
+	}
+	.box1{
+		height: 130vh;
+	}
+	.box2{
+		height: 120vh;
+	}
+	.prof{
+		height:90vh;
 	}
 }

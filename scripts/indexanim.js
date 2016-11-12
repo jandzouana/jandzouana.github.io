@@ -133,6 +133,12 @@ $(document).ready(function(){
 				$('.bot-nav-ul').css("width", "30vw");
 				$('.bot-nav-ul li').css("display", "block");
 				$("main land").css("width", "auto");
+				//text sizes about me
+				$('.text2 h2').css("font-size","7vh");
+				$('.text2 h3').css("font-size","5vh");
+				$('.text h2').css("font-size","7vh");
+				$('.text h3').css("font-size","5vh");
+
 				menuDown = true;
 			}
 			else{
@@ -144,3 +150,17 @@ $(document).ready(function(){
 			}
 	});
 });
+
+/*
+.text2, .text{
+	border: 1px solid blue;
+	height: auto;
+	h2{
+		font-size: 10vh;
+	}
+	h3{
+		font-size: 5.5vh;
+	}
+
+}
+*/

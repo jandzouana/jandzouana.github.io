@@ -215,7 +215,7 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 900px) and (orientation: landscape) {
+@media only screen and (max-width: 900px) and (orientation: landscape) and (max-height: 600px) {
   #main-char {
     padding-bottom: 9vh;
     padding-top: 10px;
