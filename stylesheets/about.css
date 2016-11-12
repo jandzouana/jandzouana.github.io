@@ -161,14 +161,14 @@ h3 {
     padding: 30px 40px 20px 40px;
     width: 100%;
   }
-  .text2, .text1 {
+  .text2, .text {
     border: 1px solid blue;
     height: 30vh;
   }
-  .text2 h2, .text1 h2 {
-    height: 10vh;
+  .text2 h2, .text h2 {
+    font-size: 5vh;
   }
-  .text2 h3, .text1 h3 {
-    height: 5vh;
+  .text2 h3, .text h3 {
+    font-size: 3vh;
   }
 }
