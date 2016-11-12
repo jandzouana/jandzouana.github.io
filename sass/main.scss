@@ -302,17 +302,24 @@ main{
 	}
 }
 
+.bot-nav{
+	background-color: $menu;
+	height: auto;
+
+}
 .bot-nav-ul{
+	display: flex;
+	min-height: 100vh;
+	height: 100vh;
+	width: 0vw;
+
 	display: none;
 	border: 2px solid green;
 	position: relative;
-	background-color: $menu;
-	padding-bottom: 5vh;
 	padding-top: $nav-height+5;
 	flex-flow: column wrap;
-	justify-content: center;
-	width: 0vw;
-	height: 100%;
+	justify-content: space-between;
+
 	li{
 		//border: 1px solid red;
 		padding: 2vh;
@@ -434,9 +441,6 @@ main{
 	}
 	.bot-nav-ul{
 		display: flex;
-		justify-content: flex-start;
-		min-height: 100vh;
-		height: 100%;
 		width: 0vw;
 		li{
 			display: none;

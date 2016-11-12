@@ -1693,17 +1693,22 @@ main {
   width: 100%;
 }
 
+.bot-nav {
+  background-color: #3d4853;
+  height: auto;
+}
+
 .bot-nav-ul {
+  display: flex;
+  min-height: 100vh;
+  height: 100vh;
+  width: 0vw;
   display: none;
   border: 2px solid green;
   position: relative;
-  background-color: #3d4853;
-  padding-bottom: 5vh;
   padding-top: 64px;
   flex-flow: column wrap;
-  justify-content: center;
-  width: 0vw;
-  height: 100%;
+  justify-content: space-between;
 }
 
 .bot-nav-ul li {
@@ -1815,9 +1820,6 @@ main {
   }
   .bot-nav-ul {
     display: flex;
-    justify-content: flex-start;
-    min-height: 100vh;
-    height: 100%;
     width: 0vw;
   }
   .bot-nav-ul li {
