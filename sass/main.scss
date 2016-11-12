@@ -48,7 +48,7 @@ body{
 
 /*container for navigation and main content*/
 .container{
-	//border: 3px solid blue;
+	border: 3px solid blue;
 	margin: auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
@@ -290,7 +290,7 @@ body{
 
 /*Main content container*/
 main{
-	//border: 1px solid red;
+	border: 2px solid purple;
 	width: $page-width - $menu-width;
 	height: 100%;
 
@@ -304,7 +304,7 @@ main{
 
 .bot-nav-ul{
 	display: none;
-	//border: 1px solid green;
+	border: 2px solid green;
 	position: relative;
 	background-color: $menu;
 	padding-bottom: 5vh;
@@ -434,6 +434,7 @@ main{
 	}
 	.bot-nav-ul{
 		display: flex;
+		justify-content: flex-start;
 		min-height: 100vh;
 		height: 100%;
 		width: 0vw;
