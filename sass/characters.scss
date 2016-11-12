@@ -35,7 +35,7 @@
 
 	.slide{
 		//border: 2px solid purple;
-		margin: 20px;
+		margin: 30px;
 		display: none;
 		position: absolute;
     top: 0;
@@ -167,6 +167,12 @@
 	#i10 {
 		background-image: url(../pictures/characters/10med.jpg);
 	}
+	#i11 {
+		background-image: url(../pictures/characters/11med.jpg);
+	}
+	#i12 {
+		background-image: url(../pictures/characters/12med.jpg);
+	}
 }
 
 @media only screen and (max-width:$cut-off) and (orientation: landscape){
@@ -185,6 +191,10 @@
 			height: 80%;
 			margin-top: 5vh;
 			border-bottom: 0px solid red!important;
+			.slide{
+				margin: 20px;
+			}
+
 		}
 	}
 
@@ -219,5 +229,11 @@
 	}
 	#i10 {
 		background-image: url(../pictures/characters/10.jpg);
+	}
+	#i11 {
+		background-image: url(../pictures/characters/11.jpg);
+	}
+	#i12 {
+		background-image: url(../pictures/characters/12.jpg);
 	}
 }

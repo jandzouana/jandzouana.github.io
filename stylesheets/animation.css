@@ -1,4 +1,4 @@
-/*Stylesheet for character page*/
+/*Stylesheet for animation page*/
 @import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
 @import 'https://fonts.googleapis.com/css?family=Josefin+Sans:300,400';
 @font-face {
@@ -49,13 +49,6 @@ h3 {
 /*Variables*/
 /*Menu*/
 /*Nav bar*/
-/*
-"main-anim">
-	<div class="container">
-		<div class="videos">
-			<iframe class="vid active-vid" width="420" height="345" src="https://youtu.be/4El3XyjnP_M">
-			</iframe>
-			*/
 #main-anim {
   height: 100%;
 }
@@ -64,10 +57,14 @@ h3 {
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
 }
 
 .gallery .videos {
-  padding: 30px;
+  padding: 20px;
+  border-top: 1px solid #d3d3d3;
+  margin-right: 30px;
+  margin-left: 30px;
   height: 68%;
 }
 
@@ -101,7 +98,7 @@ h3 {
   margin-right: 30px;
   padding-top: 20px;
   height: 28%;
-  border-top: 1px solid grey;
+  border-top: 1px solid #d3d3d3;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -214,7 +211,7 @@ h3 {
     height: 100%;
   }
   .gallery {
-    margin-top: 20px;
+    margin-top: 25px;
     height: auto;
   }
   .gallery .videos {
