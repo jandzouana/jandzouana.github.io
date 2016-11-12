@@ -797,7 +797,6 @@ h3 {
 			</iframe>
 			*/
 #main-anim {
-  border: 2px solid purple;
   height: 100%;
 }
 
@@ -955,15 +954,17 @@ h3 {
     height: 100%;
   }
   .gallery {
-    margin-top: 10px;
+    margin-top: 20px;
     height: auto;
   }
   .gallery .videos {
-    height: 90vh;
+    height: 80vh;
   }
   .gallery .vid-list {
     height: auto;
-    border: 1px solid red;
+  }
+  .gallery .vid-list div {
+    height: 25vh;
   }
 }
 
