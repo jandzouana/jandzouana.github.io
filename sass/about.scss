@@ -3,6 +3,9 @@
 @import "colors";
 @import "variable";
 
+*{
+	//border: 1px solid red!important;
+}
 
 #main-about{
 }
@@ -32,6 +35,7 @@
 	//border: 1px solid red;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	h1{
 		text-align: left;
 	}
@@ -40,7 +44,6 @@
 	}
 }
 .box2{
-	padding: 30px 40px 20px 40px;
 	height: 60%;
 	//border: 1px solid blue;
 	display: flex;
@@ -54,6 +57,13 @@
 	}
 }
 
+.text2{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px 40px 20px 40px;
+
+}
 .text{
 	width: 50%;
 	display: flex;
@@ -115,9 +125,18 @@
 		margin-bottom: 30px;
 	}
 	.text{
-		//border: 1px solid blue;
 		padding: 30px 40px 20px 40px;
-		height: 30vh;
 		width: 100%;
+	}
+	.text2, .text1{
+		border: 1px solid blue;
+		height: 30vh;
+		h2{
+			height: 10vh;
+		}
+		h3{
+			height: 5vh;
+		}
+
 	}
 }
