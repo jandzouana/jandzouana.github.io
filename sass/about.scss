@@ -75,7 +75,7 @@
 	#main-about{
 		//border: 1px solid green;
 
-		height: 1000px;
+		height: auto;
 	}
 	.about-container{
 		border-top: 0px solid red;
@@ -90,9 +90,9 @@
 	}
 	.box1{
 		padding-top: 0px;
-		height: 50%;
+		height: 40%;
 		border: 1px solid red;
-
+		justify-content: space-between;
 		flex-direction: column;
 		h2{
 			text-align: center;
@@ -102,20 +102,20 @@
 		}
 	}
 	.box2{
-		height: 50%;
+		height: 60%;
 		border: 1px solid red;
 	}
 
 	.prof{
 	//	border: 1px solid green;
-		height:80%;
+		height:400px;
 		width: 100%;
 		margin-bottom: 30px;
 	}
 	.text{
 	//	border: 1px solid blue;
 		padding: 30px 40px 20px 40px;
-		height: 20%;
+		height: auto;
 		width: 100%;
 	}
 }
