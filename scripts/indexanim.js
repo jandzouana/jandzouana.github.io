@@ -128,16 +128,16 @@ $(document).ready(function(){
 	/*Mobile navigation icon animation activation*/
 	$("#menuButton").click(function(){
 			$(this).toggleClass('is-active');
+			$('.text2').toggleClass("small");
+			$('.text').toggleClass("small");
+
 			if (menuDown == false){
 				$('.menu').fadeIn("fast");
 				$('.bot-nav-ul').css("width", "30vw");
 				$('.bot-nav-ul li').css("display", "block");
 				$("main land").css("width", "auto");
 				//text sizes about me
-				$('.text2 h2').css("font-size","7vh");
-				$('.text2 h3').css("font-size","5vh");
-				$('.text h2').css("font-size","7vh");
-				$('.text h3').css("font-size","5vh");
+
 
 				menuDown = true;
 			}

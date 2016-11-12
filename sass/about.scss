@@ -151,12 +151,14 @@
 	.text2, .text{
 		border: 1px solid blue;
 		height: auto;
+
 		h2{
 			font-size: 10vh;
 		}
 		h3{
 			font-size: 5.5vh;
 		}
+
 
 	}
 	.box1{
@@ -168,4 +170,20 @@
 	.prof{
 		height:90vh;
 	}
+	.small{
+		h2{
+			font-size: 7vh!important;
+		}
+		h3{
+			font-size: 5vh!important;
+		}
+
+	}
 }
+
+/*
+$('.text2 h2').css("font-size","7vh");
+$('.text2 h3').css("font-size","5vh");
+$('.text h2').css("font-size","7vh");
+$('.text h3').css("font-size","5vh");
+*/

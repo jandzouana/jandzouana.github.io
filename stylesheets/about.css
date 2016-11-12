@@ -197,4 +197,17 @@ h3 {
   .prof {
     height: 90vh;
   }
+  .small h2 {
+    font-size: 7vh !important;
+  }
+  .small h3 {
+    font-size: 5vh !important;
+  }
 }
+
+/*
+$('.text2 h2').css("font-size","7vh");
+$('.text2 h3').css("font-size","5vh");
+$('.text h2').css("font-size","7vh");
+$('.text h3').css("font-size","5vh");
+*/
