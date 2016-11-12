@@ -85,7 +85,7 @@
 	#main-about{
 		//border: 1px solid green;
 
-		height: 160vh;
+		height: 170vh;
 	}
 	.about-container{
 		border-top: 0px solid red;
@@ -114,28 +114,29 @@
 		}
 	}
 	.box2{
-		height: 90vh;
+		height: auto;
 		border: 1px solid red;
+		justify-content: flex-start;
 	}
 
 	.prof{
-		//border: 1px solid green;
+		border: 1px solid green;
 		height:40vh;
 		width: 100%;
-		margin-bottom: 30px;
+		//margin-bottom: 30px;
 	}
 	.text{
-		padding: 30px 40px 20px 40px;
+		padding: 0px 40px 20px 40px;
 		width: 100%;
 	}
 	.text2, .text{
 		border: 1px solid blue;
-		height: 30vh;
+		height: auto;
 		h2{
-			font-size: 5vw;
+			font-size: 3vh;
 		}
 		h3{
-			font-size: 2.5vw;
+			font-size: 2.5vh;
 		}
 
 	}
