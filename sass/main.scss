@@ -72,6 +72,8 @@ body{
 	background-color: lighten($menu, 10%);
 	position: fixed;
 	z-index: 4;
+	@include single-box-shadow(10px 10px 5px 2px black);
+	//box-shadow: 10px 10px 5px black;
 }
 
 .nav-logo{
@@ -314,7 +316,7 @@ main{
 	width: 0vw;
 
 	display: none;
-	//border: 2px solid green;
+	border: 2px solid green;
 	position: relative;
 	padding-top: $nav-height+5;
 	flex-flow: column wrap;

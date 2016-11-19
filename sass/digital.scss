@@ -1,3 +1,9 @@
+
+@import "fonts";
+@import "colors";
+@import "variable";
+
+
 #j1 {
 	background-image: url(../pictures/digital/1med.jpg);
 }
@@ -36,7 +42,7 @@
 }
 
 
-@media only screen and (max-width:$cut-off) and (orientation: landscape){
+@media only screen and (max-width: $cut-off) and (orientation: landscape){
 #main-char{
 	padding-bottom: .6*$char-main-marg-bot;
 	padding-top: 10px;

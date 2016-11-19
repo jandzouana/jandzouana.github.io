@@ -50,7 +50,6 @@ h3 {
 /*Menu*/
 /*Nav bar*/
 .about-container {
-  border-top: 1px solid #d3d3d3;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -75,7 +74,7 @@ h3 {
   justify-content: center;
 }
 
-.box1 h1 {
+.box1 h2 {
   text-align: left;
 }
 
@@ -171,7 +170,7 @@ h3 {
 
 @media only screen and (max-width: 900px) and (orientation: landscape) and (max-height: 600px) {
   #main-about {
-    height: 260vh;
+    height: 220vh;
   }
   .text2, .text {
     height: auto;
@@ -183,7 +182,11 @@ h3 {
     font-size: 5.5vh;
   }
   .box1 {
-    height: 130vh;
+    height: 90vh;
+    flex-direction: row;
+  }
+  .box1 h2, .box1 h3 {
+    text-align: left;
   }
   .box2 {
     height: 120vh;

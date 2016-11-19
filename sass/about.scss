@@ -10,7 +10,7 @@
 #main-about{
 }
 .about-container{
-	border-top: 1px solid $slide-color;
+	//border-top: 1px solid $slide-color;
 	margin: 20px;
 	display: flex;
 	flex-direction: column;
@@ -30,13 +30,12 @@
 
 .box1{
 	padding-top: 25px;
-
 	height: 40%;
 	//border: 1px solid red;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	h1{
+	h2{
 		text-align: left;
 	}
 	h3{
@@ -146,9 +145,10 @@
 	#main-about{
 		//border: 1px solid green;
 
-		height: 260vh;
+		height: 220vh;
 	}
 	.text2, .text{
+		//border: 1px solid blue;
 		height: auto;
 
 		h2{
@@ -161,7 +161,11 @@
 
 	}
 	.box1{
-		height: 130vh;
+		height: 90vh;
+		flex-direction: row;
+		h2, h3{
+			text-align: left;
+		}
 	}
 	.box2{
 		height: 120vh;
