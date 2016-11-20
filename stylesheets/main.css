@@ -142,7 +142,7 @@ h3 {
   border-radius: .25em;
   border-style: solid;
   border-width: 1px;
-  color: #3d4853;
+  color: #28394b;
   display: inline-block;
   font-family: AracneRegular, avenir, helvetica, roboto, arial, sans-serif;
   letter-spacing: .15em;
@@ -171,7 +171,7 @@ h3 {
 
 .btn:hover {
   color: white;
-  background-color: #3d4853;
+  background-color: #28394b;
   transition: background-color .3s, color .3s, border .3s;
 }
 
@@ -1058,6 +1058,7 @@ h3 {
   height: 100%;
 }
 
+/*Stylesheet for digital art page*/
 @font-face {
   font-family: 'Aracne';
   src: url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.eot?") format("eot"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.woff") format("woff"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.ttf") format("truetype"), url("../Fonts/Arcane/ARACNE-ULTRA-CONDENSED_light.svg#AracneUltraCondensedLight") format("svg");
@@ -1261,8 +1262,32 @@ h3 {
 /*Variables*/
 /*Menu*/
 /*Nav bar*/
+#main-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.link-box {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.link-box a {
+  font-family: AracneRegular;
+  font-size: 18px;
+  color: #35568b;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 10px;
+}
+
 .about-container {
-  margin: 20px;
   display: flex;
   flex-direction: column;
   width: auto;
@@ -1270,16 +1295,20 @@ h3 {
 }
 
 .about-container h2 {
-  color: #0074D9;
-  margin-bottom: 10px;
+  color: #35568b;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-family: AracneRegular;
 }
 
 .about-container h3 {
+  line-height: 1.25;
   text-align: center;
+  letter-spacing: 1px;
+  font-size: 16px;
 }
 
 .box1 {
-  padding-top: 25px;
   height: 40%;
   display: flex;
   flex-direction: row;
@@ -1331,13 +1360,26 @@ h3 {
   background-image: url(../pictures/profile.jpg);
 }
 
+@media only screen and (max-width: 1200px) {
+  .about-container h2 {
+    font-size: 20px;
+  }
+  .about-container h3 {
+    font-size: 14px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   #main-about {
-    height: 170vh;
+    justify-content: flex-start;
+    height: 180vh;
+  }
+  .link-box {
+    height: 10%;
   }
   .about-container {
     border-top: 0px solid red;
-    height: 100%;
+    height: 90%;
     margin: 0px;
   }
   #container-a {
@@ -1380,18 +1422,31 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .text2 h2, .text h2 {
+    font-size: 3vh;
+  }
+  .text2 h3, .text h3 {
+    font-size: 1.5vh;
+  }
+}
+
 @media only screen and (max-width: 900px) and (orientation: landscape) and (max-height: 600px) {
   #main-about {
-    height: 220vh;
+    margin-top: 59px;
+    height: 240vh;
+  }
+  .link-box {
+    height: 20vh;
   }
   .text2, .text {
     height: auto;
   }
   .text2 h2, .text h2 {
-    font-size: 10vh;
+    font-size: 8vh;
   }
   .text2 h3, .text h3 {
-    font-size: 5.5vh;
+    font-size: 4.5vh;
   }
   .box1 {
     height: 90vh;
@@ -1405,12 +1460,6 @@ h3 {
   }
   .prof {
     height: 90vh;
-  }
-  .small h2 {
-    font-size: 7vh !important;
-  }
-  .small h3 {
-    font-size: 5vh !important;
   }
 }
 
@@ -1464,7 +1513,7 @@ body {
   flex-flow: row nowrap;
   height: 80vh;
   max-height: 80vh;
-  min-height: 750px;
+  min-height: 600px;
   max-width: 1500px;
   width: 100%;
 }
@@ -1474,12 +1523,12 @@ body {
   display: none;
   height: 59px;
   width: 100%;
-  background-color: #536270;
+  background-color: #32465b;
   position: fixed;
   z-index: 4;
-  -webkit-box-shadow: compact(0px 0px 5px 10px 10px 5px 2px black, false, false, false, false, false, false, false, false, false);
-  -moz-box-shadow: compact(0px 0px 5px 10px 10px 5px 2px black, false, false, false, false, false, false, false, false, false);
-  box-shadow: compact(0px 0px 5px 10px 10px 5px 2px black, false, false, false, false, false, false, false, false, false);
+  -webkit-box-shadow: 0 1px 3px #172534 ;
+  -moz-box-shadow: 0 1px 3px #172534 ;
+  box-shadow: 0 1px 3px #172534 ;
 }
 
 .nav-logo {
@@ -1494,7 +1543,7 @@ body {
 /*Navigation + logo + footer*/
 .menu {
   z-index: 2;
-  background-color: #3d4853;
+  background-color: #28394b;
   max-width: 250px;
   width: 100%;
   height: 100%;
@@ -1512,7 +1561,7 @@ body {
 .menu-button {
   display: inline-block;
   padding: .5em;
-  background-color: #536270;
+  background-color: #32465b;
   /*
 	&:hover{
 		background-color: $menu;
@@ -1645,7 +1694,7 @@ body {
 }
 
 .main-nav a:hover {
-  color: #ffbf5e;
+  color: #ffb33f;
   transition: color 0.2s;
 }
 
@@ -1657,7 +1706,7 @@ body {
   display: none;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #232930;
+  background-color: #1a2531;
 }
 
 .main-nav-ul li {
@@ -1686,7 +1735,7 @@ body {
 }
 
 .sub-arrow:hover {
-  color: #ffbf5e;
+  color: #ffb33f;
 }
 
 /*Footer*/
@@ -1744,7 +1793,7 @@ main {
 }
 
 .bot-nav {
-  background-color: #3d4853;
+  background-color: #29394a;
   height: auto;
 }
 
@@ -1754,7 +1803,6 @@ main {
   height: 100vh;
   width: 0vw;
   display: none;
-  border: 2px solid green;
   position: relative;
   padding-top: 64px;
   flex-flow: column wrap;
@@ -1776,7 +1824,7 @@ main {
 }
 
 .bot-nav-ul li a:hover {
-  color: #ffbf5e;
+  color: #ffb33f;
 }
 
 #soc3 {
@@ -1811,6 +1859,7 @@ main {
     padding: 0;
   }
   .menu {
+    background-color: #29394a;
     position: fixed;
     top: 59px;
     display: none;
@@ -1880,5 +1929,38 @@ main {
 @media only screen and (min-width: 901px) {
   .menu {
     display: block !important;
+  }
+}
+
+/*Desktop media queries*/
+@media only screen and (max-height: 900px) and (min-width: 901px) {
+  #brand {
+    justify-content: flex-start;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    transition: margin .2s;
+  }
+  #logo img {
+    width: 100px;
+    height: 100px;
+    transition: width .2s;
+    transition: height .2s;
+  }
+  .main-nav-ul li {
+    height: 50px;
+    transition: height .2s;
+  }
+}
+
+@media only screen and (max-height: 840px) and (min-width: 901px) {
+  #brand {
+    justify-content: flex-start;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    transition: margin .2s;
+  }
+  .main-nav-ul li {
+    height: 40px;
+    transition: height .2s;
   }
 }

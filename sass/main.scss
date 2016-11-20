@@ -14,6 +14,13 @@
 @import "reel";
 @import "digital";
 @import "about";
+
+@mixin box-shadow2($top, $left, $blur, $color, $inset:"") {
+
+      -webkit-box-shadow:$top $left $blur $color #{$inset};
+      -moz-box-shadow:$top $left $blur $color #{$inset};
+      box-shadow:$top $left $blur $color #{$inset};
+}
 * {
 	//border: 1px solid red !important;
 	-webkit-box-sizing: border-box;
@@ -57,9 +64,9 @@ body{
 	display: flex;
 	justify-content: center;
 	flex-flow: row nowrap;
-	height: $page-height;
-	max-height: $page-height;
-	min-height: 750px;
+	height: 80vh;
+	max-height: 80vh;
+	min-height: $page-height;
 	max-width: $page-width;
 	width: 100%;
 }
@@ -69,11 +76,11 @@ body{
 	display: none;
 	height: $nav-height;
 	width: 100%;
-	background-color: lighten($menu, 10%);
+	background-color: $menu-nav;
 	position: fixed;
 	z-index: 4;
-	@include single-box-shadow(10px 10px 5px 2px black);
-	//box-shadow: 10px 10px 5px black;
+	@include box-shadow2(0, 1px, 3px, darken(#203449, 6%))
+	//box-shadow: 0px 2px 3px darken(#203449, 15%);
 }
 
 .nav-logo{
@@ -110,7 +117,7 @@ body{
 	display: inline-block;
 	padding: .5em;
 	//background-color: darken($menu, 2%);
-	background-color: lighten($menu, 10%);
+	background-color: $menu-nav;
 
 	/*
 	&:hover{
@@ -305,7 +312,7 @@ main{
 }
 
 .bot-nav{
-	background-color: $menu;
+	background-color: $menu-mob;
 	height: auto;
 
 }
@@ -316,7 +323,7 @@ main{
 	width: 0vw;
 
 	display: none;
-	border: 2px solid green;
+	//border: 2px solid green;
 	position: relative;
 	padding-top: $nav-height+5;
 	flex-flow: column wrap;
@@ -373,6 +380,7 @@ main{
 		padding: 0;
 	}
 	.menu{
+		background-color: $menu-mob;
 		position: fixed;
 		top: $nav-height;
 		display: none;
@@ -455,5 +463,55 @@ main{
 @media only screen and (min-width: $cut-off+1) {
 	.menu{
 		display:block!important;
+	}
+}
+
+
+/*Desktop media queries*/
+@media only screen and (max-height: 900px) and (min-width: $cut-off+1){
+	#brand{
+		justify-content: flex-start;
+		margin-top: 35px;
+		margin-bottom: 40px;
+		transition: margin .2s;
+	}
+	#logo{
+		img{
+			width: $logo-size;
+			height: $logo-size;
+			transition: width .2s;
+			transition: height .2s;
+		}
+	}
+	.main-nav-ul {
+
+		li {
+			//border: 1px solid green;
+			height: 50px;
+			transition: height .2s;
+			a{
+				//border: 1px solid orange;
+			}
+		}
+	}
+}
+
+@media only screen and (max-height: 840px) and (min-width: $cut-off+1){
+	#brand{
+		justify-content: flex-start;
+		margin-top: 35px;
+		margin-bottom: 30px;
+		transition: margin .2s;
+	}
+	.main-nav-ul {
+
+		li {
+			//border: 1px solid green;
+			height: 40px;
+			transition: height .2s;
+			a{
+				//border: 1px solid orange;
+			}
+		}
 	}
 }
