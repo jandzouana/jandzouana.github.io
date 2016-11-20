@@ -1377,6 +1377,9 @@ h3 {
   .link-box {
     height: 10%;
   }
+  .link-box a {
+    font-size: 3vh;
+  }
   .about-container {
     border-top: 0px solid red;
     height: 90%;
@@ -1424,6 +1427,21 @@ h3 {
 
 @media only screen and (max-width: 600px) {
   .text2 h2, .text h2 {
+    font-size: 3.5vh;
+  }
+  .text2 h3, .text h3 {
+    font-size: 2vh;
+  }
+  .link-box {
+    height: 10%;
+  }
+  .link-box a {
+    font-size: 2vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .text2 h2, .text h2 {
     font-size: 3vh;
   }
   .text2 h3, .text h3 {
@@ -1437,7 +1455,10 @@ h3 {
     height: 240vh;
   }
   .link-box {
-    height: 20vh;
+    height: 10%;
+  }
+  .link-box a {
+    font-size: 6vh;
   }
   .text2, .text {
     height: auto;
@@ -1446,7 +1467,7 @@ h3 {
     font-size: 8vh;
   }
   .text2 h3, .text h3 {
-    font-size: 4.5vh;
+    font-size: 4vh;
   }
   .box1 {
     height: 90vh;
@@ -1460,6 +1481,36 @@ h3 {
   }
   .prof {
     height: 90vh;
+  }
+  .small h2 {
+    font-size: 6.5vh !important;
+  }
+  .small h3 {
+    font-size: 3.5vh !important;
+  }
+}
+
+@media only screen and (max-width: 700px) and (orientation: landscape) and (max-height: 600px) {
+  .link-box {
+    height: 10%;
+  }
+  .link-box a {
+    font-size: 5vh;
+  }
+  .text2, .text {
+    height: auto;
+  }
+  .text2 h2, .text h2 {
+    font-size: 6vh;
+  }
+  .text2 h3, .text h3 {
+    font-size: 3vh;
+  }
+  .small h2 {
+    font-size: 4.5vh !important;
+  }
+  .small h3 {
+    font-size: 3vh !important;
   }
 }
 
@@ -1477,7 +1528,7 @@ $('.text h3').css("font-size","5vh");
 }
 
 body {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 /*Additional classes*/
@@ -1504,15 +1555,15 @@ body {
 /*container for navigation and main content*/
 .container {
   margin: auto;
-  margin-top: 40px;
+  margin-top: 0px;
   margin-bottom: 40px;
   padding-right: 20px;
   padding-left: 20px;
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
-  height: 80vh;
-  max-height: 80vh;
+  height: 90vh;
+  max-height: 90vh;
   min-height: 600px;
   max-width: 1500px;
   width: 100%;

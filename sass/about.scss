@@ -134,6 +134,9 @@
 
 	.link-box{
 		height: 10%;
+		a{
+			font-size: 3vh;
+		}
 	}
 	.about-container{
 		border-top: 0px solid red;
@@ -193,6 +196,25 @@
 @media only screen and (max-width:600px){
 	.text2, .text{
 		h2{
+			font-size: 3.5vh;
+		}
+		h3{
+			font-size: 2vh;
+		}
+
+	}
+
+	.link-box{
+		height: 10%;
+		a{
+			font-size: 2vh;
+		}
+	}
+}
+
+@media only screen and (max-width:400px){
+	.text2, .text{
+		h2{
 			font-size: 3vh;
 		}
 		h3{
@@ -201,6 +223,7 @@
 
 	}
 }
+
 @media only screen and (max-width:$cut-off) and (orientation:landscape) and (max-height: $max-land-height){
 	#main-about{
 		//border: 1px solid green;
@@ -208,7 +231,10 @@
 		height: 240vh;
 	}
 	.link-box{
-		height: 20vh;
+		height: 10%;
+		a{
+			font-size: 6vh;
+		}
 	}
 	.text2, .text{
 		//border: 1px solid blue;
@@ -218,7 +244,7 @@
 			font-size: 8vh;
 		}
 		h3{
-			font-size: 4.5vh;
+			font-size: 4vh;
 		}
 
 
@@ -238,15 +264,43 @@
 	}
 	.small{
 		h2{
-			//font-size: 7vh!important;
+			font-size: 6.5vh!important;
 		}
 		h3{
-			//font-size: 5vh!important;
+			font-size: 3.5vh!important;
 		}
 
 	}
 }
 
+@media only screen and (max-width:700px) and (orientation:landscape) and (max-height: $max-land-height){
+	.link-box{
+		height: 10%;
+		a{
+			font-size: 5vh;
+		}
+	}
+	.text2, .text{
+		//border: 1px solid blue;
+		height: auto;
+
+		h2{
+			font-size: 6vh;
+		}
+		h3{
+			font-size: 3vh;
+		}
+	}
+	.small{
+		h2{
+			font-size: 4.5vh!important;
+		}
+		h3{
+			font-size: 3vh!important;
+		}
+
+	}
+}
 /*
 $('.text2 h2').css("font-size","7vh");
 $('.text2 h3').css("font-size","5vh");
