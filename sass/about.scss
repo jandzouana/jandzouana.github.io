@@ -165,6 +165,7 @@
 		}
 	}
 	.box2{
+		padding-top: 20px;
 		height: auto;
 		//border: 1px solid red;
 		justify-content: flex-start;
@@ -177,17 +178,18 @@
 		//margin-bottom: 30px;
 	}
 	.text{
-		padding: 0px 40px 20px 40px;
 		width: 100%;
 	}
 	.text2, .text{
+		padding: 0px 10px 20px 10px;
+
 		//border: 1px solid blue;
 		height: auto;
 		h2{
-			font-size: 4vh;
+			font-size: 5vh;
 		}
 		h3{
-			font-size: 2.5vh;
+			font-size: 3.5vh;
 		}
 
 	}
@@ -196,10 +198,10 @@
 @media only screen and (max-width:600px){
 	.text2, .text{
 		h2{
-			font-size: 3.5vh;
+			font-size: 4.5vh;
 		}
 		h3{
-			font-size: 2vh;
+			font-size: 2.5vh;
 		}
 
 	}
@@ -215,10 +217,10 @@
 @media only screen and (max-width:400px){
 	.text2, .text{
 		h2{
-			font-size: 3vh;
+			font-size: 3.5vh;
 		}
 		h3{
-			font-size: 1.5vh;
+			font-size: 2vh;
 		}
 
 	}
@@ -288,7 +290,7 @@
 			font-size: 6vh;
 		}
 		h3{
-			font-size: 3vh;
+			font-size: 4.5vh;
 		}
 	}
 	.small{
@@ -296,7 +298,7 @@
 			font-size: 4.5vh!important;
 		}
 		h3{
-			font-size: 3vh!important;
+			font-size: 4vh!important;
 		}
 
 	}

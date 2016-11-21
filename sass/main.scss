@@ -68,6 +68,7 @@ body{
 	max-height: 90vh;
 	min-height: $page-height;
 	max-width: $page-width;
+	max-height: 1100px;
 	width: 100%;
 }
 
@@ -428,6 +429,7 @@ main{
 			z-index: 2;
 		}
 		li {
+			height: 45px;
 			z-index: 2;
 		}
 	}
@@ -496,7 +498,7 @@ main{
 	}
 }
 
-@media only screen and (max-height: 840px) and (min-width: $cut-off+1){
+@media only screen and (max-height: 760px) and (min-width: $cut-off+1){
 	#brand{
 		justify-content: flex-start;
 		margin-top: 35px;

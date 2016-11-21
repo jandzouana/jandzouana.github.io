@@ -190,6 +190,7 @@ h3 {
     text-align: center;
   }
   .box2 {
+    padding-top: 20px;
     height: auto;
     justify-content: flex-start;
   }
@@ -198,26 +199,26 @@ h3 {
     width: 100%;
   }
   .text {
-    padding: 0px 40px 20px 40px;
     width: 100%;
   }
   .text2, .text {
+    padding: 0px 10px 20px 10px;
     height: auto;
   }
   .text2 h2, .text h2 {
-    font-size: 4vh;
+    font-size: 5vh;
   }
   .text2 h3, .text h3 {
-    font-size: 2.5vh;
+    font-size: 3.5vh;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .text2 h2, .text h2 {
-    font-size: 3.5vh;
+    font-size: 4.5vh;
   }
   .text2 h3, .text h3 {
-    font-size: 2vh;
+    font-size: 2.5vh;
   }
   .link-box {
     height: 10%;
@@ -229,10 +230,10 @@ h3 {
 
 @media only screen and (max-width: 400px) {
   .text2 h2, .text h2 {
-    font-size: 3vh;
+    font-size: 3.5vh;
   }
   .text2 h3, .text h3 {
-    font-size: 1.5vh;
+    font-size: 2vh;
   }
 }
 
@@ -291,13 +292,13 @@ h3 {
     font-size: 6vh;
   }
   .text2 h3, .text h3 {
-    font-size: 3vh;
+    font-size: 4.5vh;
   }
   .small h2 {
     font-size: 4.5vh !important;
   }
   .small h3 {
-    font-size: 3vh !important;
+    font-size: 4vh !important;
   }
 }
 
