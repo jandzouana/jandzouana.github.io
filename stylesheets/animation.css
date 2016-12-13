@@ -50,6 +50,7 @@ h3 {
 /*Menu*/
 /*Nav bar*/
 #main-anim {
+  border: 2px solid purple;
   height: 100%;
 }
 

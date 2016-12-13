@@ -82,6 +82,7 @@ h3 {
 }
 
 .about-container h2 {
+  border: 1px solid red;
   color: #35568b;
   padding-bottom: 10px;
   font-size: 25px;
@@ -90,13 +91,15 @@ h3 {
 
 .about-container h3 {
   line-height: 1.25;
+  border: 1px solid blue;
   text-align: center;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .box1 {
   height: 40%;
+  border: 2px solid green;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -112,8 +115,12 @@ h3 {
 
 .box2 {
   height: 60%;
+  width: 90%;
+  margin: auto;
+  border: 2px solid green;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .box2 h2 {
@@ -122,14 +129,12 @@ h3 {
 
 .box2 h3 {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .text2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px 40px 20px 40px;
 }
 
 .text {
@@ -148,16 +153,20 @@ h3 {
 }
 
 @media only screen and (max-width: 1200px) {
+  .about-container .box2 {
+    width: 95%;
+  }
   .about-container h2 {
     font-size: 20px;
   }
   .about-container h3 {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
 @media only screen and (max-width: 900px) {
   #main-about {
+    border: 1px solid green;
     justify-content: flex-start;
     height: 180vh;
   }
@@ -168,7 +177,6 @@ h3 {
     font-size: 3vh;
   }
   .about-container {
-    border-top: 0px solid red;
     height: 90%;
     margin: 0px;
   }
@@ -192,6 +200,7 @@ h3 {
   .box2 {
     padding-top: 20px;
     height: auto;
+    width: 100%;
     justify-content: flex-start;
   }
   .prof {
@@ -209,7 +218,7 @@ h3 {
     font-size: 5vh;
   }
   .text2 h3, .text h3 {
-    font-size: 3.5vh;
+    font-size: 3vh;
   }
 }
 
