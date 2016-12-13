@@ -74,15 +74,18 @@
 }
 .box2{
 	height: 60%;
+	width: 80%;
+	margin: auto;
 	//border: 2px solid green;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
+
 	h2{
 		text-align: center;
 	}
 	h3{
 		text-align: center;
-		margin-bottom: 20px;
 	}
 }
 
@@ -90,7 +93,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 30px 40px 20px 40px;
 
 }
 .text{
@@ -139,7 +141,7 @@
 		}
 	}
 	.about-container{
-		border-top: 0px solid red;
+		//border-top: 0px solid red;
 		//border: 3px solid orange;
 		height: 90%;
 		margin: 0px;
@@ -167,6 +169,8 @@
 	.box2{
 		padding-top: 20px;
 		height: auto;
+		width: 100%;
+
 		//border: 1px solid red;
 		justify-content: flex-start;
 	}
@@ -189,7 +193,7 @@
 			font-size: 5vh;
 		}
 		h3{
-			font-size: 3.5vh;
+			font-size: 3vh;
 		}
 
 	}
