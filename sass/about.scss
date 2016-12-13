@@ -42,7 +42,7 @@
 	height: 90%;
 
 	h2{
-		border: 1px solid red;
+		//border: 1px solid red;
 		color: $about-header;
 		padding-bottom: 10px;
 		font-size:25px;
@@ -50,7 +50,7 @@
 	}
 	h3{
 		line-height:1.25;
-		border: 1px solid blue;
+		//border: 1px solid blue;
 		text-align: center;
 		letter-spacing: 1px;
 		font-size: 15px;
@@ -61,7 +61,7 @@
 
 .box1{
 	height: 40%;
-	border: 2px solid green;
+	//border: 2px solid green;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -76,7 +76,7 @@
 	height: 60%;
 	width: 90%;
 	margin: auto;
-  border: 2px solid green;
+  //border: 2px solid green;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -131,7 +131,7 @@
 @media only screen and (max-width:$cut-off){
 
 	#main-about{
-		border: 1px solid green;
+		//border: 1px solid green;
 		justify-content: flex-start;
 		height: 180vh;
 	}

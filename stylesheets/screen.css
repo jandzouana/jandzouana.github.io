@@ -490,6 +490,12 @@ h3 {
 }
 
 .grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
+  height: 100vh;
+  min-height: 700px;
   padding-top: 70px;
   padding-bottom: 40px;
   padding-right: 25px;
@@ -497,10 +503,11 @@ h3 {
 }
 
 header {
+  border: 1px solid green;
   display: flex;
   flex-flow: row wrap;
   position: relative;
-  height: 120px;
+  height: 20%;
   align-items: center;
 }
 
@@ -577,6 +584,7 @@ soc 2 == social media icons in footer*/
 
 /*social media icons*/
 .iconcon {
+  border: 1px solid yellow;
   padding: 3px;
   width: 45px;
   height: 45px;
@@ -595,9 +603,11 @@ soc 2 == social media icons in footer*/
 }
 
 /*Main: Navigation links, portfolio button and footer social media box*/
-main {
+.index-main {
+  border: 3px solid blue;
   display: flex;
   flex-direction: column;
+  height: 80%;
 }
 
 /*Picture that shows up in mobile version instead of navigation links*/
@@ -611,11 +621,12 @@ main {
 }
 
 .nav {
-  margin-top: 160px;
+  margin-top: 100px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
+  border: 1px solid purple;
 }
 
 .art_nav {
@@ -666,6 +677,7 @@ main {
   padding-top: 70px;
   height: auto;
   justify-content: center;
+  border: 1px solid orange;
 }
 
 #box a {
@@ -681,7 +693,7 @@ main {
 }
 
 /*Mobile devices*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   .social-media {
     clear: both;
   }
@@ -715,35 +727,35 @@ main {
 }
 
 /*Tablets (Square boxes)*/
-@media only screen and (max-width: 800px) {
-  .grid {
-    padding-top: 10px;
-    padding-bottom: 40px;
-    padding-right: 15px;
-    padding-left: 15px;
+@media only screen and (max-width: 900px) {
+  .index-main {
+    height: 70%;
+    align-items: center;
   }
-  .art_nav h2, .art_nav h3 {
-    opacity: .75;
-    font-size: 35px;
-    left: 0;
-    top: 0;
-    transform: translate(5%, 10%);
-    color: white;
-    text-align: left;
+  .grid {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  #box {
+    padding-top: 30px;
+    height: 20%;
   }
   .nav {
     flex-flow: row wrap;
-    align-content: space-around;
-    margin-top: 30px;
-    height: 600px;
+    margin-top: 0px;
+    height: 80%;
+    width: 56vh;
+    background-color: yellow;
   }
-  .imgcontainer {
-    width: 260px;
-    height: auto;
+  .art_nav {
+    height: 50%;
+    border: 1px solid red;
   }
-  header {
+  .row {
     flex-flow: column nowrap;
-    height: 260px;
+    height: 30%;
     justify-content: space-around;
   }
   .social-media {
@@ -776,26 +788,10 @@ main {
     align-items: center;
     height: 240px;
   }
-  #box {
-    padding-top: 30px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .nav {
-    height: 470px;
-  }
-  .imgcontainer {
-    width: 200px;
-    height: auto;
-  }
-  .art_nav h2, .art_nav h3 {
-    font-size: 30px;
-  }
 }
 
 /*Desktop*/
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 901px) {
   .art_nav h2, .art_nav h3 {
     font-family: AracneLight;
     font-size: 40px;
