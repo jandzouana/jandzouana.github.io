@@ -13,7 +13,7 @@
 
 /*Basics*/
 * {
-  //border: 1px solid red !important;
+  ////border: 1px solid red !important;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -24,7 +24,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	border: 1px solid red;
+	//border: 3px solid red;
 	height: 100vh;
 	min-height: 700px;
 		padding:{
@@ -36,7 +36,7 @@
 	}
 
 header {
-	border: 1px solid green;
+	//border: 1px solid green;
 	display: flex;
 	flex-flow: row wrap;
 	position: relative;
@@ -57,13 +57,14 @@ header {
 		text-decoration: none;
 	}
 }
-#logo {
+#logo-org {
 	opacity: 1;
-	img{
-		height: $logo-size;
-		width: $logo-size;
-	}
-
+	background-image: url(../pictures/brand/logovec4.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100px;
+	width: 100px;
 }
 #logo-text{
 	//border-left: 1px solid #767875;
@@ -124,7 +125,7 @@ soc 2 == social media icons in footer*/
 
 /*social media icons*/
 .iconcon{
-	border: 1px solid yellow;
+	//border: 1px solid yellow;
 	padding: 3px;
 	width: $icon-size;
 	height: $icon-size;
@@ -145,7 +146,7 @@ soc 2 == social media icons in footer*/
 
 /*Main: Navigation links, portfolio button and footer social media box*/
 .index-main {
-	border: 3px solid blue;
+	//border: 3px solid blue;
 	display: flex;
 	flex-direction: column;
 	height: 80%;
@@ -164,7 +165,7 @@ soc 2 == social media icons in footer*/
 	flex-flow: row nowrap;
 	justify-content: space-around;
 	align-items: center;
-	border: 1px solid purple;
+	//border: 1px solid purple;
 }
 .art_nav {
 	display: flex;
@@ -211,7 +212,7 @@ soc 2 == social media icons in footer*/
 	padding-top: 70px;
 	height: auto;
 	justify-content: center;
-	border: 1px solid orange;
+	//border: 1px solid orange;
 	a{
 		text-decoration: none;
 		//size of button
@@ -231,7 +232,7 @@ soc 2 == social media icons in footer*/
 
 
 /*Mobile devices*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
 	.social-media {
 		clear: both;
 	}
@@ -245,7 +246,7 @@ soc 2 == social media icons in footer*/
 
 	#soc1{
 		display: none;
-		border: 1px solid orange;
+		//border: 1px solid orange;
 	}
 	#soc2 {
 		display: flex;
@@ -269,10 +270,13 @@ soc 2 == social media icons in footer*/
 /*Tablets (Square boxes)*/
 @media only screen and (max-width: $cut-off) {
 	.index-main{
-		height: 70%;
+		height: 80%;
 		align-items: center;
 	}
 	.grid {
+		height: 100vh;
+		//min-height: 400px;
+		min-height: 0;
 		padding:{
 			top: 0px;
 			bottom:0px;
@@ -282,28 +286,33 @@ soc 2 == social media icons in footer*/
 	}
 	#box{
 		padding-top: 30px;
-		height: 20%;
-
+		height: 20vh;
+		width: 100%;
 	}
 	.nav {
 		flex-flow: row wrap;
 		margin-top: 0px;
-		height: 80%;
-		width: 56vh;
-		background-color: yellow;
+		height: 60vh;
+		width: 60vh;
+		//background-color: yellow;
 	}
 	.art_nav{
 		height: 50%;
-		border: 1px solid red;
-
+		width: 50%;
+		//border: 1px solid red;
 	}
 	.imgcontainer{
+		padding: 10px;
+		height: 100%;
+		width: auto;
 	}
 
 	.row {
+		position: static;
 		flex-flow: column nowrap;
-		height: 30%;
+		height: 20%;
 		justify-content: space-around;
+		//background-color: orange;
 	//	align-items: center;
 	}
 	.social-media {
@@ -312,37 +321,48 @@ soc 2 == social media icons in footer*/
 		height: $sm-m-height;
 		clear: both;
 	}
-	#logo{
-
-		img{
-			width: 1.25*$logo-size;
-			height: 1.25*$logo-size;
-		}
-		h1{
-			font-size: 1.25*$logo-f-size;
-		}
-	}
-	#logo-text{
-		text-align: center;
-		border-left: hidden;
-		//border-top: 2px solid #767875;
-		//margin-top: 15px;
-		padding-left: 0;
-		margin-left: 0;
-		height: $brand-m-height;
-		position: static;
-		h3{
-			text-align: center;
-		}
-
-	}
 	#brand {
 		flex-direction: column;
 		//border: 1px solid red;
-		justify-content: space-around;
+		justify-content: center;
 		align-items: center;
-		height: $brand-m-height+$logo-size;
+		height: 100%;
+		//background-color: blue;
 	}
+	#logo-cont{
+		height: 50%;
+		width: 100%;
+		//background-color: orange;
+	}
+	#logo-org{
+		position: static;
+		//background-color: yellow;
+		height: 100%;
+		width: 100%;
+	}
+	#logo-text{
+		height: 50%;
+		//background-color: green;
+		text-align: center;
+		//border-left: hidden;
+		justify-content: center;
+		padding-left: 0;
+		margin-left: 0;
+		position: static;
+		h2 {
+			padding-top: 0px;
+			margin-bottom: 0.5vh;
+			font-size: 4vh;
+		}
+		h3{
+			text-align: center;
+			padding-bottom: 0px;
+			margin-left: 0px;
+			font-size: 2vh;
+		}
+
+	}
+
 
 
 }
