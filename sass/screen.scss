@@ -234,7 +234,7 @@ soc 2 == social media icons in footer*/
 /*Mobile devices*/
 @media only screen and (max-width: 600px) {
 	.grid{
-		margin-bottom: 20px;
+		margin-bottom: 5%;
 	}
 	.row{
 		height: 30%;
@@ -247,10 +247,9 @@ soc 2 == social media icons in footer*/
 		display: none;
 	}
 	.index-main{
-		height: 50%;
+		height: 45vh;
 	}
 	#profile{
-		//border: 1px solid blue;
 		display: block;
 		height: 100%;
 		width: 100%;
