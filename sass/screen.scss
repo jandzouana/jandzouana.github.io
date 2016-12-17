@@ -95,7 +95,6 @@ header {
 
 /*social media*/
 .social-media{
-	//border: 1px solid red;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
@@ -134,15 +133,26 @@ soc 2 == social media icons in footer*/
 		opacity: 1.0;
 		transition: opacity .35s;
 	}
-}
-.icon {
-	height: 100%;
-	width: 100%;
-	padding: auto;
 
-	//border: 1px solid orange;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
+
+#yt{
+	background-image: url(../icons/yt.svg);
+}
+
+#ig{
+	background-image: url(../icons/ig.svg);
+}
+#tw{
+	background-image: url(../icons/twitter.svg);
+}
+#wp{
+	background-image: url(../icons/wp.svg);
+}
 /*Main: Navigation links, portfolio button and footer social media box*/
 .index-main {
 	//border: 3px solid blue;
