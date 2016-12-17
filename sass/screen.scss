@@ -153,7 +153,7 @@ soc 2 == social media icons in footer*/
 /*Picture that shows up in mobile version instead of navigation links*/
 #profile{
 	display: none;
-	background-color: orange;
+	//background-color: orange;
 	background-image: url(../pictures/profilemed.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -212,7 +212,7 @@ soc 2 == social media icons in footer*/
 	padding-top: 70px;
 	height: auto;
 	justify-content: center;
-	background-color: green;
+	background-color: blue;
 	a{
 		text-decoration: none;
 		//size of button
@@ -231,55 +231,7 @@ soc 2 == social media icons in footer*/
 
 
 
-/*Mobile devices*/
-@media only screen and (max-width: 600px) {
-	.grid{
-		margin-bottom: 5%;
-	}
-	.row{
-		height: 30%;
-	}
-	.social-media {
-		clear: both;
-	}
-	//center social media links center
-	.nav {
-		display: none;
-	}
-	.index-main{
-		height: 45vh;
-	}
-	#profile{
-		display: block;
-		height: 100%;
-		width: 100%;
-	}
 
-	#soc1{
-		display: none;
-		//border: 1px solid orange;
-	}
-	#soc2 {
-	//	background-color: orange;
-		display: flex;
-		align-items: flex-start;
-		margin: auto;
-		width: 80%;
-		height: 10%;
-		margin-top: 0px;
-	}
-	#box{
-		//background-color: yellow;
-		width: 100% !important;
-		height: 10%;
-	}
-
-	.iconcon {
-		width: 6vh;
-		height: 6vh;
-	}
-
-}
 /*Slight adjustment to desktop version*/
 @media only screen and (max-width: 900px){
 	.imgcontainer{
@@ -356,9 +308,9 @@ soc 2 == social media icons in footer*/
 	}
 	.social-media {
 		position: static;
-		width: 250px;
-		height: $sm-m-height;
-		clear: both;
+		//width: 250px;
+		//height: $sm-m-height;
+		//clear: both;
 	}
 	#brand {
 		flex-direction: column;
@@ -415,7 +367,68 @@ soc 2 == social media icons in footer*/
 	}
 }
 
+/*Mobile devices*/
+@media only screen and (max-width: 600px) {
+	.grid{
+		padding-bottom: 35px;
+	}
 
+	.social-media {
+		//clear: both;
+	}
+	//center social media links center
+	.nav {
+		display: none;
+	}
+	.index-main{
+		background-color: orange;
+		height: 65%;
+	}
+	.row{
+		height: 35%;
+		background-color: green;
+	}
+	#brand{
+		height: 60%;
+	}
+	#profile{
+		display: block;
+		//display: none;
+		height: 80%;
+		width: 100%;
+	}
+
+	#soc1{
+		display: flex;
+		height: 40%;
+		//border: 1px solid orange;
+	}
+	#soc2 {
+	//	background-color: orange;
+		display: none;
+		align-items: flex-start;
+		margin: auto;
+		width: 80%;
+		height: 10%;
+		margin-top: 0px;
+	}
+	#box{
+		//background-color: yellow;
+		width: 100% !important;
+		height: 20%;
+		.btn{
+			//display: none;
+		}
+	}
+
+
+
+	.iconcon {
+		width: 6vh;
+		height: 6vh;
+	}
+
+}
 
 /*Desktop*/
 @media only screen and (min-width: $cut-off+1){
