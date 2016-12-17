@@ -174,7 +174,7 @@ soc 2 == social media icons in footer*/
 	/*Text for art navigation*/
 	h2, h3 {
 		font-family: AracneRegular;
-		font-size: 50px;
+		font-size: 40px;
 		text-decoration: none;
 		position: absolute;
 		left: 50%;
@@ -212,7 +212,7 @@ soc 2 == social media icons in footer*/
 	padding-top: 70px;
 	height: auto;
 	justify-content: center;
-	//border: 1px solid orange;
+	//background-color: orange;
 	a{
 		text-decoration: none;
 		//size of button
@@ -254,6 +254,9 @@ soc 2 == social media icons in footer*/
 		width: 80%;
 		margin-top: 20px;
 	}
+	#box{
+		width: 100% !important;
+	}
 }
 /*Slight adjustment to desktop version*/
 @media only screen and (max-width: 900px){
@@ -278,8 +281,8 @@ soc 2 == social media icons in footer*/
 		//min-height: 400px;
 		min-height: 0;
 		padding:{
-			top: 0px;
-			bottom:0px;
+			top: 10px;
+			bottom:10px;
 			right: 0px;
 			left: 0px;
 		}
@@ -287,7 +290,10 @@ soc 2 == social media icons in footer*/
 	#box{
 		padding-top: 30px;
 		height: 20vh;
-		width: 100%;
+		width: 60%;
+		.btn{
+			font-size: 4vh;
+		}
 	}
 	.nav {
 		flex-flow: row wrap;
@@ -299,6 +305,17 @@ soc 2 == social media icons in footer*/
 	.art_nav{
 		height: 50%;
 		width: 50%;
+		h2, h3{
+			font-size: 2.5vh;
+			text-align: left;
+			opacity: 0.6;
+			background-color: black;
+			top: auto;
+			left: 10%;
+			bottom: 5%;
+			transform: translate(0%, 0%);
+
+		}
 		//border: 1px solid red;
 	}
 	.imgcontainer{
@@ -362,10 +379,20 @@ soc 2 == social media icons in footer*/
 		}
 
 	}
-
-
-
 }
+
+@media only screen and (max-width: $cut-off) and (orientation:landscape) {
+	.grid{
+		min-height: 400px;
+	}
+	#box{
+		width: 35%;
+		.btn{
+			//font-size: 10px;
+		}
+	}
+}
+
 
 
 /*Desktop*/

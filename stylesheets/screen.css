@@ -634,7 +634,7 @@ soc 2 == social media icons in footer*/
 
 .art_nav h2, .art_nav h3 {
   font-family: AracneRegular;
-  font-size: 50px;
+  font-size: 40px;
   text-decoration: none;
   position: absolute;
   left: 50%;
@@ -707,6 +707,9 @@ soc 2 == social media icons in footer*/
     width: 80%;
     margin-top: 20px;
   }
+  #box {
+    width: 100% !important;
+  }
 }
 
 /*Slight adjustment to desktop version*/
@@ -729,15 +732,18 @@ soc 2 == social media icons in footer*/
   .grid {
     height: 100vh;
     min-height: 0;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-right: 0px;
     padding-left: 0px;
   }
   #box {
     padding-top: 30px;
     height: 20vh;
-    width: 100%;
+    width: 60%;
+  }
+  #box .btn {
+    font-size: 4vh;
   }
   .nav {
     flex-flow: row wrap;
@@ -748,6 +754,16 @@ soc 2 == social media icons in footer*/
   .art_nav {
     height: 50%;
     width: 50%;
+  }
+  .art_nav h2, .art_nav h3 {
+    font-size: 2.5vh;
+    text-align: left;
+    opacity: 0.6;
+    background-color: black;
+    top: auto;
+    left: 10%;
+    bottom: 5%;
+    transform: translate(0%, 0%);
   }
   .imgcontainer {
     padding: 10px;
@@ -799,6 +815,15 @@ soc 2 == social media icons in footer*/
     padding-bottom: 0px;
     margin-left: 0px;
     font-size: 2vh;
+  }
+}
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+  .grid {
+    min-height: 400px;
+  }
+  #box {
+    width: 35%;
   }
 }
 
