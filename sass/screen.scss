@@ -24,7 +24,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	border: 3px solid red;
+	//border: 3px solid red;
 	height: 100vh;
 	min-height: 700px;
 		padding:{
@@ -52,7 +52,7 @@ header {
 	justify-content: flex-start;
 	flex-flow: row nowrap;
 	align-items: flex-start;
-	border: 1px solid orange;
+	//border: 1px solid orange;
 	a{
 		text-decoration: none;
 	}
@@ -99,8 +99,8 @@ header {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
-	//align-items: center;
-	width: 270px;
+	align-items: center;
+	//width: 270px;
 	height: 100%;
 	//position: absolute;
 	//right: 0;
@@ -112,7 +112,6 @@ header {
 /*soc 1 == social media icons in header
 soc 2 == social media icons in footer*/
 #soc2 {
-	background-color: pink;
 	display: none;
 	align-self: center;
 	margin:{
@@ -121,6 +120,7 @@ soc 2 == social media icons in footer*/
 }
 
 #soc1{
+	//background-color: pink;
 	display: none;
 }
 
@@ -155,7 +155,7 @@ soc 2 == social media icons in footer*/
 	display: none;
 	//background-color: orange;
 	background-image: url(../pictures/profilemed.jpg);
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
@@ -212,7 +212,7 @@ soc 2 == social media icons in footer*/
 	padding-top: 70px;
 	height: auto;
 	justify-content: center;
-	background-color: blue;
+	//background-color: blue;
 	a{
 		text-decoration: none;
 		//size of button
@@ -361,9 +361,8 @@ soc 2 == social media icons in footer*/
 	}
 	#box{
 		width: 35%;
-		.btn{
-			//font-size: 10px;
-		}
+	}
+	.social-media{
 	}
 }
 
@@ -375,18 +374,19 @@ soc 2 == social media icons in footer*/
 
 	.social-media {
 		//clear: both;
+		width: 90%;
 	}
 	//center social media links center
 	.nav {
 		display: none;
 	}
 	.index-main{
-		background-color: orange;
+		//background-color: orange;
 		height: 65%;
 	}
 	.row{
 		height: 35%;
-		background-color: green;
+		//background-color: green;
 	}
 	#brand{
 		height: 60%;
@@ -416,9 +416,7 @@ soc 2 == social media icons in footer*/
 		//background-color: yellow;
 		width: 100% !important;
 		height: 20%;
-		.btn{
-			//display: none;
-		}
+
 	}
 
 
@@ -428,6 +426,18 @@ soc 2 == social media icons in footer*/
 		height: 6vh;
 	}
 
+}
+
+@media only screen and (max-width: 600px) and (orientation:landscape) {
+	.social-media{
+		width: 70%;
+	}
+	#box{
+		width: 60%;
+		.btn{
+			font-size: 3vh;
+		}
+	}
 }
 
 /*Desktop*/
