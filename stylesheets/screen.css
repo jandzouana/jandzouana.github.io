@@ -610,11 +610,10 @@ soc 2 == social media icons in footer*/
 /*Picture that shows up in mobile version instead of navigation links*/
 #profile {
   display: none;
-}
-
-#profile img {
-  width: 100%;
-  height: auto;
+  background-image: url(../pictures/profilemed.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .nav {
@@ -689,26 +688,44 @@ soc 2 == social media icons in footer*/
 
 /*Mobile devices*/
 @media only screen and (max-width: 600px) {
+  .grid {
+    padding-bottom: 20px;
+  }
+  .row {
+    height: 30%;
+  }
   .social-media {
     clear: both;
   }
   .nav {
     display: none;
   }
+  .index-main {
+    height: 50%;
+  }
   #profile {
     display: block;
+    height: 100%;
+    width: 100%;
   }
   #soc1 {
     display: none;
   }
   #soc2 {
     display: flex;
+    align-items: flex-start;
     margin: auto;
     width: 80%;
-    margin-top: 20px;
+    height: 10%;
+    margin-top: 0px;
   }
   #box {
     width: 100% !important;
+    height: 10%;
+  }
+  .iconcon {
+    width: 7vh;
+    height: 7vh;
   }
 }
 

@@ -125,11 +125,9 @@ soc 2 == social media icons in footer*/
 
 /*social media icons*/
 .iconcon{
-	//border: 1px solid yellow;
 	padding: 3px;
 	width: $icon-size;
 	height: $icon-size;
-	//margin-left: 25px;
 	opacity: 0.65;
 	&:hover{
 		opacity: 1.0;
@@ -154,10 +152,10 @@ soc 2 == social media icons in footer*/
 /*Picture that shows up in mobile version instead of navigation links*/
 #profile{
 	display: none;
-	img {
-		width: 100%;
-		height: auto;
-	}
+	background-image: url(../pictures/profilemed.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 .nav{
 	margin-top: 100px;
@@ -233,6 +231,12 @@ soc 2 == social media icons in footer*/
 
 /*Mobile devices*/
 @media only screen and (max-width: 600px) {
+	.grid{
+		padding-bottom: 20px;
+	}
+	.row{
+		height: 30%;
+	}
 	.social-media {
 		clear: both;
 	}
@@ -240,8 +244,14 @@ soc 2 == social media icons in footer*/
 	.nav {
 		display: none;
 	}
+	.index-main{
+		height: 50%;
+	}
 	#profile{
+		//border: 1px solid blue;
 		display: block;
+		height: 100%;
+		width: 100%;
 	}
 
 	#soc1{
@@ -249,14 +259,25 @@ soc 2 == social media icons in footer*/
 		//border: 1px solid orange;
 	}
 	#soc2 {
+	//	background-color: orange;
 		display: flex;
+		align-items: flex-start;
 		margin: auto;
 		width: 80%;
-		margin-top: 20px;
+		height: 10%;
+		margin-top: 0px;
 	}
 	#box{
+		//background-color: yellow;
 		width: 100% !important;
+		height: 10%;
 	}
+
+	.iconcon {
+		width: 7vh;
+		height: 7vh;
+	}
+
 }
 /*Slight adjustment to desktop version*/
 @media only screen and (max-width: 900px){
