@@ -361,7 +361,10 @@ h3 {
 
 @media screen and (max-width: 600px) {
   .btn:hover {
-    background-color: #16202a;
+    background-color: #222d38;
+  }
+  .btn--full {
+    max-width: 16em !important;
   }
 }
 

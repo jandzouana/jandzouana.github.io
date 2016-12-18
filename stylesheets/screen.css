@@ -354,7 +354,10 @@ h3 {
 
 @media screen and (max-width: 600px) {
   .btn:hover {
-    background-color: #16202a;
+    background-color: #222d38;
+  }
+  .btn--full {
+    max-width: 16em !important;
   }
 }
 
@@ -840,6 +843,7 @@ soc 2 == social media icons in footer*/
     width: 100%;
   }
   #soc1 {
+    max-width: 25em;
     display: flex;
     height: 40%;
   }
@@ -864,6 +868,7 @@ soc 2 == social media icons in footer*/
 @media only screen and (max-width: 600px) and (orientation: landscape) {
   .social-media {
     width: 70%;
+    max-width: 16em !important;
   }
   #box {
     width: 60%;

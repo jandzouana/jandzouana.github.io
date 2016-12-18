@@ -409,12 +409,14 @@ soc 2 == social media icons in footer*/
 	}
 
 	#soc1{
+		//background-color: orange;
+		max-width: 25em;
+
 		display: flex;
 		height: 40%;
 		//border: 1px solid orange;
 	}
 	#soc2 {
-	//	background-color: orange;
 		display: none;
 		align-items: flex-start;
 		margin: auto;
@@ -441,6 +443,7 @@ soc 2 == social media icons in footer*/
 @media only screen and (max-width: 600px) and (orientation:landscape) {
 	.social-media{
 		width: 70%;
+		max-width: 16em!important;
 	}
 	#box{
 		width: 60%;
