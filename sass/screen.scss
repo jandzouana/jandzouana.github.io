@@ -367,7 +367,7 @@ soc 2 == social media icons in footer*/
 
 @media only screen and (max-width: $cut-off) and (orientation:landscape) {
 	.grid{
-		min-height: 400px;
+		//min-height: 400px;
 	}
 	#box{
 		width: 35%;
