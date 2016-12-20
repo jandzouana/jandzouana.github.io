@@ -263,7 +263,7 @@ h3 {
     font-size: 4vh;
   }
   .box1 {
-    height: 90vh;
+    height: 80vh;
     flex-direction: row;
   }
   .box1 h2, .box1 h3 {
