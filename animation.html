@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Home </title>
+    <title>Animation </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="scripts/indexanim.js"></script>
-		<script src="http://cdn.wideskyhosting.com/js/jquery.cycle.js"></script>
 		<link rel="icon" href="pictures/brand/logovec4.png">
 
     <!--[if IE]>
@@ -38,13 +37,13 @@
 				</div>
 				<nav class="main-nav">
 					<ul class="main-nav-ul">
-						<li><a href="home.html">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li><a href="about.html">About me</a></li>
 						<li class="cont-subs"><a href="#">Art<span class="sub-arrow"></span></a></li>
 						<ul>
-							<li><a href="characters.html">Character Designs</a></li>
-							<li><a href="digital.html">Digital Art</a></li>
-							<li><a href="trad.html">Traditional Art</a></li>
+							<li><a href="art/characters.html">Character Designs</a></li>
+							<li><a href="art/digital.html">Digital Art</a></li>
+							<li><a href="art/trad.html">Traditional Art</a></li>
 						</ul>
 						<li><a href="anim.html">Animation</a></li>
 						<li><a href="https://vimeo.com/123391160" target="_blank">Animation Reel</a></li>
@@ -70,11 +69,11 @@
 			</div>
 			<nav class="bot-nav">
 				<ul class="bot-nav-ul">
-					<li><a href="home.html">Home</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About me</a></li>
-					<li><a href="characters.html">Character Designs</a></li>
-					<li><a href="digital.html">Digital Art</a></li>
-					<li><a href="trad.html">Traditional Art</a></li>
+					<li><a href="art/characters.html">Character Designs</a></li>
+					<li><a href="art/digital.html">Digital Art</a></li>
+					<li><a href="art/trad.html">Traditional Art</a></li>
 					<li><a href="anim.html">Animation</a></li>
 					<li><a href="https://vimeo.com/123391160" target="_blank">Animation Reel</a></li>
 					<li>
@@ -96,27 +95,35 @@
 					</li>
 				</ul>
 			</nav>
-			<main id = "main-char">
-				<div id = "left_arrow">
-					<img src="pictures/brand/arrow.svg" alt="arrow">
+			<main id = "main-anim">
+				<div class="gallery">
+					<div class="videos">
+						<iframe class="vid active-vid" src="https://www.youtube.com/embed/4El3XyjnP_M">
+						</iframe>
+						<iframe class="vid" src="https://www.youtube.com/embed/ZUG_S44IPBQ">
+						</iframe>
+						<iframe class="vid" src="https://www.youtube.com/embed/FOEfyjcLTHs">
+						</iframe>
+					</div>
+					<div class="anim-title"><p>Animations</div>
+					<ul class="vid-list">
+						<li class="active-li">
+							<div class="thumb overlay"></div>
+							<div id="ii1" class="thumb"></div>
+							<p>A Monster Tale<p>
+						</li>
+						<li>
+							<div class="thumb overlay"></div>
+							<div id="ii2" class="thumb"></div>
+							<p>A Call to Wiflred</p>
+						</li>
+						<li>
+							<div class="thumb overlay"></div>
+							<div id="ii3" class="thumb"></div>
+							<p>Bo the Creature</p>
+						</li>
+					</ul>
 				</div>
-				<div id = "right_arrow">
-					<img src="pictures/brand/arrow2.svg" alt="arrow">
-				</div>
-				<div class = "slideshow">
-					<div class = "slide active" id="i1"></div>
-					<div class = "slide" id="i2"></div>
-					<div class = "slide" id="i3"></div>
-					<div class = "slide" id="i4"></div>
-					<div class = "slide" id="i5"></div>
-					<div class = "slide" id="i6"></div>
-					<div class = "slide" id="i7"></div>
-					<div class = "slide" id="i8"></div>
-					<div class = "slide" id="i9"></div>
-					<div class = "slide" id="i10"></div>
-					<div class = "slide" id="i11"></div>
-				</div>
-				<div class = "dots"><ul></ul></div>
 			</main>
 		</div>
 	</body>
