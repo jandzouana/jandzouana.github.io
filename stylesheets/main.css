@@ -820,7 +820,6 @@ h3 {
 /*Menu*/
 /*Nav bar*/
 #main-anim {
-  border: 2px solid purple;
   height: 100%;
 }
 
@@ -856,6 +855,7 @@ h3 {
 .gallery .anim-title {
   height: 4%;
   margin-left: 30px;
+  margin-bottom: 5px;
 }
 
 .gallery .anim-title p {
@@ -949,6 +949,7 @@ h3 {
     width: 100%;
   }
   .gallery .videos {
+    border-top: 0px solid #d3d3d3;
     height: 58vh;
     padding: 0px;
     margin-right: 10px;
