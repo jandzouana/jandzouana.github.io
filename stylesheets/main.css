@@ -1280,30 +1280,15 @@ h3 {
   padding: 20px;
 }
 
-.link-box {
-  height: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: flex-start;
-}
-
-.link-box a {
-  font-family: AracneRegular;
-  font-size: 18px;
-  color: #35568b;
-  text-decoration: none;
-  cursor: pointer;
-  text-align: center;
-  padding-top: 10px;
-}
-
 .about-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: auto;
-  height: 90%;
+  height: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .about-container h2 {
@@ -1324,7 +1309,7 @@ h3 {
   height: 40%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .box1 h2 {
@@ -1335,42 +1320,90 @@ h3 {
   text-align: left;
 }
 
-.box2 {
-  height: 60%;
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.box2 h2 {
-  text-align: center;
-}
-
-.box2 h3 {
-  text-align: center;
-}
-
-.text2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.text {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .prof {
-  width: 40%;
+  width: 30%;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(../pictures/profile.jpg);
+  display: none;
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.link-box {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-end;
+  align-self: flex-end;
+}
+
+.link-box a {
+  font-family: AracneRegular;
+  font-size: 18px;
+  color: #4d4d4d;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: right;
+  padding-top: 10px;
+}
+
+.link-box a:hover {
+  color: #ffb33f;
+}
+
+.contact {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+.contact h2 {
+  height: 10%;
+}
+
+.contact form {
+  height: 90%;
+  font-family: AracneRegular;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.contact label {
+  color: #4d4d4d;
+}
+
+.contact input, .contact textarea {
+  background: #efefef;
+}
+
+.contact textarea {
+  height: 40%;
+}
+
+.contact input, .contact label {
+  height: 8%;
+}
+
+.contact #submit {
+  height: 18%;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #4d4d4d;
+}
+
+.contact #submit:hover {
+  color: white;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1418,26 +1451,19 @@ h3 {
   .box1 h3 {
     text-align: center;
   }
-  .box2 {
-    height: auto;
-    width: 100%;
-    justify-content: flex-start;
-  }
   .prof {
     height: 40vh;
     width: 100%;
   }
   .text {
     width: 100%;
-  }
-  .text2, .text {
     padding: 0px 10px 20px 10px;
     height: auto;
   }
-  .text2 h2, .text h2 {
+  .text h2 {
     font-size: 5vh;
   }
-  .text2 h3, .text h3 {
+  .text h3 {
     font-size: 3vh;
   }
 }
@@ -1477,13 +1503,13 @@ h3 {
   .link-box a {
     font-size: 6vh;
   }
-  .text2, .text {
+  .text {
     height: auto;
   }
-  .text2 h2, .text h2 {
+  .text h2 {
     font-size: 8vh;
   }
-  .text2 h3, .text h3 {
+  .text h3 {
     font-size: 4vh;
   }
   .box1 {
@@ -1492,9 +1518,6 @@ h3 {
   }
   .box1 h2, .box1 h3 {
     text-align: left;
-  }
-  .box2 {
-    height: 120vh;
   }
   .prof {
     height: 90vh;
@@ -1514,13 +1537,13 @@ h3 {
   .link-box a {
     font-size: 5vh;
   }
-  .text2, .text {
+  .text {
     height: auto;
   }
-  .text2 h2, .text h2 {
+  .text h2 {
     font-size: 6vh;
   }
-  .text2 h3, .text h3 {
+  .text h3 {
     font-size: 4.5vh;
   }
   .small h2 {
