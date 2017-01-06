@@ -1348,7 +1348,7 @@ h3 {
 .link-box a {
   font-family: AracneRegular;
   font-size: 18px;
-  color: #4d4d4d;
+  color: grey;
   text-decoration: none;
   cursor: pointer;
   text-align: right;
@@ -1396,6 +1396,7 @@ h3 {
 }
 
 .contact #submit {
+  cursor: pointer;
   height: 18%;
   margin-top: 10px;
   font-size: 20px;

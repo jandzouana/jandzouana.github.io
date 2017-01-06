@@ -87,7 +87,7 @@
 		font-family: AracneRegular;
 		font-size: 18px;
 		//color: $about-header;
-		color: darken(grey, 20%);
+		color: grey;
 		text-decoration: none;
 		cursor: pointer;
 		text-align: right;
@@ -132,6 +132,7 @@
 		height: 8%;
 	}
 	#submit{
+		cursor: pointer;
 		height: 18%;
 		margin-top: 10px;
 		font-size: 20px;
