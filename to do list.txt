@@ -1,8 +1,19 @@
-1.change home to go to index?
-*change url to pages
-2.add contact page
+
 3.update drawings (end of vacay)
 4.make little icon link to something?
 5.clean up Code
 6. add compass stuff
 7. animation page?
+8. add anti spam
+9.update resume
+10. turn back uac
+11. change from digital to regular illustrations
+12. add sketch section
+18. change url link to other
+19. split character design into sections
+20. icon for website
+21. security measures aaginst password
+
+Today:
+2. fix mobile about me
+3. add margn top bottom to link box

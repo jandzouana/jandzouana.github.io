@@ -1277,29 +1277,31 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .about-container {
+  border: 2px solid orange;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   width: auto;
   height: 100%;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .about-container h2 {
   color: #35568b;
   padding-bottom: 10px;
-  font-size: 25px;
+  font-size: 23px;
   font-family: AracneRegular;
 }
 
 .about-container h3 {
-  line-height: 1.25;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 1px;
   font-size: 15px;
@@ -1307,6 +1309,7 @@ h3 {
 
 .box1 {
   height: 40%;
+  border: 2px solid green;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -1334,10 +1337,12 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 1px solid blue;
 }
 
 .link-box {
   height: 10%;
+  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1360,6 +1365,7 @@ h3 {
 }
 
 .contact {
+  border: 1px solid green;
   width: 100%;
   height: 50%;
   display: flex;
@@ -1381,6 +1387,7 @@ h3 {
 
 .contact label {
   color: #4d4d4d;
+  margin-top: 2px;
 }
 
 .contact input {
@@ -1392,18 +1399,19 @@ h3 {
   background: #efefef;
 }
 
-.contact textarea {
-  height: 40%;
+.contact input, .contact label {
+  height: 10%;
 }
 
-.contact input, .contact label {
-  height: 8%;
+.contact .captcha {
+  width: 60px;
+  padding-top: 6px;
 }
 
 .contact #submit {
   font-family: AracneRegular;
   cursor: pointer;
-  height: 18%;
+  height: 20%;
   margin-top: 10px;
   font-size: 20px;
   color: #4d4d4d;
@@ -1413,9 +1421,34 @@ h3 {
   color: white;
 }
 
-@media only screen and (max-width: 1200px) {
-  .about-container .box2 {
-    width: 95%;
+.contact .submitmsg {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.contact .top {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 80%;
+  justify-content: space-between;
+}
+
+.contact .left, .contact .right {
+  width: 47%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.contact .right textarea {
+  height: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+  .about-container {
+    border: 1px solid purple;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .about-container h2 {
     font-size: 20px;
@@ -1423,23 +1456,91 @@ h3 {
   .about-container h3 {
     font-size: 13px;
   }
+  .box1 {
+    height: 45%;
+  }
+  .link-box {
+    height: 5%;
+  }
+  .link-box a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 985px) {
+  .about-container {
+    border: 1px solid red;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .about-container h2 {
+    font-size: 18px;
+  }
+  .about-container h3 {
+    font-size: 13px;
+  }
+  .box1 {
+    height: 50%;
+  }
+  .link-box {
+    height: 5%;
+  }
+  .link-box a {
+    font-size: 15px;
+  }
+  input, label {
+    height: 8%;
+  }
+  .contact {
+    height: 45%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
   #main-about {
     justify-content: flex-start;
-    height: 180vh;
-    padding-top: 0px;
+    height: 200vh;
+    padding: 0px;
+  }
+  .contact {
+    height: 50%;
+  }
+  .contact .top {
+    height: 90%;
+    border: 1px solid blue;
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+  .contact .left, .contact .right {
+    width: 100%;
+    height: 50%;
+  }
+  .contact #submit {
+    height: 10%;
+    font-size: 2.5vh;
+    border: 1px solid green;
+  }
+  .contact input, .contact label {
+    font-size: 2.5vh;
   }
   .link-box {
-    height: 10%;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    height: 5%;
   }
   .link-box a {
     font-size: 3vh;
+    text-align: center;
   }
   .about-container {
-    height: 90%;
+    height: 100%;
     margin: 0px;
+    padding-bottom: 30px;
+  }
+  .about-container h2 {
+    font-size: 5vh;
+    text-align: center;
   }
   #container-a {
     height: 100%;
@@ -1448,7 +1549,7 @@ h3 {
   }
   .box1 {
     padding-top: 0px;
-    height: 70vh;
+    height: 45%;
     justify-content: space-around;
     flex-direction: column;
   }
@@ -1457,10 +1558,6 @@ h3 {
   }
   .box1 h3 {
     text-align: center;
-  }
-  .prof {
-    height: 40vh;
-    width: 100%;
   }
   .text {
     width: 100%;
@@ -1471,102 +1568,67 @@ h3 {
     font-size: 5vh;
   }
   .text h3 {
-    font-size: 3vh;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .text2 h2, .text h2 {
-    font-size: 4.5vh;
-  }
-  .text2 h3, .text h3 {
     font-size: 2.5vh;
   }
-  .link-box {
-    height: 10%;
-  }
-  .link-box a {
-    font-size: 2vh;
-  }
 }
 
-@media only screen and (max-width: 400px) {
-  .text2 h2, .text h2 {
-    font-size: 3.5vh;
-  }
-  .text2 h3, .text h3 {
-    font-size: 2vh;
-  }
-}
-
-@media only screen and (max-width: 900px) and (orientation: landscape) and (max-height: 600px) {
-  #main-about {
-    margin-top: 59px;
-    height: 240vh;
-  }
-  .link-box {
-    height: 10%;
-  }
-  .link-box a {
-    font-size: 6vh;
-  }
+@media only screen and (max-width: 650px) {
   .text {
+    padding: 0px 5px 20px 5px;
     height: auto;
   }
   .text h2 {
-    font-size: 8vh;
-  }
-  .text h3 {
-    font-size: 4vh;
-  }
-  .box1 {
-    height: 80vh;
-    flex-direction: row;
-  }
-  .box1 h2, .box1 h3 {
-    text-align: left;
-  }
-  .prof {
-    height: 90vh;
-  }
-  .small h2 {
-    font-size: 6.5vh !important;
-  }
-  .small h3 {
-    font-size: 3.5vh !important;
-  }
-}
-
-@media only screen and (max-width: 700px) and (orientation: landscape) and (max-height: 600px) {
-  .link-box {
-    height: 10%;
-  }
-  .link-box a {
     font-size: 5vh;
   }
-  .text {
-    height: auto;
-  }
-  .text h2 {
-    font-size: 6vh;
-  }
   .text h3 {
-    font-size: 4.5vh;
-  }
-  .small h2 {
-    font-size: 4.5vh !important;
-  }
-  .small h3 {
-    font-size: 4vh !important;
+    font-size: 2vh;
   }
 }
 
-/*
-$('.text2 h2').css("font-size","7vh");
-$('.text2 h3').css("font-size","5vh");
-$('.text h2').css("font-size","7vh");
-$('.text h3').css("font-size","5vh");
-*/
+@media only screen and (max-width: 500px) {
+  .contact {
+    height: 40%;
+  }
+  .box1 {
+    height: 55%;
+  }
+  .text h2 {
+    font-size: 2.5vh;
+  }
+  .text h3 {
+    font-size: 2vh;
+  }
+  .about-container h2 {
+    font-size: 2.5vh;
+    text-align: center;
+  }
+  .link-box a {
+    font-size: 2.5vh;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .contact {
+    height: 40%;
+  }
+  .box1 {
+    height: 55%;
+  }
+  .text h2 {
+    font-size: 2vh;
+  }
+  .text h3 {
+    font-size: 1.45vh;
+  }
+  .about-container h2 {
+    font-size: 2vh;
+    text-align: center;
+  }
+  .link-box a {
+    font-size: 2vh;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
