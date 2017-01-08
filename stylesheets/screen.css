@@ -498,6 +498,20 @@ h3 {
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 .grid {
   display: flex;
   flex-direction: column;
