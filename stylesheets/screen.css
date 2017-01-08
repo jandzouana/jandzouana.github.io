@@ -498,17 +498,12 @@ h3 {
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 html {
   overflow: hidden;
 }
 
 body {
-  overflow: scroll;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
